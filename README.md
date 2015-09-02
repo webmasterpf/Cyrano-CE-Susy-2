@@ -47,7 +47,7 @@ Dans la logique Mobile first, la div "content" aura 5 colonnes, si c'est un écr
 <pre>
 #content {
   @include span(5 of 12);
-  @include susy-breakpoint($desktop) {
+  @include breakpoint($desktop) {
     @include span(13 of $desktop);
     @include prefix(3 of $desktop);
   }
@@ -88,9 +88,9 @@ Compass Recipes : mixin css3
  Breakpoints pour SUSY
 ----------------------------------
 <pre>
- @include susy-breakpoint ($mobile){}
- @include susy-breakpoint ($desktop){}
- @include susy-breakpoint ($tablet){}
+ @include breakpoint ($mobile){}
+ @include breakpoint ($desktop){}
+ @include breakpoint ($tablet){}
 </pre>
 
 Diaporama homepage surimpression
