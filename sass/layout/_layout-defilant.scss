@@ -34,7 +34,9 @@ aside.content_top .annonce-container .annonce
       margin: 0;
       padding: 0;
   }
-  
+  img{
+      @include adaptable-img;
+  }
   @include breakpoint ($tablet){
      max-width: container($tabletcol);
   }

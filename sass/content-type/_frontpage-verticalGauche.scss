@@ -21,7 +21,8 @@ body .conteneur
         @include clearfix;
     }
     .HPDroite{
-        //width: container();
+        img{@include adaptable-img;}
+        
     }
     .HPDroite1{}
     .HPDroite2{}
