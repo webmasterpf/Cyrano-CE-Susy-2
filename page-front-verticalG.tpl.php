@@ -2,8 +2,6 @@
 global $theme_path;
 include ($theme_path.'/includes/inc_header.php');
 ?>
-<div class="content-global">
-
 
  <!-- ______________________ CONTENU HAUT _______________________ -->
  
@@ -52,9 +50,7 @@ include ($theme_path.'/includes/inc_header.php');
 
     </div><!-- /#content-bottom -->
    
-	
 
-</div> <!-- /content-global -->
     <?php
 global $theme_path;
 include ($theme_path.'/includes/inc_footer.php');

@@ -64,11 +64,8 @@ breakpoint-2.5.0
 
 //Import Homepage - choisir quel layout utiliser
 
-//@import "content-type/frontpage-agtest";
-//@import "content-type/frontpage-pano";
-//@import "content-type/frontpage-verticalDroit";
-//@import "content-type/frontpage-verticalGauche";
-@import "content-type/frontpage-institutionnel";
+@import "content-type/frontpage-verticalGauche";
+
 
 
 
@@ -96,8 +93,8 @@ breakpoint-2.5.0
 @import "content-type/page-recrutement";*/
 
 //developpement
-//@import "content-type/page-agtest";
-//@import "layout/layout-debug-colour";
+
+@import "layout/layout-debug-colour";
 
 //Galeries slideshow views
 @import "galeries/_views_slideshow";
