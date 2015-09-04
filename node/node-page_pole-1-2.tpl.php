@@ -1,4 +1,4 @@
-<!-- ______________________ NODE-PAGE_POLE.TPL _______________________ -->
+<!-- ______________________node-page_pole-1-2.tpl - pole services _______________________ -->
 <div class="node <?php print $classes; ?>" id="node-<?php print $node->nid; ?>">
   <div class="node-inner">
 
@@ -12,22 +12,13 @@
       <span class="submitted"><?php print $submitted; ?></span>
     <?php endif; ?>
 <!-- ______________________ PARTIE CUSTOMISEE _______________________ -->
+ <div id="liste_formation_pole_services">
                   <?php if ($title): ?>
                 <h1 class="title-page-bloc"><?php print $title; ?></h1>
               <?php endif; ?>
-<!-- ______________________ BLOC GAUCHE _______________________ -->
-              <div id="bloc-gauche-pole">
-                  <?php print $pole_bloc_G; ?>
-              </div>
-<!-- ______________________ BLOC CENTRE _______________________ -->
-              <div id="bloc-centre-pole">
-                  <?php print $pole_bloc_C; ?>
-              </div>
-<!-- ______________________ BLOC DROIT _______________________ -->
-              <div id="bloc-droit-pole">
-                  <?php print $pole_bloc_D; ?>
-              </div>
-
+               
+<?php print $node->field_vue_pole_formation[0]['view'] ?>
+</div>
     <?php if ($terms): ?>
       <div class="taxonomy"><?php //print $terms; ?></div>
     <?php endif;?>

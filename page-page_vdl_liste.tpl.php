@@ -1,5 +1,6 @@
 <?php $theme_path = drupal_get_path('theme', 'cyrano_ce'); include ($theme_path.'/includes/inc_header.php'); ?>
- <!-- ______________________ LAYOUT PAGE ACTUALITES LISTE OVERRIDE PAR NODE.TPL CUSTOM _______________________ -->
+
+ <!-- ______________________ LAYOUT PAGE VIE DU LYCEE - LISTE CELONY PAGE.TPL_______________________ -->
   <!-- ______________________ CONTENU _______________________ -->
   
       <div id="contentPage">
@@ -12,19 +13,16 @@
               <?php print $content_top; ?>
             </div> <!-- /#content-top -->
 	  
-<!-- ______________________ CONTENT TOP NODE_______________________ -->
+      <!-- ______________________ CONTENT TOP NODE_______________________ -->
                <?php if ($content_top_node): ?>
             <div id="content-top-node">
 	              <?php print $content_top_node; ?>
             </div> <!-- /#content-top-node -->
-            <?php endif; ?>      
-
-        
-            <div id="content-inner-page-actualites">
-		             
-		
-           
-
+            <?php endif; ?>
+   
+        <!-- ______________________ CONTENT INNER _______________________ -->
+        <div id="content-inner-vdl" class="inner column center">
+	
           <?php if ($mission || $messages || $help || $tabs): ?>
             <div id="content-header">              
 
@@ -43,15 +41,12 @@
             </div> <!-- /#content-header -->
           <?php endif; ?>
 		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
-                  <div id="middle-content-page-actualites">
-          
+          <div id="middle-content-vdl">
+       
             <?php print $content; ?>
               <?php print $feed_icons; ?>
           </div> <!-- /#content-area -->
-
         
-
-          
           
       </div> <!-- /content-inner /content -->
 
@@ -64,10 +59,11 @@
         <?php endif; ?>
 
        
-		
+		 
+
    
-    	 <br clear="all"/>
-         <!-- ______________________ CONTENU BAS _______________________ -->
+    	 <br class="clearBoth"/>
+           <!-- ______________________ CONTENU BAS _______________________ -->
 <?php if ($content_bottom): ?>
             <div id="content-bottom">
               <?php print $content_bottom; ?>
@@ -75,6 +71,6 @@
           <?php endif; ?>
 	 </div> <!-- /contentPage -->
 	  
-	  <?php $theme_path = drupal_get_path('theme', 'cyrano_ce'); include ($theme_path.'/includes/inc_footer.php'); ?>
+<?php $theme_path = drupal_get_path('theme', 'cyrano_ce'); include ($theme_path.'/includes/inc_footer.php'); ?>
          <?php endif; ?>
-     
+    

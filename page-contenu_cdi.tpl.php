@@ -1,5 +1,5 @@
 <?php $theme_path = drupal_get_path('theme', 'cyrano_ce'); include ($theme_path.'/includes/inc_header.php'); ?>
- <!-- ______________________ LAYOUT PAGE ACTUALITES LISTE OVERRIDE PAR NODE.TPL CUSTOM _______________________ -->
+ <!-- ______________________ LAYOUT CONTENU CDI OVERRIDE PAR NODE.TPL CUSTOM _______________________ -->
   <!-- ______________________ CONTENU _______________________ -->
   
       <div id="contentPage">
@@ -20,7 +20,7 @@
             <?php endif; ?>      
 
         
-            <div id="content-inner-page-actualites">
+        <div id="content-inner-page-lycee">
 		             
 		
            
@@ -43,7 +43,7 @@
             </div> <!-- /#content-header -->
           <?php endif; ?>
 		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
-                  <div id="middle-content-page-actualites">
+          <div id="middle-content-page-lycee">
           
             <?php print $content; ?>
               <?php print $feed_icons; ?>
@@ -66,7 +66,7 @@
        
 		
    
-    	 <br clear="all"/>
+    	 <br class="clearBoth"/>
          <!-- ______________________ CONTENU BAS _______________________ -->
 <?php if ($content_bottom): ?>
             <div id="content-bottom">

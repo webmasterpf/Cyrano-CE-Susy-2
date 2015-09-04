@@ -1,5 +1,5 @@
 <?php $theme_path = drupal_get_path('theme', 'cyrano_ce'); include ($theme_path.'/includes/inc_header.php'); ?>
- <!-- ______________________ LAYOUT PAGE ACTUALITES LISTE OVERRIDE PAR NODE.TPL CUSTOM _______________________ -->
+ <!-- ______________________ LAYOUT PAGE GLOBALE _______________________ -->
   <!-- ______________________ CONTENU _______________________ -->
   
       <div id="contentPage">
@@ -11,20 +11,20 @@
 
               <?php print $content_top; ?>
             </div> <!-- /#content-top -->
-	  
-<!-- ______________________ CONTENT TOP NODE_______________________ -->
+            
+            <!-- ______________________ CONTENT TOP NODE_______________________ -->
                <?php if ($content_top_node): ?>
             <div id="content-top-node">
 	              <?php print $content_top_node; ?>
             </div> <!-- /#content-top-node -->
-            <?php endif; ?>      
-
-        
-            <div id="content-inner-page-actualites">
-		             
+            <?php endif; ?>
+	  
+      
+       <!-- ______________________ CONTENU CENTRAL _______________________ -->
 		
-           
-
+	
+        <div class="inner column center content-page-globale">
+	
           <?php if ($mission || $messages || $help || $tabs): ?>
             <div id="content-header">              
 
@@ -43,8 +43,8 @@
             </div> <!-- /#content-header -->
           <?php endif; ?>
 		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
-                  <div id="middle-content-page-actualites">
-          
+          <div id="middle-content">
+           <!-- <pre> <?php print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->
             <?php print $content; ?>
               <?php print $feed_icons; ?>
           </div> <!-- /#content-area -->
@@ -63,10 +63,8 @@
           </div> <!-- /navigation -->
         <?php endif; ?>
 
-       
-		
    
-    	 <br clear="all"/>
+    	 <br class="clearBoth"/>
          <!-- ______________________ CONTENU BAS _______________________ -->
 <?php if ($content_bottom): ?>
             <div id="content-bottom">

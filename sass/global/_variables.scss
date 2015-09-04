@@ -1,5 +1,5 @@
 /* Changing Susy default global settings */
-//*Réglage de la grille de SusyOne - approche mobile-first
+//*Réglage de la grille de Susy2 - approche mobile-first
 $total-columns: 4;             // nombre de colonnes de la grille de base pour mobile
 $column-width: 4.15em;            // largeur de chaque colonnes (px,em,%)
 $gutter-width: 1em;            // taille de la gouttière entre colonnes (px,em,%)
@@ -19,7 +19,7 @@ $susy: (
   math: if($container-style == magic, fluid, $container-style),
   
   //Debug
-  debug :(
+  debug: (
   image: show,
   color: rgba(#66f, .25),
   output: overlay,

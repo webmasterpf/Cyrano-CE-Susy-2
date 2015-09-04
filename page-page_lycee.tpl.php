@@ -1,33 +1,32 @@
-<?php
-global $theme_path;
-include ($theme_path.'/includes/inc_header.php');
-?>
- <!-- ______________________ LAYOUT PAGE MODELE OVERRIDE PAR NODE.TPL CUSTOM _______________________ -->
+<?php $theme_path = drupal_get_path('theme', 'cyrano_ce'); include ($theme_path.'/includes/inc_header.php'); ?>
+ <!-- ______________________ LAYOUT PAGE LYCEE OVERRIDE PAR NODE.TPL CUSTOM _______________________ -->
   <!-- ______________________ CONTENU _______________________ -->
-
-      <div class="content-global">
-
-       <!-- ______________________ CONTENT INNER GLOBAL _______________________ -->
-
-        <div class="content-inner" class="page-MODELE">
-              <!-- ______________________ CONTENT TOP _______________________ -->
-      <?php if ($breadcrumb ||$content_top): ?>
+  
+      <div id="contentPage">
+      
+          <!-- ______________________ CONTENT TOP _______________________ -->
+      <?php if ($breadcrumb ||$content_top ): ?>
             <div id="content-top">
-	<span class="ariane"> <?php print $breadcrumb; ?></span>
+	<span id="ariane"> <?php print $breadcrumb; ?></span>
 
               <?php print $content_top; ?>
             </div> <!-- /#content-top -->
-            <?php endif; ?>
-
-  <!-- ______________________ CONTENT TOP NODE_______________________ -->
+	  
+<!-- ______________________ CONTENT TOP NODE_______________________ -->
                <?php if ($content_top_node): ?>
             <div id="content-top-node">
 	              <?php print $content_top_node; ?>
             </div> <!-- /#content-top-node -->
-            <?php endif; ?>
+            <?php endif; ?>      
+
+        
+        <div id="content-inner-page-lycee">
+		             
+		
+           
 
           <?php if ($mission || $messages || $help || $tabs): ?>
-            <div class="content-header">
+            <div id="content-header">              
 
               <?php if ($mission): ?>
                 <div id="mission"><?php print $mission; ?></div>
@@ -35,7 +34,7 @@ include ($theme_path.'/includes/inc_header.php');
 
               <?php print $messages; ?>
 
-              <?php print $help; ?>
+              <?php print $help; ?> 
 
               <?php if ($tabs): ?>
                 <div class="tabs"><?php print $tabs; ?></div>
@@ -44,15 +43,19 @@ include ($theme_path.'/includes/inc_header.php');
             </div> <!-- /#content-header -->
           <?php endif; ?>
 		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
-             <article class="middle-content page-MODELE">
-
+          <div id="middle-content-page-lycee">
+          
             <?php print $content; ?>
               <?php print $feed_icons; ?>
-                  </article> <!-- /#content-area -->
+          </div> <!-- /#content-area -->
 
+        
+
+          
+          
       </div> <!-- /content-inner /content -->
 
-
+            
         <?php if (!empty($primary_links) or !empty($secondary_links)): ?>
           <div id="navigation" class="menu <?php if (!empty($primary_links)) { print "with-main-menu"; } if (!empty($secondary_links)) { print " with-sub-menu"; } ?>">
             <?php if (!empty($primary_links)){ print theme('links', $primary_links, array('id' => 'primary', 'class' => 'links main-menu')); } ?>
@@ -60,14 +63,18 @@ include ($theme_path.'/includes/inc_header.php');
           </div> <!-- /navigation -->
         <?php endif; ?>
 
+       
+		
+   
+    	 <br class="clearBoth"/>
          <!-- ______________________ CONTENU BAS _______________________ -->
 <?php if ($content_bottom): ?>
-            <div class="content-bottom">
+            <div id="content-bottom">
               <?php print $content_bottom; ?>
             </div><!-- /#content-bottom -->
           <?php endif; ?>
-	 </div> <!-- /content-global -->
-<?php
-global $theme_path;
-include ($theme_path.'/includes/inc_footer.php');
-?>     
+	 </div> <!-- /contentPage -->
+	  
+	  <?php $theme_path = drupal_get_path('theme', 'cyrano_ce'); include ($theme_path.'/includes/inc_footer.php'); ?>
+         <?php endif; ?>
+     

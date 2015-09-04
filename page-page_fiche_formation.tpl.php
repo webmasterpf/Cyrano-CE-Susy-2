@@ -1,5 +1,5 @@
 <?php $theme_path = drupal_get_path('theme', 'cyrano_ce'); include ($theme_path.'/includes/inc_header.php'); ?>
- <!-- ______________________ LAYOUT PAGE ACTUALITES LISTE OVERRIDE PAR NODE.TPL CUSTOM _______________________ -->
+ <!-- ______________________ LAYOUT PAGE FICHE FORMATION OVERRIDE PAR NODE.TPL CUSTOM _______________________ -->
   <!-- ______________________ CONTENU _______________________ -->
   
       <div id="contentPage">
@@ -19,11 +19,8 @@
             </div> <!-- /#content-top-node -->
             <?php endif; ?>      
 
-        
-            <div id="content-inner-page-actualites">
-		             
-		
-           
+         <!-- ______________________ CONTENT INNER _______________________ -->
+        <div id="content-inner-fiche-formation">
 
           <?php if ($mission || $messages || $help || $tabs): ?>
             <div id="content-header">              
@@ -43,10 +40,12 @@
             </div> <!-- /#content-header -->
           <?php endif; ?>
 		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
-                  <div id="middle-content-page-actualites">
+          <div id="middle-content-fiche-formation">
           
             <?php print $content; ?>
               <?php print $feed_icons; ?>
+              <!-- retour haut selon resolution de l'ecran -->
+<!--          <a href="#general" id="retour_haut">Haut de page</a>-->
           </div> <!-- /#content-area -->
 
         
@@ -66,7 +65,7 @@
        
 		
    
-    	 <br clear="all"/>
+    	 <br class="clearBoth"/>
          <!-- ______________________ CONTENU BAS _______________________ -->
 <?php if ($content_bottom): ?>
             <div id="content-bottom">

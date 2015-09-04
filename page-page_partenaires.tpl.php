@@ -1,5 +1,5 @@
-<?php $theme_path = drupal_get_path('theme', 'cyrano_pf'); include ($theme_path.'/includes/inc_header.php'); ?>
- <!-- ______________________ LAYOUT PAGE PARTENAIRE _______________________ -->
+<?php $theme_path = drupal_get_path('theme', 'cyrano_ce'); include ($theme_path.'/includes/inc_header.php'); ?>
+ <!-- ______________________ LAYOUT PAGE PARTENAIRES CELONY PAGE.TPL OVERRIDE PAR NODE.TPL CUSTOM_______________________ -->
   <!-- ______________________ CONTENU _______________________ -->
   
       <div id="contentPage">
@@ -11,23 +11,18 @@
 
               <?php print $content_top; ?>
             </div> <!-- /#content-top -->
-	  
-      
-       <!-- ______________________ COLONNE GAUCHE _______________________ -->
-		
-			  <?php if ($left): ?>
-         <div id="left-content-partenaire">
-            <?php print $left; ?>
-          </div>
-             <?php endif; ?> <!-- /sidebar-left -->
-		
-		<!--fin du contenu gauche -->
-        
-        <div id="content-inner-partenaire" class="inner column center">
+
+            <!-- ______________________ CONTENT TOP NODE_______________________ -->
+               <?php if ($content_top_node): ?>
+            <div id="content-top-node">
+	              <?php print $content_top_node; ?>
+            </div> <!-- /#content-top-node -->
+            <?php endif; ?>
+            
+        <!-- ______________________ CONTENT INNER _______________________ -->
+        <div id="content-inner-vdl">
 		             
-		 <?php if ($title): ?>
-                <h1 class="title"><?php print $title; ?></h1>
-              <?php endif; ?>
+		
            
 
           <?php if ($mission || $messages || $help || $tabs): ?>
@@ -48,20 +43,9 @@
             </div> <!-- /#content-header -->
           <?php endif; ?>
 		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
-          <div id="middle-content-partenaire">
-          <div class="body-partenaire"  <?php print $content; ?>
-
-              <?php if ($formulaire): ?>
-            <div id="formulaire_partenaire">
-              <?php print $formulaire; ?>
-            </div><!-- /#formulaire_partenaire -->
-              <?php endif; ?>
-            
-                  <?php if ($centre_partenaire): ?>
-         <div id="centre-partenaire">
-            <?php print $centre_partenaire; ?>
-          </div>
-             <?php endif; ?>
+          <div id="middle-content-vdl">
+           <!-- <pre> <?php print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->
+            <?php print $content; ?>
               <?php print $feed_icons; ?>
           </div> <!-- /#content-area -->
 
@@ -80,18 +64,10 @@
         <?php endif; ?>
 
        
-		  <!-- ______________________ COLONNE DROITE _______________________ -->
-        <?php if ($right): ?>
-         <!--d�but du contenu droit -->
-		<div id="right-content-partenaire">
-			
-				
-            <?php print $right; ?>
-        </div>
-        <?php endif; ?> <!-- /sidebar-right -->
+		
 
    
-    	 <br clear="all"/>
+    	 <br class="clearBoth"/>
          <!-- ______________________ CONTENU BAS _______________________ -->
 <?php if ($content_bottom): ?>
             <div id="content-bottom">
@@ -100,6 +76,6 @@
           <?php endif; ?>
 	 </div> <!-- /contentPage -->
 	  
-	  <?php $theme_path = drupal_get_path('theme', 'cyrano_pf'); include ($theme_path.'/includes/inc_footer.php'); ?>
+	  <?php $theme_path = drupal_get_path('theme', 'cyrano_ce'); include ($theme_path.'/includes/inc_footer.php'); ?>
          <?php endif; ?>
      
