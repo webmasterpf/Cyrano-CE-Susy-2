@@ -25,23 +25,23 @@
 #name-and-slogan-offline, #site-slogan-offline{
      background: #ADC91F;
     color: #606070;
-    padding: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius:5px;
-    border-radius: 5px;
+    padding: em(5px);
+    -moz-border-radius: em(5px);
+    -webkit-border-radius:em(5px);
+    border-radius: em(5px);
 }
 #contentPage-offline{
 
 	margin:0 auto;
 	padding:0;
-	width: 990px;
+	width: em(990px);
 	background-color:white;
 
 }
 #footer-offline{
     margin:0 auto;
-	padding:5px 0;
-	width:980px;
+	padding:em(5px) 0;
+	width:em(980px);
 	background: white url(../images/bg_footer.jpg) no-repeat bottom right;
 	text-align: left;
 	color: #9898a6;
@@ -52,14 +52,14 @@
 #name-and-slogan-maintenance, #site-slogan-maintenance{
     background: #ADC91F;
     color: #606070;
-    padding: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius:5px;
-    border-radius: 5px;
+    padding: em(5px);
+    -moz-border-radius: em(5px);
+    -webkit-border-radius:em(5px);
+    border-radius: em(5px);
 }
 #site-name-maintenance{
     margin: 0;
-    padding: 15px;
+    padding: em(15px);
 }
 #contentPage-maintenance{
 
@@ -75,7 +75,7 @@
     width: 900px;
     display: block;
      background: transparent url(../images/zebra-gros-clair.gif) repeat top left;
-     padding: 15px 0;
+     padding: em(15px) 0;
 }
 #middle-content-maintenance p{
     background: white;
@@ -85,12 +85,12 @@
 }
 #footer-maintenance{
     margin:0 auto;
-	padding:5px 0;
+	padding:em(5px) 0;
 	width:980px;
 	background: white url(../images/bg_footer.jpg) no-repeat bottom right;
 	text-align: left;
 	color: #9898a6;
-        height:50px;
+        height:em(50px);
         font-size: 11px;
 }
 #footer-maintenance a{
