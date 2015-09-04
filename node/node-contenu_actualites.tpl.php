@@ -3,7 +3,7 @@
   <div class="node-inner">
 <!--______________COLONNE GAUCHE 1________________ -->
   <!-- <pre> <?php //print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->
-<div id="pageLycee_col_G1">
+<div id="pageLycee_col_1">
      <?php if ($title): /*insertion du titre de la page et style differencié*/?>
      <h1 class="titre_pl"><?php print $title; ?></h1>
      <?php endif; ?>
@@ -17,14 +17,14 @@
                   <?php
  /* inclusion d'une region pour bloc dans colonne de gauche*/
               global $theme_path;
-              include ($theme_path.'/includes/inc_region_col_G1.php');
+              include ($theme_path.'/includes/inc_region_col_1.php');
               ?>
 
         
        
 </div>
 <!--______________COLONNE GAUCHE 2________________ -->
-<div id="pageLycee_col_G2">
+<div id="pageLycee_col_2">
      <?php if ($submitted): ?>
       <span class="submitted"><?php print $submitted; ?></span>
     <?php endif; ?>
@@ -45,14 +45,14 @@
       
       <?php
               global $theme_path;
-              include ($theme_path.'/includes/inc_region_col_G2.php');
+              include ($theme_path.'/includes/inc_region_col_2.php');
               ?>
      <!-- retour haut selon resolution de l'ecran -->
          <!-- <a href="#general" id="retour_haut">Haut de page</a>-->
 </div>
 <!--______________COLONNE GAUCHE 3________________ -->
    
-<div id="pageLycee_col_G3">
+<div id="pageLycee_col_3">
      <?php print $picture; ?>
 
    

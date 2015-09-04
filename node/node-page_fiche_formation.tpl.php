@@ -3,7 +3,7 @@
   <div class="node-inner">
 <!--______________COLONNE GAUCHE 1________________ -->
   <!-- <pre> <?php //print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->
-<div id="fiche_col_G1">
+<div id="fiche_col_1">
      <?php if ($title): /*insertion du titre de la page et style differencié*/?>
      <h1 class="titre_fiche"><?php print $title; ?></h1>
      
@@ -18,11 +18,11 @@ include ($theme_path.'/includes/inc_field_diapo_fiche_flash.php');
  <?php
  /* inclusion d'une region pour bloc dans colonne de gauche*/
               global $theme_path;
-              include ($theme_path.'/includes/inc_region_col_G1.php');
+              include ($theme_path.'/includes/inc_region_col_1.php');
               ?>
 </div>
 <!--______________COLONNE GAUCHE 2________________ -->
-<div id="fiche_col_G2">
+<div id="fiche_col_2">
     <?php
 global $theme_path;
 include ($theme_path.'/includes/inc_formation_table_fiche.php');
@@ -31,7 +31,7 @@ include ($theme_path.'/includes/inc_formation_table_fiche.php');
 </div>
 <!--______________COLONNE GAUCHE 3________________ -->
    
-<div id="fiche_col_G3">
+<div id="fiche_col_3">
      <?php print $picture; ?>
 
     <?php if ($submitted): ?>

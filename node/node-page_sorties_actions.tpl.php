@@ -3,7 +3,7 @@
   <div class="node-inner">
 <!--______________COLONNE GAUCHE 1________________ -->
  
-<div id="pageSortieActions_col_G1">
+<div id="pageSortieActions_col_1">
      <?php if ($title): /*insertion du titre de la page et style differencié*/?>
      <h1 class="titre_vdl_sortie"><?php print $title; ?></h1>
      
@@ -18,12 +18,12 @@ include ($theme_path.'/includes/inc_vdl_table_infos_plus.php');
  <?php
  /* inclusion d'une region pour bloc dans colonne de gauche*/
               global $theme_path;
-              include ($theme_path.'/includes/inc_region_col_G1.php');
+              include ($theme_path.'/includes/inc_region_col_1.php');
               ?>
    
 </div>
 <!--______________COLONNE GAUCHE 2________________ -->
-<div id="pageSortieActions_col_G2">
+<div id="pageSortieActions_col_2">
      <?php if ($submitted): ?>
       <span class="submitted"><?php print $submitted; ?></span>
     <?php endif; ?>
@@ -43,7 +43,7 @@ include ($theme_path.'/includes/inc_vdl_table_infos_plus.php');
 </div>
 <!--______________COLONNE GAUCHE 3________________ -->
    
-<div id="pageSortieActions_col_G3">
+<div id="pageSortieActions_col_3">
      <?php print $picture; ?>
   
 

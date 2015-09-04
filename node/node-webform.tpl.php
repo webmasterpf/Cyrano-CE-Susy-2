@@ -10,7 +10,7 @@
    
      <!--______________COLONNE GAUCHE 1________________ -->
   
-<div id="webform_col_G1">
+<div id="webform_col_1">
      <?php if ($title): /*insertion du titre de la page et style differencié*/?>
      <h1 class="titre_pl"><?php print $title; ?></h1>
 
@@ -23,11 +23,11 @@
  <?php
  /* inclusion d'une region pour bloc dans colonne de gauche*/
               global $theme_path;
-              include ($theme_path.'/includes/inc_region_col_G1.php');
+              include ($theme_path.'/includes/inc_region_col_1.php');
               ?>
 </div>
 <!--______________COLONNE GAUCHE 2________________ -->
-<div id="webform_col_G2">
+<div id="webform_col_2">
      <?php if ($submitted) { ?>
     <span class="submitted"><?php print $submitted?></span>
   <?php }; ?>
@@ -56,7 +56,7 @@
 </div>
 <!--______________COLONNE GAUCHE 3________________ -->
 
-<div id="webform_col_G3">
+<div id="webform_col_3">
      <?php print $picture; ?>
 
 
