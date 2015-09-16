@@ -6,9 +6,9 @@
 |           CONTENU VDL                |
 |--------------------------------------*/
 
-//@include susy-breakpoint ($mobile){}
-//@include susy-breakpoint ($desktop){}
-//@include susy-breakpoint ($tablet){}
+//@include breakpoint ($mobile){}
+//@include breakpoint ($desktop){}
+//@include breakpoint ($tablet){}
 
 h1.vdl_titre{color: $gris-clair;}
 .vdl-content{}
@@ -26,6 +26,3 @@ h1.vdl_titre{color: $gris-clair;}
 {
     img{@include adaptable-img;}
 }
-
-
-

@@ -81,7 +81,8 @@ regions[bandeau1] = Bandeau haut de page
 ;regions[centralBloc] = Zone pour bloc central - View Bloc
 ;regions[centre_partenaire] = Zone centrale page partenaire
 
-
+regions[content_top] = Content top
+regions[content_top_node] = Content top node
 
 ;Diaporama HP selon layout choisi (décommenter pour choisir)
 ;regions[DiapoPanoHP] = Diaporama Panoramique Homepage - Bloc
@@ -112,8 +113,7 @@ regions[pole_bloc_G] = Bloc pour pole Gauche
 regions[pole_bloc_C] = Bloc pour pole Centre
 regions[pole_bloc_D] = Bloc pour pole Droit
 
-regions[content_top] = Content top
-regions[content_top_node] = Content top node
+
 regions[formulaire] = Zone formulaire bloc
 regions[left] = Colonne Gauche
 regions[decoTitre] = Titre deco image - Fiche Formations

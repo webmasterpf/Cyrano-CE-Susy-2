@@ -62,39 +62,39 @@ breakpoint-2.5.0
 @import "ui/style-backoffice";
 //@import "ui/volet_coulissant_css";
 
-//Import Homepage - choisir quel layout utiliser
-
-@import "content-type/frontpage-verticalGauche";
-
-
+//Import Homepage - choisir quel layout et style utiliser
+@import "layout/layout-vertical-hp-gauche";
+@import "content-type-style/frontpage-verticalGauche";
 
 
-// Import des partiels pour les node.tpl
-//@import "content-type/node-TYPE";
-@import "content-type/views";
 
-@import "content-type/page-lycee";
-//@import "content-type/contenu-vdl";
-//@import "content-type/page-pole";
 
+// Import des partiels pour le style des node.tpl
+//@import "content-type-style/node-TYPE";
+@import "content-type-style/views";
+
+@import "content-type-style/page-lycee";
+//@import "content-type-style/contenu-vdl";
+//@import "content-type-style/page-pole";
+@import "content-type-style/page-vdl-liste";
 //Content type site 
 
-@import "content-type/fiche-formation-pf";
+@import "content-type-style/fiche-formation-pf";
 
-/*@import "content-type/page-association";
-@import "content-type/page-lycee";
-@import "content-type/page-formations";
-@import "content-type/page-bourses";
-@import "content-type/page-bts";
-@import "content-type/fiche-bts";
-@import "content-type/page-partenaires";
-@import "content-type/page-actualites";
-@import "content-type/page-contact";
-@import "content-type/page-recrutement";*/
+/*@import "content-type-style/page-association";
+@import "content-type-style/page-lycee";
+@import "content-type-style/page-formations";
+@import "content-type-style/page-bourses";
+@import "content-type-style/page-bts";
+@import "content-type-style/fiche-bts";
+@import "content-type-style/page-partenaires";
+@import "content-type-style/page-actualites";
+@import "content-type-style/page-contact";
+@import "content-type-style/page-recrutement";*/
 
 //developpement
 
 @import "layout/layout-debug-colour";
 
 //Galeries slideshow views
-@import "galeries/_views_slideshow";
+@import "galeries/views_slideshow";

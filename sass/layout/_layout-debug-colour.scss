@@ -131,7 +131,32 @@ body .conteneur {
     
     }
 }
+//Pour le dev, code visuel sur les blocs selon le breakpoint
+// HP Vertical Gauche
+body .conteneur {
 
+    .HPDiapoVerticalGauche{background: orangered;}
+    .HPDroite{}
+    .HPDroite1{background: #C8D215;}
+    .HPDroite2{background: salmon;}
+    .HPDroite3{}
+
+    @include breakpoint($desktop) {/*    //Dimensions pour les pc*/
+        .HPDiapoVerticalGauche{background: rosybrown;}
+        .HPDroite{}
+        .HPDroite1{background: gold;}
+        .HPDroite2{background: bisque;}
+        .HPDroite3{background: inactiveborder;}
+    }
+
+    @include breakpoint($tablet) {/*     //Dimensions pour les tablettes*/
+        .HPDiapoVerticalGauche{}
+        .HPDroite{background: #C8D215;}
+        .HPDroite1{background: royalblue;}
+        .HPDroite2{background: #00CC99;}
+        .HPDroite3{}
+    }
+}
 /*//////////////////////\\\\\\\\\\\\\\\\\\\\\\
 ********** COULEUR LAYOUT NODE.TPL OVERRIDE **********
 \\\\\\\\\\\\\\\\\\\\\\\//////////////////////*/

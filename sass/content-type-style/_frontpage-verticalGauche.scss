@@ -5,6 +5,7 @@
 /*-------------------------------------|
 |       CONTENU CUSTOM NODE.TPL        |
 |     FRONTPAGE  VERTICAL GAUCHE       |
+|                       STYLE                   |
 |--------------------------------------*/
 
   //@include susy-breakpoint ($mobile){}
@@ -16,39 +17,44 @@ body .conteneur
 {
     //Pas de @include container($total-columns); car deja mis dans layout !!!
     background:transparent image-url("bg_content_etoile.gif") no-repeat left bottom;
-
+    .conteneur-flex{
+      
+    }
     .HPDiapoVerticalGauche{
-        @include clearfix;
+       
+         }
+    .HPDiapoVerticalGauche aside.ImgFixeHPG{
+         
     }
     .HPDroite{
-        img{@include adaptable-img;}
-        
+       
     }
     .HPDroite1{}
     .HPDroite2{}
     .HPDroite3{}
 
-    @include susy-breakpoint($tablet) {/*     //Dimensions pour les tablettes*/
-        //Taille du conteneur du groupe
-        @include container($tabletcol);
-        .HPDiapoVerticalGauche{@include span(4);}
-        .HPDroite{@include span(last 4);}
+    @include breakpoint($tablet) {/*     //Dimensions pour les tablettes*/
+        
+        .HPDiapoVerticalGauche{}
+        .HPDroite{}
         .HPDroite1{}
         .HPDroite2{}
         .HPDroite3{}
 
     }
-    @include susy-breakpoint($desktop) {/*    //Dimensions pour les pc*/
+    @include breakpoint($desktop) {/*    //Dimensions pour les pc*/
         //Taille du conteneur du groupe    
       @include container($desktopcol);
-
+.conteneur-flex{
+       
+            }
         .HPDiapoVerticalGauche{
-            
-            @include span(6 of $desktopcol first);
+       padding: 0 0.3em;     
+       
             
         }
         .HPDroite{
-            @include span(6 of $desktopcol last);
+          
            
             
             
@@ -66,32 +72,7 @@ body .conteneur
     }
 
 }
-//Pour le dev, code visuel sur les blocs selon le breakpoint
-// à commenter ou supprimer pour la production
-body .conteneur {
 
-    .HPDiapoVerticalGauche{background: orangered;}
-    .HPDroite{}
-    .HPDroite1{background: #C8D215;}
-    .HPDroite2{background: salmon;}
-    .HPDroite3{}
-
-    @include susy-breakpoint($desktop) {/*    //Dimensions pour les pc*/
-        .HPDiapoVerticalGauche{background: rosybrown;}
-        .HPDroite{}
-        .HPDroite1{background: gold;}
-        .HPDroite2{background: bisque;}
-        .HPDroite3{background: inactiveborder;}
-    }
-
-    @include susy-breakpoint($tablet) {/*     //Dimensions pour les tablettes*/
-        .HPDiapoVerticalGauche{}
-        .HPDroite{background: #C8D215;}
-        .HPDroite1{background: royalblue;}
-        .HPDroite2{background: #00CC99;}
-        .HPDroite3{}
-    }
-}
 /********************/
 /*ZONES PAGE ACCUEIL*/
 
@@ -122,31 +103,48 @@ body .conteneur {
     }
 
 }
+.illus_lyceeMetiers{
+    margin: 0 auto;
+    display: block;
+    padding: em(5px);
+}
+.PartieDroite1 {
+    a{
+        color: $vert;
+        padding: em(2px);
+        font-size: smaller;
+        &:hover{
+            color: black;
+            background: $vert;
+            text-decoration: none;
+        }
+    }
+}
+
 /*---DIAPORAMA HOMEPAGE TEXTE DYNAMIQUE  PANORAMIQUE----*/
 
 //Layout du diaporama dynamique (Views slideshow)
 //Code imbriqué à 100%
 aside.DiapoHP{
    
-     max-width: container();
         #transparency{
-           display: none;
+         
            
         }
         #contenu-diapo{
-           display: none;
+         
         }
-    img{@include adaptable-img;}
-       @include susy-breakpoint($tablet) {
-        #transparency{display: block;}
-        #contenu-diapo{display: block;}
+    img{}
+       @include breakpoint($tablet) {
+        #transparency{}
+        #contenu-diapo{}
 
     }
-    @include susy-breakpoint($desktop) { 
+    @include breakpoint($desktop) { 
        
        
-        #transparency{display: block;}
-        #contenu-diapo{display: block;}
+        #transparency{}
+        #contenu-diapo{}
         img{}
     }
  
@@ -157,9 +155,9 @@ aside.DiapoHP{
 /*---DIAPORAMA HOMEPAGE TEXTE DYNAMIQUE----*/
 
 #transparency{
-background:none repeat scroll 0 0 $rose-fushia;/*Couleur du fond*/
-height:em(50px);
-bottom:em(65px); 
+background:none repeat scroll 0 0 $vert;/*Couleur du fond*/
+height:em(60px);
+bottom:em(75px); 
 left:em(12px);
 position:relative;
 z-index:15;
@@ -168,7 +166,7 @@ z-index:15;
 #contenu-diapo {
   
   position: relative;
-  bottom:em(150px);
+  bottom:10.375em;
   left: em(10px);
   color: white;
   z-index: 20;

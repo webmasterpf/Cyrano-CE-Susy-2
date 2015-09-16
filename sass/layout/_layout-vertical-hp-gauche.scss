@@ -17,35 +17,38 @@ body .conteneur
     //Pas de @include container($total-columns); car deja mis dans layout !!!
     background:transparent image-url("bg_content_etoile.gif") no-repeat left bottom;
     .conteneur-flex{
-        @include clearfix;
+        //@include clearfix;
         //Flexbox initialisation du conteneur
         @include flexbox;
-        @include flex-flow(column wrap);
+       @include flex-flow(column wrap);//besoin d'envelopper le contenu
         //Values: none | <flex-grow> <flex-shrink> || <flex-basis>
         // Default: See individual properties (1 1 0).
-            // @include flex(1 0 span(1));
-    }
+             @include flex(1 0 span($mobilecol));
+
     .HPDiapoVerticalGauche{
         @include clearfix;
-        
+    //Flexbox ordre des blocs
+          
+             @include order(2);    
+             
         img{@include adaptable-img;}
-         }
-    .HPDiapoVerticalGauche aside.ImgFixeHPG{
+     aside.ImgFixeHPG{
             img{border: 0.1em solid $violet;padding: 0.1em;}     
-            //Flexbox ordre des blocs
-            @include flexbox;
-             @include order(2);
+                }
     }
+   
+                
     .HPDroite{
-        img{@include adaptable-img;}
         //Flexbox ordre des blocs 
-        @include flexbox;
+        
          @include order(1);
+        img{@include adaptable-img;}
+        
     }
     .HPDroite1{}
     .HPDroite2{}
     .HPDroite3{}
-
+    }
     @include breakpoint($tablet) {/*     //Dimensions pour les tablettes*/
         //Taille du conteneur du groupe
         @include container($tabletcol);
@@ -60,17 +63,19 @@ body .conteneur
         //Taille du conteneur du groupe    
       @include container($desktopcol);
 .conteneur-flex{
-        @include clearfix;
-       
-            }
+        //@include clearfix;
+        @include flex-flow(row nowrap);
+           
         .HPDiapoVerticalGauche{
-             @include span(6 of $desktopcol first);
-            
+             //@include span(6 of $desktopcol first);
+             @include flex(1 0 span(6 of $desktopcol first));
+             @include order(1);
             
         }
         .HPDroite{
-            @include span(6 of $desktopcol last);
-           
+            //@include span(6 of $desktopcol);
+            @include flex(1 0 span(6 of $desktopcol last));
+            @include order(2);
             
             
         }
@@ -85,6 +90,7 @@ body .conteneur
 
         }
     }
+     }
 
 }
 
