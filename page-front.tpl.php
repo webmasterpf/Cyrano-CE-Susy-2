@@ -11,7 +11,7 @@ include ($theme_path.'/includes/inc_header.php');
      </div> <!--/#content-top -->
  <?php endif; ?>
  <!-- ______________________ LAYOUT HOMEPAGE VERTICAL G_______________________ -->   
- 
+ <div class="conteneur-flex">
    <!-- ______________________ ZONE DIAPO _______________________ -->
 			
             <?php if ($DiapoGaucheHP): ?>
@@ -35,7 +35,7 @@ include ($theme_path.'/includes/inc_header.php');
         <?php endif; ?>
 	  
 </div><!--    /Partie Droite -->
-	
+	</div><!--    /Conteneur flex -->
     <!-- ______________________ FIN LAYOUT PAGE _______________________ -->
         
 
