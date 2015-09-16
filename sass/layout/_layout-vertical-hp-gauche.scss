@@ -1,0 +1,121 @@
+
+// Regroupe le style pour le contenu des node.tpl custom
+// créer des fichiers _node-TYPE.scss et les importer dans application.scss
+
+/*-------------------------------------|
+|       CONTENU CUSTOM NODE.TPL        |
+|     FRONTPAGE  VERTICAL GAUCHE       |
+|--------------------------------------*/
+
+  //@include susy-breakpoint ($mobile){}
+  //@include susy-breakpoint ($desktop){}
+  //@include susy-breakpoint ($tablet){}
+
+//Code imbriqué à 100%
+body .conteneur
+{
+    //Pas de @include container($total-columns); car deja mis dans layout !!!
+    background:transparent image-url("bg_content_etoile.gif") no-repeat left bottom;
+    .conteneur-flex{
+        @include clearfix;
+        //Flexbox initialisation du conteneur
+        @include flexbox;
+        @include flex-flow(column wrap);
+        //Values: none | <flex-grow> <flex-shrink> || <flex-basis>
+        // Default: See individual properties (1 1 0).
+            // @include flex(1 0 span(1));
+    }
+    .HPDiapoVerticalGauche{
+        @include clearfix;
+        
+        img{@include adaptable-img;}
+         }
+    .HPDiapoVerticalGauche aside.ImgFixeHPG{
+            img{border: 0.1em solid $violet;padding: 0.1em;}     
+            //Flexbox ordre des blocs
+            @include flexbox;
+             @include order(2);
+    }
+    .HPDroite{
+        img{@include adaptable-img;}
+        //Flexbox ordre des blocs 
+        @include flexbox;
+         @include order(1);
+    }
+    .HPDroite1{}
+    .HPDroite2{}
+    .HPDroite3{}
+
+    @include breakpoint($tablet) {/*     //Dimensions pour les tablettes*/
+        //Taille du conteneur du groupe
+        @include container($tabletcol);
+        .HPDiapoVerticalGauche{@include span(4);}
+        .HPDroite{@include span(last 4);}
+        .HPDroite1{}
+        .HPDroite2{}
+        .HPDroite3{}
+
+    }
+    @include breakpoint($desktop) {/*    //Dimensions pour les pc*/
+        //Taille du conteneur du groupe    
+      @include container($desktopcol);
+.conteneur-flex{
+        @include clearfix;
+       
+            }
+        .HPDiapoVerticalGauche{
+             @include span(6 of $desktopcol first);
+            
+            
+        }
+        .HPDroite{
+            @include span(6 of $desktopcol last);
+           
+            
+            
+        }
+        .HPDroite1{
+            
+        }
+        .HPDroite2{
+            
+
+        }
+        .HPDroite3{
+
+        }
+    }
+
+}
+
+
+
+/*---DIAPORAMA HOMEPAGE TEXTE DYNAMIQUE  PANORAMIQUE----*/
+
+//Layout du diaporama dynamique (Views slideshow)
+//Code imbriqué à 100%
+aside.DiapoHP{
+   
+     max-width: container();
+        #transparency{
+           display: none;
+           
+        }
+        #contenu-diapo{
+           display: none;
+        }
+    img{@include adaptable-img;}
+       @include breakpoint($tablet) {
+        #transparency{display: block;}
+        #contenu-diapo{display: block;}
+
+    }
+    @include breakpoint($desktop) { 
+       
+       
+        #transparency{display: block;}
+        #contenu-diapo{display: block;}
+        img{}
+    }
+ 
+}
