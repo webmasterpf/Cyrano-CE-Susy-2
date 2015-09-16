@@ -1,0 +1,81 @@
+// Regroupe le style pour le contenu des node.tpl custom
+// créer des fichiers _node-TYPE.scss et les importer dans application.scss
+
+/*----------------------------------------
+*****~~~~~~ PAGE VDL  ~~~~~~~~~~~~*********
+-----LISTE DES VDL - TEMPLATE VUES -----
+------------------------------------------*/
+h1.titre_vdl{
+    font-size: 24px;
+    color: #AEC721;
+    line-height: 1.0em;
+}
+
+/*######-------- COLONNE 2 --------######*/
+#pageVdl_col_G2 h2{}
+#pageVdl_col_G2 h3{}
+#pageVdl_col_G2 h4{}
+#pageVdl_col_G2 p{
+    padding: 5px;
+    
+}
+#pageVdl_col_G2 ul{}
+#pageVdl_col_G2 img{
+
+}
+
+#pageVdl_col_G2 a{}
+#pageVdl_col_G2 a:hover{}
+
+#pageVdl_col_G2 h2 a{}
+#pageVdl_col_G2 h2 a:hover{}
+#pageVdl_col_G2 h3 a{}
+#pageVdl_col_G2 h3 a:hover{}
+#pageVdl_col_G2 h4 a{}
+#pageVdl_col_G2 h4 a:hover{}
+#pageVdl_col_G2 .views-exposed-form .views-exposed-widget .form-submit {
+    margin: 0 0 0 3.3em;
+}
+
+
+/*Table pour la vue filtre dyn sur tid*/
+#table-bloc-vdl-liste{width: 95%;margin: 0 auto;border: 0;border-top: em(3px) solid $vert;}
+#table-bloc-vdl-liste thead th{
+    border-bottom: em(3px) solid $vert;
+}
+#table-bloc-vdl-liste tbody{}
+#table-bloc-vdl-liste tr{
+    margin: em(3px);
+    
+
+}
+#table-bloc-vdl-liste td{
+    background: white;
+    border: 0;
+    margin: em(2px) 0;
+    padding: em(5px);
+    display: block;
+    border-bottom: em(2px) solid $violet;
+    font-size: smaller;
+}
+#table-bloc-vdl-liste td:hover{
+    background: $vert;
+}
+#table-bloc-vdl-liste td img{border: em(2px) solid $violet;}
+#table-bloc-vdl-liste td img a{}
+#table-bloc-vdl-liste p{}
+#table-bloc-vdl-liste a{
+    color: $violet;
+    text-decoration: none;
+    font-weight: bold;
+}
+#table-bloc-vdl-liste a:hover{
+    text-decoration: underline;
+    color: white;
+}
+#table-bloc-vdl-liste span.date-display-single,#table-bloc-vdl-liste .views-field-field-date-evenement-value{
+    text-align: right;
+    /*float: right;*/
+    font-style: italic;
+}
+
