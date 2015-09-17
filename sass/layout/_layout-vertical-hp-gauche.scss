@@ -40,8 +40,8 @@ body .conteneur
                 
     .HPDroite{
         //Flexbox ordre des blocs 
-        
-         @include order(1);
+             @include order(1);
+             padding:0 0 4em 0;
         img{@include adaptable-img;}
         
     }
@@ -76,7 +76,7 @@ body .conteneur
             //@include span(6 of $desktopcol);
             @include flex(1 0 span(6 of $desktopcol last));
             @include order(2);
-            
+            padding: 0;
             
         }
         .HPDroite1{

@@ -137,8 +137,8 @@ body .conteneur {
 
     .HPDiapoVerticalGauche{background: orangered;}
     .HPDroite{}
-    .HPDroite1{background: #C8D215;}
-    .HPDroite2{background: salmon;}
+    .HPDroite1{background: sienna;}
+    .HPDroite2{background: thistle;}
     .HPDroite3{}
 
     @include breakpoint($desktop) {/*    //Dimensions pour les pc*/

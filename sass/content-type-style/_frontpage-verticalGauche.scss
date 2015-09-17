@@ -30,7 +30,17 @@ body .conteneur
        
     }
     .HPDroite1{}
-    .HPDroite2{}
+    .HPDroite2{
+        aside.PartieDroite2 {
+            h3{
+                font-family: arista,Trebuchet MS, sans-serif;
+                text-align: center;
+                color: $vert;
+                font-size: large;
+                margin: 0 0 em(10px);
+            }
+        }
+    }
     .HPDroite3{}
 
     @include breakpoint($tablet) {/*     //Dimensions pour les tablettes*/
@@ -101,6 +111,12 @@ body .conteneur
             text-decoration: underline;
         }
     }
+    a img{
+         text-decoration: none;
+            &:hover{ text-decoration: none;
+            border: 0;background: none;}
+        
+    }
 
 }
 .illus_lyceeMetiers{
@@ -119,6 +135,12 @@ body .conteneur
             background: $vert;
             text-decoration: none;
         }
+    }
+       a > img[src$=".gif"]{
+         text-decoration: none;
+            &:hover{ text-decoration: none;
+            border: 0;background: none;}
+        
     }
 }
 
