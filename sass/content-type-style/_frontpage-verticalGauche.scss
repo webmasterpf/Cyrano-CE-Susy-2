@@ -109,6 +109,7 @@ body .conteneur
     padding: em(5px);
 }
 .PartieDroite1 {
+    p{padding: 0.3em;}
     a{
         color: $vert;
         padding: em(2px);
@@ -152,33 +153,39 @@ aside.DiapoHP{
 
 // Style du diaporama dynamique
 
-/*---DIAPORAMA HOMEPAGE TEXTE DYNAMIQUE----*/
+/*---DIAPORAMA HOMEPAGE TEXTE DYNAMIQUE PAS SUR MOBILE----*/
+.conteneur #views_slideshow_cycle_div_diaporama_homepage-block_1_0 > div > div.views-field.views-field-teaser{
+    display: none;
+    @include breakpoint ($desktop){
+        display: block;
+        #transparency{
+            background:none repeat scroll 0 0 $vert;/*Couleur du fond*/
+            height:em(60px);
+            bottom:em(75px); 
+            left:em(12px);
+            width: 95%;
+            position:relative;
+            z-index:15;
+            @include opacity(0.6);
+        }
+        #contenu-diapo {
 
-#transparency{
-background:none repeat scroll 0 0 $vert;/*Couleur du fond*/
-height:em(60px);
-bottom:em(75px); 
-left:em(12px);
-position:relative;
-z-index:15;
-@include opacity(0.6);
-}
-#contenu-diapo {
-  
-  position: relative;
-  bottom:10.375em;
-  left: em(10px);
-  color: white;
-  z-index: 20;
-  
-  
-  h2 {
-    color: white;
-    padding: em(5px);
-    font-family: $AristaFont;
-  }
-  a {
-    
-    text-decoration: none;
-  }
+            position: relative;
+            bottom:10.375em;
+            left: em(10px);
+            color: white;
+            z-index: 20;
+
+
+            h2 {
+                color: white;
+                padding: em(5px);
+                font-family: $AristaFont;
+            }
+            a {
+
+                text-decoration: none;
+            }
+        }
+    }
 }

@@ -47,11 +47,13 @@
                 <?php endif; ?>
             </div>
 
-            <div class="menuImg">
-                <?php if (!empty($navStatic)): ?>
+
+            <?php if (!empty($navStatic)): ?>
+                <div class="menuImg">
                     <?php print $navStatic; ?>
-                <?php endif; ?>
-            </div>
+                </div>            
+            <?php endif; ?>
+            
 
         </div><!-- /headHaut -->
         <div class="headBas">

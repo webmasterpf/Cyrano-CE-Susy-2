@@ -11,18 +11,16 @@
      //pas besoin de mixin de taille pour les élèments enfants.
      clear: both;
        img{@include adaptable-img;}
-       @include susy-breakpoint ($mobile){
-         //width: container();
-       }
-       @include susy-breakpoint ($desktop){
+      
+       @include breakpoint ($desktop){
         
        }
-       @include susy-breakpoint ($tablet){
+       @include breakpoint ($tablet){
           
        }
 }
 .view-diaporama-homepage{
-height:em(200px);
+height:auto;
 margin:0 auto;
 position:inherit;
 }

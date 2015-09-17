@@ -7,9 +7,9 @@
 |     FRONTPAGE  VERTICAL GAUCHE       |
 |--------------------------------------*/
 
-  //@include susy-breakpoint ($mobile){}
-  //@include susy-breakpoint ($desktop){}
-  //@include susy-breakpoint ($tablet){}
+  //@include breakpoint ($mobile){}
+  //@include breakpoint ($desktop){}
+  //@include breakpoint ($tablet){}
 
 //Code imbriqué à 100%
 body .conteneur
@@ -17,7 +17,7 @@ body .conteneur
     //Pas de @include container($total-columns); car deja mis dans layout !!!
     background:transparent image-url("bg_content_etoile.gif") no-repeat left bottom;
     .conteneur-flex{
-        //@include clearfix;
+        
         //Flexbox initialisation du conteneur
         @include flexbox;
        @include flex-flow(column wrap);//besoin d'envelopper le contenu
@@ -26,7 +26,7 @@ body .conteneur
              @include flex(1 0 span($mobilecol));
 
     .HPDiapoVerticalGauche{
-        @include clearfix;
+      padding: 0.3em;
     //Flexbox ordre des blocs
           
              @include order(2);    
@@ -63,7 +63,7 @@ body .conteneur
         //Taille du conteneur du groupe    
       @include container($desktopcol);
 .conteneur-flex{
-        //@include clearfix;
+       //Affichage des blocs en ligne
         @include flex-flow(row nowrap);
            
         .HPDiapoVerticalGauche{

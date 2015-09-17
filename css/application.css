@@ -2529,21 +2529,66 @@ Layout pour les desktop.Breakpoint définit par variable dans _variables.scss
 |       CONTENU CUSTOM NODE.TPL        |
 |     FRONTPAGE  VERTICAL GAUCHE       |
 |--------------------------------------*/
-/* line 15, ../sass/content-type/_frontpage-verticalGauche.scss */
+/* line 15, ../sass/layout/_layout-vertical-hp-gauche.scss */
 body .conteneur {
   background: transparent url('../images/bg_content_etoile.gif?1441360246') no-repeat left bottom;
 }
-/* line 20, ../sass/content-type/_frontpage-verticalGauche.scss */
-body .conteneur .HPDiapoVerticalGauche {
+/* line 19, ../sass/layout/_layout-vertical-hp-gauche.scss */
+body .conteneur .conteneur-flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  display: -ms-flexbox;
+  -webkit-flex-flow: column wrap;
+  -moz-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-flex: 1 0 100%;
+  -moz-box-flex: 1 0 100%;
+  -webkit-flex: 1 0 100%;
+  -moz-flex: 1 0 100%;
+  -ms-flex: 1 0 100%;
+  flex: 1 0 100%;
+}
+/* line 28, ../sass/layout/_layout-vertical-hp-gauche.scss */
+body .conteneur .conteneur-flex .HPDiapoVerticalGauche {
   overflow: hidden;
   *zoom: 1;
+  -webkit-box-ordinal-group: 2;
+  -moz-box-ordinal-group: 2;
+  -ms-flex-order: 2;
+  -webkit-order: 2;
+  -moz-order: 2;
+  -ms-order: 2;
+  order: 2;
 }
-/* line 24, ../sass/content-type/_frontpage-verticalGauche.scss */
-body .conteneur .HPDroite img {
+/* line 34, ../sass/layout/_layout-vertical-hp-gauche.scss */
+body .conteneur .conteneur-flex .HPDiapoVerticalGauche img {
+  max-width: 100%;
+}
+/* line 36, ../sass/layout/_layout-vertical-hp-gauche.scss */
+body .conteneur .conteneur-flex .HPDiapoVerticalGauche aside.ImgFixeHPG img {
+  border: 0.1em solid #911381;
+  padding: 0.1em;
+}
+/* line 41, ../sass/layout/_layout-vertical-hp-gauche.scss */
+body .conteneur .conteneur-flex .HPDroite {
+  -webkit-box-ordinal-group: 1;
+  -moz-box-ordinal-group: 1;
+  -ms-flex-order: 1;
+  -webkit-order: 1;
+  -moz-order: 1;
+  -ms-order: 1;
+  order: 1;
+}
+/* line 45, ../sass/layout/_layout-vertical-hp-gauche.scss */
+body .conteneur .conteneur-flex .HPDroite img {
   max-width: 100%;
 }
 @media (min-width: 800px) and (max-width: 989px) {
-  /* line 15, ../sass/content-type/_frontpage-verticalGauche.scss */
+  /* line 15, ../sass/layout/_layout-vertical-hp-gauche.scss */
   body .conteneur {
     /*     //Dimensions pour les tablettes*/
     max-width: 40.2em;
@@ -2580,14 +2625,14 @@ body .conteneur .HPDroite img {
     background-clip: content-box, border-box;
     background-position: left top;
   }
-  /* line 34, ../sass/content-type/_frontpage-verticalGauche.scss */
+  /* line 55, ../sass/layout/_layout-vertical-hp-gauche.scss */
   body .conteneur .HPDiapoVerticalGauche {
     width: 100%;
     float: left;
     margin-left: 0;
     margin-right: 0;
   }
-  /* line 35, ../sass/content-type/_frontpage-verticalGauche.scss */
+  /* line 56, ../sass/layout/_layout-vertical-hp-gauche.scss */
   body .conteneur .HPDroite {
     width: 100%;
     float: left;
@@ -2596,7 +2641,7 @@ body .conteneur .HPDroite img {
   }
 }
 @media (min-width: 990px) {
-  /* line 15, ../sass/content-type/_frontpage-verticalGauche.scss */
+  /* line 15, ../sass/layout/_layout-vertical-hp-gauche.scss */
   body .conteneur {
     /*    //Dimensions pour les pc*/
     max-width: 60.8em;
@@ -2633,29 +2678,151 @@ body .conteneur .HPDroite img {
     background-clip: content-box, border-box;
     background-position: left top;
   }
-  /* line 45, ../sass/content-type/_frontpage-verticalGauche.scss */
-  body .conteneur .HPDiapoVerticalGauche {
-    width: 49.17763%;
-    float: left;
-    margin-left: 0;
-    margin-right: -100%;
+  /* line 65, ../sass/layout/_layout-vertical-hp-gauche.scss */
+  body .conteneur .conteneur-flex {
+    -webkit-flex-flow: row nowrap;
+    -moz-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
   }
-  /* line 50, ../sass/content-type/_frontpage-verticalGauche.scss */
-  body .conteneur .HPDroite {
-    width: 49.17763%;
-    float: left;
-    margin-left: 50.82237%;
-    margin-right: -100%;
+  /* line 69, ../sass/layout/_layout-vertical-hp-gauche.scss */
+  body .conteneur .conteneur-flex .HPDiapoVerticalGauche {
+    -webkit-box-flex: 1 0 49.17763%;
+    -moz-box-flex: 1 0 49.17763%;
+    -webkit-flex: 1 0 49.17763%;
+    -moz-flex: 1 0 49.17763%;
+    -ms-flex: 1 0 49.17763%;
+    flex: 1 0 49.17763%;
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -ms-flex-order: 1;
+    -webkit-order: 1;
+    -moz-order: 1;
+    -ms-order: 1;
+    order: 1;
+  }
+  /* line 75, ../sass/layout/_layout-vertical-hp-gauche.scss */
+  body .conteneur .conteneur-flex .HPDroite {
+    -webkit-box-flex: 1 0 49.17763%;
+    -moz-box-flex: 1 0 49.17763%;
+    -webkit-flex: 1 0 49.17763%;
+    -moz-flex: 1 0 49.17763%;
+    -ms-flex: 1 0 49.17763%;
+    flex: 1 0 49.17763%;
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    -moz-order: 2;
+    -ms-order: 2;
+    order: 2;
+  }
+}
+
+/*---DIAPORAMA HOMEPAGE TEXTE DYNAMIQUE  PANORAMIQUE----*/
+/* line 103, ../sass/layout/_layout-vertical-hp-gauche.scss */
+aside.DiapoHP {
+  max-width: 19.6em;
+}
+/* line 106, ../sass/layout/_layout-vertical-hp-gauche.scss */
+aside.DiapoHP #transparency {
+  display: none;
+}
+/* line 110, ../sass/layout/_layout-vertical-hp-gauche.scss */
+aside.DiapoHP #contenu-diapo {
+  display: none;
+}
+/* line 113, ../sass/layout/_layout-vertical-hp-gauche.scss */
+aside.DiapoHP img {
+  max-width: 100%;
+}
+@media (min-width: 800px) and (max-width: 989px) {
+  /* line 115, ../sass/layout/_layout-vertical-hp-gauche.scss */
+  aside.DiapoHP #transparency {
+    display: block;
+  }
+  /* line 116, ../sass/layout/_layout-vertical-hp-gauche.scss */
+  aside.DiapoHP #contenu-diapo {
+    display: block;
+  }
+}
+@media (min-width: 990px) {
+  /* line 122, ../sass/layout/_layout-vertical-hp-gauche.scss */
+  aside.DiapoHP #transparency {
+    display: block;
+  }
+  /* line 123, ../sass/layout/_layout-vertical-hp-gauche.scss */
+  aside.DiapoHP #contenu-diapo {
+    display: block;
+  }
+}
+
+/*-------------------------------------|
+|       CONTENU CUSTOM NODE.TPL        |
+|     FRONTPAGE  VERTICAL GAUCHE       |
+|                       STYLE                   |
+|--------------------------------------*/
+/* line 16, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+body .conteneur {
+  background: transparent url('../images/bg_content_etoile.gif?1441360246') no-repeat left bottom;
+}
+@media (min-width: 800px) and (max-width: 989px) {
+  /* line 16, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+  body .conteneur {
+    /*     //Dimensions pour les tablettes*/
+  }
+}
+@media (min-width: 990px) {
+  /* line 16, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+  body .conteneur {
+    /*    //Dimensions pour les pc*/
+    max-width: 60.8em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../../home/webmaster/.rvm/gems/ruby-1.9.3-p484/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+  body .conteneur:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  /* line 71, ../../../../../../../../home/webmaster/.rvm/gems/ruby-1.9.3-p484/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
+  head:hover ~ body .conteneur, head:hover ~ body body .conteneur {
+    position: relative;
+  }
+  /* line 74, ../../../../../../../../home/webmaster/.rvm/gems/ruby-1.9.3-p484/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
+  head:hover ~ body .conteneur:before, head:hover ~ body body .conteneur:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: " ";
+    z-index: 998;
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzY2NjZmZiIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSI4MC41ODI1MiUiIHN0b3AtY29sb3I9IiNiM2IzZmYiIHN0b3Atb3BhY2l0eT0iMC4yNSIvPjxzdG9wIG9mZnNldD0iODAuNTgyNTIlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(102, 102, 255, 0.25)), color-stop(80.58252%, rgba(179, 179, 255, 0.25)), color-stop(80.58252%, rgba(0, 0, 0, 0))), -webkit-gradient(linear, 50% 0%, 50% 1, color-stop(100%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0)));
+    background-image: -moz-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80.58252%, rgba(0, 0, 0, 0) 80.58252%), -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
+    background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80.58252%, rgba(0, 0, 0, 0) 80.58252%), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
+    background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80.58252%, rgba(0, 0, 0, 0) 80.58252%), linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
+    background-size: 8.47039%, 100% 24px;
+    background-origin: content-box, border-box;
+    background-clip: content-box, border-box;
+    background-position: left top;
+  }
+  /* line 51, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+  body .conteneur .HPDiapoVerticalGauche {
+    padding: 0 0.3em;
   }
 }
 
 /********************/
 /*ZONES PAGE ACCUEIL*/
-/* line 74, ../sass/content-type/_frontpage-verticalGauche.scss */
+/* line 80, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .content-bottom-home table {
   width: auto;
 }
-/* line 78, ../sass/content-type/_frontpage-verticalGauche.scss */
+/* line 84, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .content-bottom-home ul {
   margin: 0;
   padding: 0;
@@ -2687,76 +2854,52 @@ body .conteneur .HPDroite img {
 }
 
 /****************/
-/* line 85, ../sass/content-type/_frontpage-verticalGauche.scss */
+/* line 91, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .HPDroite {
   background: none;
   color: black;
 }
-/* line 89, ../sass/content-type/_frontpage-verticalGauche.scss */
+/* line 95, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .HPDroite ul li {
   list-style: square;
 }
-/* line 92, ../sass/content-type/_frontpage-verticalGauche.scss */
+/* line 98, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .HPDroite a {
   text-decoration: none;
 }
-/* line 94, ../sass/content-type/_frontpage-verticalGauche.scss */
+/* line 100, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .HPDroite a:hover {
   text-decoration: underline;
 }
 
-/* line 100, ../sass/content-type/_frontpage-verticalGauche.scss */
+/* line 106, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .illus_lyceeMetiers {
   margin: 0 auto;
   display: block;
   padding: 0.3125em;
 }
 
-/*---DIAPORAMA HOMEPAGE TEXTE DYNAMIQUE  PANORAMIQUE----*/
-/* line 109, ../sass/content-type/_frontpage-verticalGauche.scss */
-aside.DiapoHP {
-  max-width: 19.6em;
+/* line 112, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+.PartieDroite1 a {
+  color: #ADC91F;
+  padding: 0.125em;
+  font-size: smaller;
 }
-/* line 112, ../sass/content-type/_frontpage-verticalGauche.scss */
-aside.DiapoHP #transparency {
-  display: none;
-}
-/* line 116, ../sass/content-type/_frontpage-verticalGauche.scss */
-aside.DiapoHP #contenu-diapo {
-  display: none;
-}
-/* line 119, ../sass/content-type/_frontpage-verticalGauche.scss */
-aside.DiapoHP img {
-  max-width: 100%;
-}
-@media (min-width: 800px) and (max-width: 989px) {
-  /* line 121, ../sass/content-type/_frontpage-verticalGauche.scss */
-  aside.DiapoHP #transparency {
-    display: block;
-  }
-  /* line 122, ../sass/content-type/_frontpage-verticalGauche.scss */
-  aside.DiapoHP #contenu-diapo {
-    display: block;
-  }
-}
-@media (min-width: 990px) {
-  /* line 128, ../sass/content-type/_frontpage-verticalGauche.scss */
-  aside.DiapoHP #transparency {
-    display: block;
-  }
-  /* line 129, ../sass/content-type/_frontpage-verticalGauche.scss */
-  aside.DiapoHP #contenu-diapo {
-    display: block;
-  }
+/* line 116, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+.PartieDroite1 a:hover {
+  color: black;
+  background: #ADC91F;
+  text-decoration: none;
 }
 
+/*---DIAPORAMA HOMEPAGE TEXTE DYNAMIQUE  PANORAMIQUE----*/
 /*---DIAPORAMA HOMEPAGE TEXTE DYNAMIQUE----*/
-/* line 139, ../sass/content-type/_frontpage-verticalGauche.scss */
+/* line 157, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 #transparency {
-  background: none repeat scroll 0 0 #E30078;
+  background: none repeat scroll 0 0 #ADC91F;
   /*Couleur du fond*/
-  height: 3.125em;
-  bottom: 4.0625em;
+  height: 3.75em;
+  bottom: 4.6875em;
   left: 0.75em;
   position: relative;
   z-index: 15;
@@ -2770,21 +2913,21 @@ aside.DiapoHP img {
   -khtml-opacity: 0.6;
 }
 
-/* line 148, ../sass/content-type/_frontpage-verticalGauche.scss */
+/* line 166, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 #contenu-diapo {
   position: relative;
-  bottom: 9.375em;
+  bottom: 10.375em;
   left: 0.625em;
   color: white;
   z-index: 20;
 }
-/* line 157, ../sass/content-type/_frontpage-verticalGauche.scss */
+/* line 175, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 #contenu-diapo h2 {
   color: white;
   padding: 0.3125em;
   font-family: "Arista", Trebuchet MS, sans-serif;
 }
-/* line 162, ../sass/content-type/_frontpage-verticalGauche.scss */
+/* line 180, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 #contenu-diapo a {
   text-decoration: none;
 }
@@ -2793,28 +2936,28 @@ aside.DiapoHP img {
 |       STYLE DES VIEWS                |
 |par AJOUT ou OVERRIDE des classes/IDs |
 |--------------------------------------*/
-/* line 10, ../sass/content-type/_views.scss */
+/* line 10, ../sass/content-type-style/_views.scss */
 .vue-diapo-hp-img {
   clear: both;
 }
-/* line 13, ../sass/content-type/_views.scss */
+/* line 13, ../sass/content-type-style/_views.scss */
 .vue-diapo-hp-img img {
   max-width: 100%;
 }
 
-/* line 24, ../sass/content-type/_views.scss */
+/* line 24, ../sass/content-type-style/_views.scss */
 .view-diaporama-homepage {
   height: 12.5em;
   margin: 0 auto;
   position: inherit;
 }
 
-/* line 30, ../sass/content-type/_views.scss */
+/* line 30, ../sass/content-type-style/_views.scss */
 #views_slideshow_singleframe_main_diaporama_homepage-block_1 {
   padding: 0;
 }
 
-/* line 33, ../sass/content-type/_views.scss */
+/* line 33, ../sass/content-type-style/_views.scss */
 #views_slideshow_singleframe_teaser_section_diaporama_homepage-block_1 {
   position: relative;
   z-index: 1;
@@ -2828,7 +2971,7 @@ aside.DiapoHP img {
 *****~~~~~~ PAGE VDL  ~~~~~~~~~~~~*********
 -----LISTE DES VDL - TEMPLATE VUES -----
 ------------------------------------------*/
-/* line 8, ../sass/content-type/_page-vdl-liste.scss */
+/* line 8, ../sass/content-type-style/_page-vdl-liste.scss */
 h1.titre_vdl {
   font-size: 24px;
   color: #AEC721;
@@ -2836,69 +2979,70 @@ h1.titre_vdl {
 }
 
 /*######-------- COLONNE 2 --------######*/
-/* line 18, ../sass/content-type/_page-vdl-liste.scss */
+/* line 18, ../sass/content-type-style/_page-vdl-liste.scss */
 #pageVdl_col_G2 p {
   padding: 5px;
 }
 
-/* line 36, ../sass/content-type/_page-vdl-liste.scss */
+/* line 36, ../sass/content-type-style/_page-vdl-liste.scss */
 #pageVdl_col_G2 .views-exposed-form .views-exposed-widget .form-submit {
   margin: 0 0 0 3.3em;
 }
 
 /*Table pour la vue filtre dyn sur tid*/
-/* line 42, ../sass/content-type/_page-vdl-liste.scss */
+/* line 42, ../sass/content-type-style/_page-vdl-liste.scss */
 #table-bloc-vdl-liste {
-  width: 490px;
+  width: 95%;
   margin: 0 auto;
   border: 0;
-  border-top: 3px solid #AEC81F;
+  border-top: 0.1875em solid #ADC91F;
 }
 
-/* line 43, ../sass/content-type/_page-vdl-liste.scss */
+/* line 43, ../sass/content-type-style/_page-vdl-liste.scss */
 #table-bloc-vdl-liste thead th {
-  border-bottom: 3px solid #AEC81F;
+  border-bottom: 0.1875em solid #ADC91F;
 }
 
-/* line 47, ../sass/content-type/_page-vdl-liste.scss */
+/* line 47, ../sass/content-type-style/_page-vdl-liste.scss */
 #table-bloc-vdl-liste tr {
-  margin: 3px;
+  margin: 0.1875em;
 }
 
-/* line 52, ../sass/content-type/_page-vdl-liste.scss */
+/* line 52, ../sass/content-type-style/_page-vdl-liste.scss */
 #table-bloc-vdl-liste td {
   background: white;
   border: 0;
-  margin: 2px 0;
-  padding: 5px;
+  margin: 0.125em 0;
+  padding: 0.3125em;
   display: block;
-  border-bottom: 2px solid #950F7E;
+  border-bottom: 0.125em solid #911381;
+  font-size: smaller;
 }
 
-/* line 60, ../sass/content-type/_page-vdl-liste.scss */
+/* line 61, ../sass/content-type-style/_page-vdl-liste.scss */
 #table-bloc-vdl-liste td:hover {
-  background: #AEC81F;
+  background: #ADC91F;
 }
 
-/* line 63, ../sass/content-type/_page-vdl-liste.scss */
+/* line 64, ../sass/content-type-style/_page-vdl-liste.scss */
 #table-bloc-vdl-liste td img {
-  border: 2px solid #91127D;
+  border: 0.125em solid #911381;
 }
 
-/* line 66, ../sass/content-type/_page-vdl-liste.scss */
+/* line 67, ../sass/content-type-style/_page-vdl-liste.scss */
 #table-bloc-vdl-liste a {
-  color: #950F7E;
+  color: #911381;
   text-decoration: none;
   font-weight: bold;
 }
 
-/* line 71, ../sass/content-type/_page-vdl-liste.scss */
+/* line 72, ../sass/content-type-style/_page-vdl-liste.scss */
 #table-bloc-vdl-liste a:hover {
   text-decoration: underline;
   color: white;
 }
 
-/* line 75, ../sass/content-type/_page-vdl-liste.scss */
+/* line 76, ../sass/content-type-style/_page-vdl-liste.scss */
 #table-bloc-vdl-liste span.date-display-single, #table-bloc-vdl-liste .views-field-field-date-evenement-value {
   text-align: right;
   /*float: right;*/
@@ -2910,13 +3054,13 @@ h1.titre_vdl {
 |       CONTENU FICHE FORMATION        |
 |--------------------------------------*/
 @media (min-width: 990px) {
-  /* line 12, ../sass/content-type/_fiche-formation-pf.scss */
+  /* line 12, ../sass/content-type-style/_fiche-formation-pf.scss */
   #colonne-2.fiche-formation {
     border-left: 0.0625em solid #CFD0D2;
   }
 }
 
-/* line 20, ../sass/content-type/_fiche-formation-pf.scss */
+/* line 20, ../sass/content-type-style/_fiche-formation-pf.scss */
 .fiche-formation h1.titre-fiche-formation {
   font-size: x-large;
   margin: 0.1em;
@@ -2926,7 +3070,7 @@ h1.titre_vdl {
   background: url('../images/deco_fiche_formation.gif?1441360334') no-repeat top left;
   color: #DE603A;
 }
-/* line 25, ../sass/content-type/_fiche-formation-pf.scss */
+/* line 25, ../sass/content-type-style/_fiche-formation-pf.scss */
 .fiche-formation h2 {
   font-size: 1em;
   color: #333333;
@@ -2935,46 +3079,46 @@ h1.titre_vdl {
   padding: 0.3em;
   line-height: 1.1em;
 }
-/* line 33, ../sass/content-type/_fiche-formation-pf.scss */
+/* line 33, ../sass/content-type-style/_fiche-formation-pf.scss */
 .fiche-formation h3 {
   color: #931B7D;
   font-size: 0.9em;
   margin: 0.3125em;
 }
-/* line 38, ../sass/content-type/_fiche-formation-pf.scss */
+/* line 38, ../sass/content-type-style/_fiche-formation-pf.scss */
 .fiche-formation h4 {
   color: #01ABCF;
   font-size: 0.625em;
 }
-/* line 42, ../sass/content-type/_fiche-formation-pf.scss */
+/* line 42, ../sass/content-type-style/_fiche-formation-pf.scss */
 .fiche-formation p {
   padding: 0.3125em;
 }
-/* line 46, ../sass/content-type/_fiche-formation-pf.scss */
+/* line 46, ../sass/content-type-style/_fiche-formation-pf.scss */
 .fiche-formation ul {
   list-style: inside;
 }
-/* line 50, ../sass/content-type/_fiche-formation-pf.scss */
+/* line 50, ../sass/content-type-style/_fiche-formation-pf.scss */
 .fiche-formation img {
   padding: 0;
 }
-/* line 51, ../sass/content-type/_fiche-formation-pf.scss */
+/* line 51, ../sass/content-type-style/_fiche-formation-pf.scss */
 .fiche-formation a {
   color: #D63E2A;
   font-weight: inherit;
   text-decoration: none;
 }
-/* line 53, ../sass/content-type/_fiche-formation-pf.scss */
+/* line 53, ../sass/content-type-style/_fiche-formation-pf.scss */
 .fiche-formation a:hover {
   text-decoration: underline;
 }
-/* line 55, ../sass/content-type/_fiche-formation-pf.scss */
+/* line 55, ../sass/content-type-style/_fiche-formation-pf.scss */
 .fiche-formation span.field-content-savoir-plus {
   color: #02A7D5;
   font-size: 0.875em;
   font-weight: bold;
 }
-/* line 60, ../sass/content-type/_fiche-formation-pf.scss */
+/* line 60, ../sass/content-type-style/_fiche-formation-pf.scss */
 .fiche-formation .complement_titre_fiche h3 {
   font-size: 0.875em;
   color: #E1017B;
@@ -2982,22 +3126,22 @@ h1.titre_vdl {
 }
 
 @media (min-width: 800px) and (max-width: 989px) {
-  /* line 67, ../sass/content-type/_fiche-formation-pf.scss */
+  /* line 67, ../sass/content-type-style/_fiche-formation-pf.scss */
   div#colonne-2.fiche-formation {
     border-left: 0.0625em solid #CFD0D2;
   }
 }
 
-/*@import "content-type/page-association";
-@import "content-type/page-lycee";
-@import "content-type/page-formations";
-@import "content-type/page-bourses";
-@import "content-type/page-bts";
-@import "content-type/fiche-bts";
-@import "content-type/page-partenaires";
-@import "content-type/page-actualites";
-@import "content-type/page-contact";
-@import "content-type/page-recrutement";*/
+/*@import "content-type-style/page-association";
+@import "content-type-style/page-lycee";
+@import "content-type-style/page-formations";
+@import "content-type-style/page-bourses";
+@import "content-type-style/page-bts";
+@import "content-type-style/fiche-bts";
+@import "content-type-style/page-partenaires";
+@import "content-type-style/page-actualites";
+@import "content-type-style/page-contact";
+@import "content-type-style/page-recrutement";*/
 /*
 Pour le dev, code visuel sur les blocs selon le breakpoint
 à commenter ou supprimer pour la production
