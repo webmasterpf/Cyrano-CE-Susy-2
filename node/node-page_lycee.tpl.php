@@ -3,7 +3,7 @@
   <div class="node-inner">
 <!--______________COLONNE GAUCHE 1________________ -->
   <!-- <pre> <?php //print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->
-<div id="pageLycee_col_1">
+<div id="colonne-1" class="page-lycee col1_layout_3_6_3">
      <?php if ($title): /*insertion du titre de la page et style differencié*/?>
      <h1 class="titre_pl"><?php print $title; ?></h1>
      
@@ -19,7 +19,7 @@
               ?>
 </div>
 <!--______________COLONNE GAUCHE 2________________ -->
-<div id="pageLycee_col_2">
+<div id="colonne-2" class="page-lycee col2_layout_3_6_3">
      <?php if ($submitted): ?>
       <span class="submitted"><?php print $submitted; ?></span>
     <?php endif; ?>
@@ -27,12 +27,11 @@
      /*insertion du contenu du corps de la page*/
       print $node->content['body']['#value']
       ?>
-     <!-- retour haut selon resolution de l'ecran -->
-          <a href="#general" id="retour_haut">Haut de page</a>
+     
 </div>
 <!--______________COLONNE GAUCHE 3________________ -->
    
-<div id="pageLycee_col_3">
+<div id="colonne-3" class="page-lycee col3_layout_3_6_3">
      <?php print $picture; ?>
 
    

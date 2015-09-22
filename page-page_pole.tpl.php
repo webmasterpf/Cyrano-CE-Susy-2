@@ -1,13 +1,13 @@
-<?php $theme_path = drupal_get_path('theme', 'cyrano_ce'); include ($theme_path.'/includes/inc_header.php'); ?>
+<?php $theme_path = drupal_get_path('theme', 'd6_ce_susy2'); include ($theme_path.'/includes/inc_header.php'); ?>
  <!-- ______________________ LAYOUT PAGE POLE CELONY PAGE.TPL_______________________ -->
   <!-- ______________________ CONTENU _______________________ -->
   
-      <div id="contentPage">
+ 
       
           <!-- ______________________ CONTENT TOP _______________________ -->
       <?php if ($breadcrumb ||$content_top ): ?>
             <div id="content-top">
-	<span id="ariane"> <?php print $breadcrumb; ?></span>
+	<span class="ariane"> <?php print $breadcrumb; ?></span>
 
               <?php print $content_top; ?>
             </div> <!-- /#content-top -->
@@ -19,7 +19,7 @@
             </div> <!-- /#content-top-node -->
             <?php endif; ?>      
         
-        <div id="content-inner-pole" class="inner column center">
+        <div id="content-inner" class="inner column center">
 		             
 		
            
@@ -42,7 +42,7 @@
             </div> <!-- /#content-header -->
           <?php endif; ?>
 		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
-          <div id="middle-content-pole">
+          <div id="middle-content">
            <!-- <pre> <?php //print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->
 
 
@@ -65,18 +65,14 @@
         <?php endif; ?>
 
        
-	
-
-   
-    	 <br class="clearBoth"/>
          <!-- ______________________ CONTENU BAS _______________________ -->
 <?php if ($content_bottom): ?>
             <div id="content-bottom">
               <?php print $content_bottom; ?>
             </div><!-- /#content-bottom -->
           <?php endif; ?>
-	 </div> <!-- /contentPage -->
+	
 	  
-	  <?php $theme_path = drupal_get_path('theme', 'cyrano_ce'); include ($theme_path.'/includes/inc_footer.php'); ?>
+	  <?php $theme_path = drupal_get_path('theme', 'd6_ce_susy2'); include ($theme_path.'/includes/inc_footer.php'); ?>
          <?php endif; ?>
      

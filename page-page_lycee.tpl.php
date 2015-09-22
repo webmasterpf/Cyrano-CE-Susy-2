@@ -1,13 +1,13 @@
-<?php $theme_path = drupal_get_path('theme', 'cyrano_ce'); include ($theme_path.'/includes/inc_header.php'); ?>
+<?php $theme_path = drupal_get_path('theme', 'd6_ce_susy2'); include ($theme_path.'/includes/inc_header.php'); ?>
  <!-- ______________________ LAYOUT PAGE LYCEE OVERRIDE PAR NODE.TPL CUSTOM _______________________ -->
   <!-- ______________________ CONTENU _______________________ -->
   
-      <div id="contentPage">
+     
       
           <!-- ______________________ CONTENT TOP _______________________ -->
       <?php if ($breadcrumb ||$content_top ): ?>
             <div id="content-top">
-	<span id="ariane"> <?php print $breadcrumb; ?></span>
+	<span class="ariane"> <?php print $breadcrumb; ?></span>
 
               <?php print $content_top; ?>
             </div> <!-- /#content-top -->
@@ -20,7 +20,7 @@
             <?php endif; ?>      
 
         
-        <div id="content-inner-page-lycee">
+        <div id="content-inner">
 		             
 		
            
@@ -43,7 +43,7 @@
             </div> <!-- /#content-header -->
           <?php endif; ?>
 		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
-          <div id="middle-content-page-lycee">
+                  <div id="middle-content" class="conteneur-flex">
           
             <?php print $content; ?>
               <?php print $feed_icons; ?>
@@ -66,15 +66,14 @@
        
 		
    
-    	 <br class="clearBoth"/>
          <!-- ______________________ CONTENU BAS _______________________ -->
 <?php if ($content_bottom): ?>
             <div id="content-bottom">
               <?php print $content_bottom; ?>
             </div><!-- /#content-bottom -->
           <?php endif; ?>
-	 </div> <!-- /contentPage -->
+	
 	  
-	  <?php $theme_path = drupal_get_path('theme', 'cyrano_ce'); include ($theme_path.'/includes/inc_footer.php'); ?>
+	  <?php $theme_path = drupal_get_path('theme', 'd6_ce_susy2'); include ($theme_path.'/includes/inc_footer.php'); ?>
          <?php endif; ?>
      

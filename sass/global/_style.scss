@@ -6,16 +6,21 @@
 /**-- style du fil d'ariane --**/
 
 .ariane .breadcrumb {
-  padding: 0 0 0 0.3em;
-  color: #C0c0c0;
-  text-decoration: none;
-  background: chocolate;//supprimer en PROD
-  a {
-    color: #FFF;
-    text-decoration: none;
-    &:hover {
-      color: #000;
-      text-decoration: underline;
+    display: none;
+    @include breakpoint ($desktop){
+        display: block;
+        padding: 0 0 0 0.3em;
+        color: #C0c0c0;
+        text-decoration: none;
+        background: chocolate;//supprimer en PROD
+        a {
+            color: #FFF;
+            text-decoration: none;
+            &:hover {
+                color: #000;
+                text-decoration: underline;
+            }
+        }
     }
-  }
+
 }

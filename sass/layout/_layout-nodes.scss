@@ -25,7 +25,7 @@ body .conteneur{
             
         }
         @include breakpoint ($desktop){
-           @include span(3 of $desktopcol);
+           @include span(3 of $desktopcol no-gutters);
             
         }
         //Pour orientation paysage
@@ -44,7 +44,7 @@ body .conteneur{
         
         }
         @include breakpoint ($desktop){
-          @include span(6 of $desktopcol);
+          @include span(6 of $desktopcol no-gutters);//pour que la col3 ne sorte pas
         
         }
         //Pour orientation paysage
@@ -63,7 +63,8 @@ body .conteneur{
              @include isolate(.3%);
         }
         @include breakpoint ($desktop){
-           @include span(last 3 of $desktopcol no-gutters);
+           @include span(3 of $desktopcol);
+            
         }
         //Pour orientation paysage
          @include breakpoint ($tabletlandscape){

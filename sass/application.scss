@@ -46,6 +46,7 @@ breakpoint-2.5.0
 
 @import "layout/layout";
 @import "layout/layout-nodes";
+@import "layout/layout-nodes-flexbox";
 @import "layout/layout-header";
 @import "layout/layout-footer";
 @import "layout/layout-defilant";
@@ -75,7 +76,7 @@ breakpoint-2.5.0
 
 @import "content-type-style/page-lycee";
 //@import "content-type-style/contenu-vdl";
-//@import "content-type-style/page-pole";
+@import "content-type-style/page-pole";
 @import "content-type-style/page-vdl-liste";
 //Content type site 
 
