@@ -207,7 +207,7 @@ body .conteneur {
             @include breakpoint ($desktop){
                 @include flex-flow(row nowrap);
                 .titre-flex{
-                    @include flex(1 0 span(12 of $desktopcol));
+                    @include flex(1 0 span(12 of $desktopcol));//marche pas
                 }
                 .layoutflex_3col_all4{
                     @include flex(1 0 span(4 of $desktopcol));
