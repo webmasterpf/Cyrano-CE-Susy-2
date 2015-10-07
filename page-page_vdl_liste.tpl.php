@@ -1,9 +1,9 @@
-<?php $theme_path = drupal_get_path('theme', 'cyrano_ce'); include ($theme_path.'/includes/inc_header.php'); ?>
+<?php $theme_path = drupal_get_path('theme', 'd6_ce_susy2'); include ($theme_path.'/includes/inc_header.php'); ?>
 
  <!-- ______________________ LAYOUT PAGE VIE DU LYCEE - LISTE CELONY PAGE.TPL_______________________ -->
   <!-- ______________________ CONTENU _______________________ -->
   
-      <div id="contentPage">
+   
       
           <!-- ______________________ CONTENT TOP _______________________ -->
       <?php if ($breadcrumb ||$content_top ): ?>
@@ -21,7 +21,7 @@
             <?php endif; ?>
    
         <!-- ______________________ CONTENT INNER _______________________ -->
-        <div id="content-inner-vdl" class="inner column center">
+        <div id="content-inner" class="inner column center">
 	
           <?php if ($mission || $messages || $help || $tabs): ?>
             <div id="content-header">              
@@ -41,7 +41,7 @@
             </div> <!-- /#content-header -->
           <?php endif; ?>
 		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
-          <div id="middle-content-vdl">
+          <div id="middle-content" class="conteneur-flex">
        
             <?php print $content; ?>
               <?php print $feed_icons; ?>
@@ -69,8 +69,8 @@
               <?php print $content_bottom; ?>
             </div><!-- /#content-bottom -->
           <?php endif; ?>
-	 </div> <!-- /contentPage -->
+	
 	  
-<?php $theme_path = drupal_get_path('theme', 'cyrano_ce'); include ($theme_path.'/includes/inc_footer.php'); ?>
+<?php $theme_path = drupal_get_path('theme', 'd6_ce_susy2'); include ($theme_path.'/includes/inc_footer.php'); ?>
          <?php endif; ?>
     

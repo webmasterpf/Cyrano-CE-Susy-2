@@ -1,4 +1,4 @@
-<?php $theme_path = drupal_get_path('theme', 'cyrano_ce'); include ($theme_path.'/includes/inc_header.php'); ?>
+<?php $theme_path = drupal_get_path('theme', 'd6_ce_susy2'); include ($theme_path.'/includes/inc_header.php'); ?>
  <!-- ______________________ LAYOUT PAGE CONTENU ACTUALITE CELONY PAGE.TPL_______________________ -->
   <!-- ______________________ CONTENU _______________________ -->
   
@@ -75,6 +75,6 @@
           <?php endif; ?>
 	 </div> <!-- /contentPage -->
 	  
- <?php $theme_path = drupal_get_path('theme', 'cyrano_ce'); include ($theme_path.'/includes/inc_footer.php'); ?>
+ <?php $theme_path = drupal_get_path('theme', 'd6_ce_susy2'); include ($theme_path.'/includes/inc_footer.php'); ?>
          <?php endif; ?>
      

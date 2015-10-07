@@ -4,8 +4,7 @@ include ($theme_path.'/includes/inc_header.php');
 ?>
   <!-- ______________________ CONTENU _______________________ -->
   
-      <div class="content-global">
-      
+     
    
       
        <!-- ______________________ COLONNE GAUCHE _______________________ -->
@@ -58,7 +57,7 @@ include ($theme_path.'/includes/inc_header.php');
             </div> <!-- /#content-header -->
           <?php endif; ?>
 		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
-              <article class="middle-content page-MODELE">
+              <article id="middle-content">
 
             <?php print $content; ?>
               <?php print $feed_icons; ?>
@@ -96,7 +95,7 @@ include ($theme_path.'/includes/inc_header.php');
 
    
     
-	 </div> <!-- /content-global -->
+	
 	  
 	<?php
 global $theme_path;
