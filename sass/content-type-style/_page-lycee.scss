@@ -14,8 +14,9 @@
 body .conteneur .conteneur-flex{
     #colonne-1.page-lycee h1.titre_pl{order:1;}
     #colonne-1.page-lycee img{order:4;}
-    #colonne-2.page-lycee {order:2;}
-    #colonne-3.page-lycee {order:3;}
+    #colonne-1.page-lycee {order:4}
+    #colonne-2.page-lycee {order:1;}
+    #colonne-3.page-lycee {order:2;}
     @include breakpoint ($desktop){}
 }
 
@@ -42,6 +43,15 @@ h1.titre_pl a:hover{}
     h2 a{&:hover{}}
     h3 a{&:hover{}}
     h4 a{&:hover{}}
+    .imagecache{
+        //pour centrer l'image
+        margin: 0 auto;
+        display: block;
+        width: span(2);
+        @include breakpoint ($desktop){
+            width: span(5.3/2);
+        }
+    }
 }
 
 /*######-------- COLONNE G2 --------######*/
@@ -92,7 +102,12 @@ iframe#slideshare-embed, iframe{@include adaptable-img;}
     font-size: small;
     @include arrondis;
 }
-
+ul,p{
+    line-height: normal;
+    }
+    p{
+        margin: 0.3em;
+    }
 }
 
 
