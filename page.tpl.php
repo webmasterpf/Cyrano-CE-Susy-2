@@ -82,7 +82,7 @@ include ($theme_path.'/includes/inc_header.php');
        
 		  <!-- ______________________ COLONNE DROITE _______________________ -->
         <?php if ($right): ?>
-         <!--d�but du contenu droit -->
+         <!--debut du contenu droit -->
 		<div id="right-content">
 			<?php if ($search_box) : ?>
 				<div id="recherche">
@@ -93,13 +93,7 @@ include ($theme_path.'/includes/inc_header.php');
         </div>
         <?php endif; ?> <!-- /sidebar-right -->
 
-   
-    
-	
 	  
-	<?php
-global $theme_path;
-include ($theme_path.'/includes/inc_footer.php');
-?>
+	<?php global $theme_path; include ($theme_path.'/includes/inc_footer.php'); ?>
     
      

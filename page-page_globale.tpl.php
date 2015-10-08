@@ -2,7 +2,7 @@
  <!-- ______________________ LAYOUT PAGE GLOBALE _______________________ -->
   <!-- ______________________ CONTENU _______________________ -->
   
-      <div id="contentPage">
+     
       
           <!-- ______________________ CONTENT TOP _______________________ -->
       <?php if ($breadcrumb ||$content_top ): ?>
@@ -44,7 +44,7 @@
           <?php endif; ?>
 		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
           <div id="middle-content">
-           <!-- <pre> <?php print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->
+           <!-- <pre> <?php //print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->
             <?php print $content; ?>
               <?php print $feed_icons; ?>
           </div> <!-- /#content-area -->
@@ -64,14 +64,13 @@
         <?php endif; ?>
 
    
-    	 <br class="clearBoth"/>
          <!-- ______________________ CONTENU BAS _______________________ -->
 <?php if ($content_bottom): ?>
             <div id="content-bottom">
               <?php print $content_bottom; ?>
             </div><!-- /#content-bottom -->
           <?php endif; ?>
-	 </div> <!-- /contentPage -->
+	
 	  
 	  <?php $theme_path = drupal_get_path('theme', 'd6_ce_susy2'); include ($theme_path.'/includes/inc_footer.php'); ?>
          <?php endif; ?>

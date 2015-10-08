@@ -1,7 +1,11 @@
 <!-- ______________________ NODE-PAGE_POLE.TPL _______________________ -->
 <div class="node <?php print $classes; ?>" id="node-<?php print $node->nid; ?>">
+    
+       <?php if ($title): ?>
+<div class="titre-flex"><h1 class="title-page-bloc"><?php print $title; ?></h1></div>
+              <?php endif; ?>
+    
   <div class="node-inner conteneur-flex">
-
  
     <?php print $picture; ?>
 
@@ -9,9 +13,7 @@
       <span class="submitted"><?php print $submitted; ?></span>
     <?php endif; ?>
 <!-- ______________________ PARTIE CUSTOMISEE _______________________ -->
-                  <?php if ($title): ?>
-                <h1 class="title-page-bloc titre-flex"><?php print $title; ?></h1>
-              <?php endif; ?>
+               
 <!-- ______________________ BLOC GAUCHE _______________________ -->
 <div id="bloc-gauche-pole" class="page-pole layoutflex_3col_all4">
                   <?php print $pole_bloc_G; ?>

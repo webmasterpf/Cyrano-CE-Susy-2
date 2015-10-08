@@ -18,21 +18,26 @@
 }
 /*######-------- ||| ORDRE FLEXBOX ||| --------######*/
 body .conteneur .conteneur-flex{
-    h1.title-page-bloc{order:0;}
+    .titre-flex{order:0;}
     #bloc-gauche-pole{}
     #bloc-centre-pole {}
     #bloc-droit-pole {}
     @include breakpoint ($desktop){
-        h1.title-page-bloc{order:0;}
+        .titre-flex{order:0;max-height: 4em;}
+        #bloc-gauche-pole{order:1;}
+        #bloc-centre-pole {order:2;}
+        #bloc-droit-pole {order:3;}
     }
 }
+
+/*######-------- ||| STYLE ||| --------######*/
 h1.title-page-bloc{
     font-size: xx-large;
     font-family: arista,Trebuchet MS, sans-serif;
     text-align: center;
     color: $violet;
     text-transform: uppercase;
-    margin: 0 0 em(20px) 0;
+    
 }
 h3.block-title{
     font-size: 18px;
