@@ -18,7 +18,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
         
     <?php
- global $theme_path; include ($theme_path . '/includes/inc_jquery_plugin.php');
+ global $theme_path; include ($theme_path . '/includes/inc_js_jquery_plugin.php');
  ?>
   </head>
 

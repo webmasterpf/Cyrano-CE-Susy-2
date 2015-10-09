@@ -15,10 +15,14 @@ include ($theme_path.'/js/code_stats.php');
        
     </section> 
     <!-- ______________________ /CONTENEUR _______________________ -->
-           <?php
-global $theme_path;
-include ($theme_path.'/includes/inc_responsivenav.php');
-?>    
+           <?php 
+           global $theme_path;
+           include ($theme_path.'/includes/inc_js_responsivenav.php');
+           include ($theme_path.'/js/jquery-lib-online.php');
+           include ($theme_path.'/includes/inc_js_masonry.php');
+           ?>
+    
+    
 	<?php print $closure ?>
    
   </body>

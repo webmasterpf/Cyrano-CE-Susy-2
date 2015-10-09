@@ -44,6 +44,9 @@
           <?php endif; ?>
 		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
           <div id="middle-content">
+               <?php if ($title): /*insertion du titre de la page et style differencié*/?>
+     <h1 class="titre_pl"><?php print $title; ?></h1>
+     <?php endif; ?>
            <!-- <pre> <?php //print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->
             <?php print $content; ?>
               <?php print $feed_icons; ?>

@@ -25,6 +25,7 @@ scripts[] = js/jquery.sidebar.min.js
 scripts[] = js/general.js
 ;scripts[] = js/jquery_plugin.js
 
+
 ;Styles pour Superfish
 superfish_styles[assopf_superfish] = Style pour Superfish  - assopf_superfish.css
 

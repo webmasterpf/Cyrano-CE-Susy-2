@@ -2,11 +2,11 @@
  * Plugin Jquery qui utilisent la version de base fournie par Drupal
  * jquery update 1.3.2
  */
-//<!--Pour utiliser slectnav en RWD-->
+//<!--Pour utiliser selectnav en RWD-->
     $(document).ready(function(){
         console.log('Dans la boucle Defaut :  Version de jquery utilisée pour les plugins :' + jQuery111().jquery +
-            ' -- Version de Jquery pour $ :' + $.fn.jquery +
-            ' -- Version de Jquery pour jQuery :' + jQuery().jquery
+            ' -- Version de Jquery pour var $ :' + $.fn.jquery +
+            ' -- Version de Jquery pour var jQuery :' + jQuery().jquery
             );
     
     selectnav('subnav',{label: '- Accès rapide -'});
@@ -50,8 +50,8 @@ jQuery.noConflict();
   jQuery111(document).ready(function($){
     console.log(
 'Dans la boucle Plugins :  Version de jquery utilisée pour les plugins :' + jQuery111().jquery +
-' -- Version de Jquery pour $ :' + $.fn.jquery +
-' -- Version de Jquery pour jQuery :' + jQuery().jquery
+' -- Version de Jquery pour var $ :' + $.fn.jquery +
+' -- Version de Jquery pour var jQuery :' + jQuery().jquery
      );  
     
         //header colle au top

@@ -2005,12 +2005,12 @@ body .conteneur .conteneur-flex {
   }
   /* line 209, ../sass/layout/_layout-nodes-flexbox.scss */
   body .conteneur .conteneur-flex .titre-flex {
-    -webkit-box-flex: 1 0 100%;
-    -moz-box-flex: 1 0 100%;
-    -webkit-flex: 1 0 100%;
-    -moz-flex: 1 0 100%;
-    -ms-flex: 1 0 100%;
-    flex: 1 0 100%;
+    -webkit-box-flex: 2 0 100%;
+    -moz-box-flex: 2 0 100%;
+    -webkit-flex: 2 0 100%;
+    -moz-flex: 2 0 100%;
+    -ms-flex: 2 0 100%;
+    flex: 2 0 100%;
   }
   /* line 212, ../sass/layout/_layout-nodes-flexbox.scss */
   body .conteneur .conteneur-flex .layoutflex_3col_all4 {
@@ -3906,6 +3906,7 @@ body .conteneur .conteneur-flex .titre-flex {
   /* line 26, ../sass/content-type-style/_page-pole.scss */
   body .conteneur .conteneur-flex .titre-flex {
     order: 0;
+    max-height: 4em;
   }
   /* line 27, ../sass/content-type-style/_page-pole.scss */
   body .conteneur .conteneur-flex #bloc-gauche-pole {
@@ -3921,17 +3922,17 @@ body .conteneur .conteneur-flex .titre-flex {
   }
 }
 
-/* line 32, ../sass/content-type-style/_page-pole.scss */
+/*######-------- ||| STYLE ||| --------######*/
+/* line 34, ../sass/content-type-style/_page-pole.scss */
 h1.title-page-bloc {
   font-size: xx-large;
   font-family: arista,Trebuchet MS, sans-serif;
   text-align: center;
   color: #911381;
   text-transform: uppercase;
-  margin: 0 0 1.25em 0;
 }
 
-/* line 40, ../sass/content-type-style/_page-pole.scss */
+/* line 42, ../sass/content-type-style/_page-pole.scss */
 h3.block-title {
   font-size: 18px;
   color: #ADC91F;
@@ -3940,29 +3941,29 @@ h3.block-title {
   margin: 1.25em 0;
 }
 
-/* line 48, ../sass/content-type-style/_page-pole.scss */
+/* line 50, ../sass/content-type-style/_page-pole.scss */
 #middle-content .page-pole .view-content h3 {
   color: #911381;
   text-decoration: none;
   padding: 0.125em;
 }
-/* line 54, ../sass/content-type-style/_page-pole.scss */
+/* line 56, ../sass/content-type-style/_page-pole.scss */
 #middle-content .page-pole .views-field-title {
   font-size: 14px;
 }
-/* line 58, ../sass/content-type-style/_page-pole.scss */
+/* line 60, ../sass/content-type-style/_page-pole.scss */
 #middle-content .page-pole .views-field-title a {
   color: #ADC91F;
   text-decoration: none;
   padding: 0.125em;
 }
-/* line 64, ../sass/content-type-style/_page-pole.scss */
+/* line 66, ../sass/content-type-style/_page-pole.scss */
 #middle-content .page-pole .views-field-title a:hover {
   background: #ADC91F;
   color: white;
 }
 
-/* line 70, ../sass/content-type-style/_page-pole.scss */
+/* line 72, ../sass/content-type-style/_page-pole.scss */
 #block-views-Formations_par_poles-block_1,
 #block-views-Formations_par_poles-block_2,
 #block-views-Formations_par_poles-block_3 {
@@ -3971,31 +3972,31 @@ h3.block-title {
   padding: 4.4375em 1.25em;
 }
 
-/* line 77, ../sass/content-type-style/_page-pole.scss */
+/* line 79, ../sass/content-type-style/_page-pole.scss */
 #block-views-Formations_par_poles-block_1 {
   background: white url("../images/bg_pole_tertiaire.jpg") no-repeat top left;
   background-size: contain;
 }
 
-/* line 82, ../sass/content-type-style/_page-pole.scss */
+/* line 84, ../sass/content-type-style/_page-pole.scss */
 #block-views-Formations_par_poles-block_2 {
   background: white url("../images/bg_pole_services.jpg") no-repeat left 0.0625em;
   background-size: contain;
 }
 
-/* line 86, ../sass/content-type-style/_page-pole.scss */
+/* line 88, ../sass/content-type-style/_page-pole.scss */
 #block-views-Formations_par_poles-block_3 {
   background: white url("../images/bg_pole_arts.jpg") no-repeat top left;
   background-size: contain;
 }
 
 /*TABLE PAGE FORMATION PAR POLES*/
-/* line 93, ../sass/content-type-style/_page-pole.scss */
+/* line 95, ../sass/content-type-style/_page-pole.scss */
 .table_bloc_form_pole {
   width: 98%;
 }
 
-/* line 97, ../sass/content-type-style/_page-pole.scss */
+/* line 99, ../sass/content-type-style/_page-pole.scss */
 .table_bloc_form_pole td {
   margin: 2px 0;
   padding: 4px 0;
@@ -4004,7 +4005,7 @@ h3.block-title {
 
 /*--------------------*/
 /*POLE SERVICE LISTE*/
-/* line 104, ../sass/content-type-style/_page-pole.scss */
+/* line 106, ../sass/content-type-style/_page-pole.scss */
 #liste_formation_pole_services, #liste_formation_pole_tertiaire, #liste_formation_pole_arts {
   background: white url("../images/bg_coin_vierge.jpg") no-repeat top left;
   margin: 0 auto;
@@ -4012,43 +4013,43 @@ h3.block-title {
   width: 61.25em;
 }
 
-/* line 110, ../sass/content-type-style/_page-pole.scss */
+/* line 112, ../sass/content-type-style/_page-pole.scss */
 #liste_formation_pole_services h3, #liste_formation_pole_tertiaire h3, #liste_formation_pole_arts h3 {
   color: #AEC821;
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 115, ../sass/content-type-style/_page-pole.scss */
+/* line 117, ../sass/content-type-style/_page-pole.scss */
 #liste_formation_pole_services .view, #liste_formation_pole_tertiaire view, #liste_formation_pole_arts view {
   width: 99%;
 }
 
-/* line 118, ../sass/content-type-style/_page-pole.scss */
+/* line 120, ../sass/content-type-style/_page-pole.scss */
 #liste_formation_pole_services .view-content, #liste_formation_pole_tertiaire view-content, #liste_formation_pole_arts view-content {
   width: 80%;
   margin: 0 auto;
   padding: 20px 0;
 }
 
-/* line 124, ../sass/content-type-style/_page-pole.scss */
+/* line 126, ../sass/content-type-style/_page-pole.scss */
 #liste_formation_pole_services table, #liste_formation_pole_tertiaire table, #liste_formation_pole_arts table {
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 128, ../sass/content-type-style/_page-pole.scss */
+/* line 130, ../sass/content-type-style/_page-pole.scss */
 #liste_formation_pole_services tbody, #liste_formation_pole_tertiaire tbody, #liste_formation_pole_arts tbody {
   margin: 0 auto;
   padding: 0;
 }
 
-/* line 132, ../sass/content-type-style/_page-pole.scss */
+/* line 134, ../sass/content-type-style/_page-pole.scss */
 #liste_formation_pole_services table tr, #liste_formation_pole_tertiaire tr, #liste_formation_pole_arts tr {
   padding: 0;
 }
 
-/* line 135, ../sass/content-type-style/_page-pole.scss */
+/* line 137, ../sass/content-type-style/_page-pole.scss */
 #liste_formation_pole_services table td, #liste_formation_pole_tertiaire td, #liste_formation_pole_arts td {
   padding: 0;
 }
@@ -4136,6 +4137,248 @@ h1.titre_vdl {
 }
 
 /*-------------------------------------|
+|       CONTENU CUSTOM               |
+|       PAGE VDL MUR IMAGE         |
+|--------------------------------------*/
+/*== PAGE GLOBALE POUR VDL ou ACTU ===*/
+/*######-------- ||| ORDRE FLEXBOX ||| --------######*/
+/*######-------- ||| LAYOUT SUSY GALLERY ||| --------######*/
+/* line 15, ../sass/content-type-style/_node-vdl-global.scss */
+.table-vdl-global .mur-image .liste-image-ul .liste-image-item {
+  width: 47.44898%;
+  float: left;
+}
+/* line 66, ../../../../../../../../home/webmaster/.rvm/gems/ruby-1.9.3-p484/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+.table-vdl-global .mur-image .liste-image-ul .liste-image-item:nth-child(2n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: both;
+  margin-left: 0;
+}
+/* line 66, ../../../../../../../../home/webmaster/.rvm/gems/ruby-1.9.3-p484/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+.table-vdl-global .mur-image .liste-image-ul .liste-image-item:nth-child(2n + 2) {
+  margin-left: 52.55102%;
+  margin-right: -100%;
+  clear: none;
+}
+@media (min-width: 990px) {
+  /* line 15, ../sass/content-type-style/_node-vdl-global.scss */
+  .table-vdl-global .mur-image .liste-image-ul .liste-image-item {
+    width: 15.29605%;
+    float: left;
+  }
+  /* line 66, ../../../../../../../../home/webmaster/.rvm/gems/ruby-1.9.3-p484/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+  .table-vdl-global .mur-image .liste-image-ul .liste-image-item:nth-child(6n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  /* line 66, ../../../../../../../../home/webmaster/.rvm/gems/ruby-1.9.3-p484/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+  .table-vdl-global .mur-image .liste-image-ul .liste-image-item:nth-child(6n + 2) {
+    margin-left: 16.94079%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 66, ../../../../../../../../home/webmaster/.rvm/gems/ruby-1.9.3-p484/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+  .table-vdl-global .mur-image .liste-image-ul .liste-image-item:nth-child(6n + 3) {
+    margin-left: 33.88158%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 66, ../../../../../../../../home/webmaster/.rvm/gems/ruby-1.9.3-p484/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+  .table-vdl-global .mur-image .liste-image-ul .liste-image-item:nth-child(6n + 4) {
+    margin-left: 50.82237%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 66, ../../../../../../../../home/webmaster/.rvm/gems/ruby-1.9.3-p484/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+  .table-vdl-global .mur-image .liste-image-ul .liste-image-item:nth-child(6n + 5) {
+    margin-left: 67.76316%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 66, ../../../../../../../../home/webmaster/.rvm/gems/ruby-1.9.3-p484/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+  .table-vdl-global .mur-image .liste-image-ul .liste-image-item:nth-child(6n + 6) {
+    margin-left: 84.70395%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+
+/*######-------- ||| STYLE ||| --------######*/
+/*Items*/
+/* line 25, ../sass/content-type-style/_node-vdl-global.scss */
+.table-vdl-global .liste-image-ul {
+  list-style: none;
+  padding: 0;
+}
+/* line 28, ../sass/content-type-style/_node-vdl-global.scss */
+.table-vdl-global .liste-image-ul a {
+  color: #911381;
+  text-decoration: none;
+  font-size: small;
+}
+/* line 31, ../sass/content-type-style/_node-vdl-global.scss */
+.table-vdl-global .liste-image-ul a:hover {
+  text-decoration: underline;
+}
+
+/* line 35, ../sass/content-type-style/_node-vdl-global.scss */
+.table-vdl-global .tooltip-vdl {
+  display: none;
+}
+@media (min-width: 990px) {
+  /* line 35, ../sass/content-type-style/_node-vdl-global.scss */
+  .table-vdl-global .tooltip-vdl {
+    display: block;
+  }
+}
+
+/* line 41, ../sass/content-type-style/_node-vdl-global.scss */
+.table-vdl-global .field-content {
+  height: 10em;
+}
+
+/* line 42, ../sass/content-type-style/_node-vdl-global.scss */
+.table-vdl-global img {
+  border: 0.2em solid #ADC91F;
+  padding: 0.3em;
+  margin: 0.1875em;
+}
+
+/* line 43, ../sass/content-type-style/_node-vdl-global.scss */
+.table-vdl-global span.titre-vdl {
+  z-index: 15;
+  position: relative;
+  bottom: 5.625em;
+  background: #ECECED;
+  color: #911381;
+  left: 0.3125em;
+  width: 9.0625em;
+  display: block;
+}
+
+/* line 45, ../sass/content-type-style/_node-vdl-global.scss */
+.table-vdl-global .tooltip-vdl {
+  padding: 0;
+  height: 10em;
+  position: relative;
+  bottom: 1.875em;
+}
+
+/* line 46, ../sass/content-type-style/_node-vdl-global.scss */
+.table-vdl-global .img-vdl {
+  padding: 0;
+  height: 10em;
+  position: relative;
+  bottom: 1.875em;
+}
+
+/*Europe 13  Partenaires 14 Sortie-actions 15*/
+/* line 49, ../sass/content-type-style/_node-vdl-global.scss */
+.vdl-13, .vdl-Europe, .vdl-15, .vdl-Sortie-actions, .vdl-14, .vdl-Partenaires {
+  position: relative;
+  z-index: 10;
+  display: block;
+  width: 4.625em;
+  height: 3.25em;
+  top: 1.625em;
+  left: 0.1875em;
+}
+
+/* line 53, ../sass/content-type-style/_node-vdl-global.scss */
+.vdl-13, .vdl-Europe {
+  background: transparent url("../images/coin-globale-VDL-europe.png") no-repeat 0;
+}
+
+/* line 56, ../sass/content-type-style/_node-vdl-global.scss */
+.vdl-14, .vdl-Partenaires {
+  background: transparent url("../images/coin-globale-VDL-partenaire.png") no-repeat 0;
+}
+
+/* line 59, ../sass/content-type-style/_node-vdl-global.scss */
+.vdl-15, .vdl-Sortie-actions {
+  background: transparent url("../images/coin-globale-VDL-sortie.png") no-repeat 0;
+}
+
+/*Filtre exposé page globale*/
+/* line 62, ../sass/content-type-style/_node-vdl-global.scss */
+#views-exposed-form-VDL-visuel-block-1 {
+  width: 30%;
+  margin: 5px auto;
+  background: transparent url(../images/zebra-gros-clair.gif) repeat;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/* line 66, ../sass/content-type-style/_node-vdl-global.scss */
+#views-exposed-form-VDL-visuel-block-1 h3 {
+  font-family: arista,Trebuchet MS, sans-serif;
+  text-align: center;
+  color: #01ABCF;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+/* line 73, ../sass/content-type-style/_node-vdl-global.scss */
+#views-exposed-form-VDL-visuel-block-1 select {
+  margin: 0 auto;
+}
+
+/* line 74, ../sass/content-type-style/_node-vdl-global.scss */
+#views-exposed-form-VDL-visuel-block-1 .views-reset-button {
+  margin: 0 auto;
+}
+
+/* line 76, ../sass/content-type-style/_node-vdl-global.scss */
+#views-exposed-form-VDL-visuel-block-1 .views-exposed-widget {
+  margin: 0 auto;
+}
+
+/*
+== Bloc filtre exposé de view pour l'année - archives ===
+*/
+/*Avec views 3 nvx noms de classes et ids : 
+views-exposed-form-liste-actu-lycee-block-5
+views-exposed-form-Actualites-liste-globale-block-1
+*/
+/* line 86, ../sass/content-type-style/_node-vdl-global.scss */
+#views-exposed-form-liste-actu-lycee-block-5, #views-exposed-form-liste-actu-lycee-block-4,
+#views-exposed-form-liste-actu-lycee-block-3 {
+  width: 10em;
+  margin: 0.9375em auto;
+  background: transparent url(../images/zebra-gros-clair.gif) repeat;
+  border-radius: 0.3125em;
+  padding: 0.3125em;
+}
+
+/* line 95, ../sass/content-type-style/_node-vdl-global.scss */
+#views-exposed-form-liste-actu-lycee-block-5 h3, #views-exposed-form-liste-actu-lycee-block-4 h3,
+#views-exposed-form-liste-actu-lycee-block-3 h3 {
+  font-family: arista,Trebuchet MS, sans-serif;
+  text-align: center;
+  color: #01ABCF;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+/* line 103, ../sass/content-type-style/_node-vdl-global.scss */
+#views-exposed-form-liste-actu-lycee-block-5 select, #views-exposed-form-liste-actu-lycee-block-4 select,
+#views-exposed-form-liste-actu-lycee-block-3 select {
+  margin: 0 auto;
+}
+
+/* line 107, ../sass/content-type-style/_node-vdl-global.scss */
+#views-exposed-form-liste-actu-lycee-block-5 .date-views-filter-wrapper .form-item,
+#views-exposed-form-liste-actu-lycee-block-4 .date-views-filter-wrapper .form-item,
+#views-exposed-form-liste-actu-lycee-block-3 .date-views-filter-wrapper .form-item {
+  margin: 1px auto;
+  width: 10em;
+  display: block;
+}
+
+/*-------------------------------------|
 |       CONTENU CUSTOM NODE.TPL        |
 |       CONTENU FICHE FORMATION        |
 |--------------------------------------*/
@@ -4218,16 +4461,6 @@ h1.titre_vdl {
   }
 }
 
-/*@import "content-type-style/page-association";
-@import "content-type-style/page-lycee";
-@import "content-type-style/page-formations";
-@import "content-type-style/page-bourses";
-@import "content-type-style/page-bts";
-@import "content-type-style/fiche-bts";
-@import "content-type-style/page-partenaires";
-@import "content-type-style/page-actualites";
-@import "content-type-style/page-contact";
-@import "content-type-style/page-recrutement";*/
 /*
 Pour le dev, code visuel sur les blocs selon le breakpoint
 à commenter ou supprimer pour la production
