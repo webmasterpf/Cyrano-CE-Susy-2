@@ -1,16 +1,14 @@
 <!--______________NODE TPL POUR TdC PAGE ACTUALITE GLOBALE CUSTOM________________ -->
 <div class="node <?php print $classes; ?>" id="node-<?php print $node->nid; ?>">
-  <div class="node-inner">
+  <div class="node-inner conteneur-flex">
 <!--______________COLONNE GAUCHE 1________________ -->
   <!-- <pre> <?php //print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->
-<div id="page_actualites_col_1">
-     <?php if ($title): /*insertion du titre de la page et style differencié*/?>
-     <h1 class="titre_pl"><?php print $title; ?></h1>
-     <?php endif; ?>
-   <br clear="all"/>
+<div id="colonne-1" class="page-actualites col1_layoutflex_3_6_3">
+  
+  
  <?php
  /* inclusion d'une region pour bloc dans colonne de gauche*/
-              $theme_path = drupal_get_path('theme', 'cyrano_ce');
+              $theme_path = drupal_get_path('theme', 'd6_ce_susy2');
               include ($theme_path.'/includes/inc_region_col_1.php');
               ?>
 
@@ -18,43 +16,50 @@
        
 </div>
 <!--______________COLONNE GAUCHE 2________________ -->
-<div id="page_actualites_col_2">
+<div id="colonne-2" class="page-actualites col2_layoutflex_3_6_3">
      <?php if ($submitted): ?>
       <span class="submitted"><?php print $submitted; ?></span>
     <?php endif; ?>
+      
+         <?php if ($title): /*insertion du titre de la page et style differencié*/?>
+     <h1 class="titre_pl"><?php print $title; ?></h1>
+     <?php endif; ?>
     <?php
+    
      /*insertion du contenu du corps de la page*/
       print $node->content['body']['#value']
       ?>
               <?php
-                  $theme_path = drupal_get_path('theme', 'cyrano_ce');
+                  $theme_path = drupal_get_path('theme', 'd6_ce_susy2');
                   include ($theme_path.'/includes/inc_actus_globale.php');
                   ?>
       
       <?php
-              $theme_path = drupal_get_path('theme', 'cyrano_ce');
+              $theme_path = drupal_get_path('theme', 'd6_ce_susy2');
               include ($theme_path.'/includes/inc_region_col_2.php');
               ?>
-     <!-- retour haut selon resolution de l'ecran -->
-          <a href="#general" id="retour_haut">Haut de page</a>
+    
 </div>
 <!--______________COLONNE GAUCHE 3________________ -->
    
-<div id="page_actualites_col_3">
+<div id="colonne-3" class="page-actualites col3_layoutflex_3_6_3">
      <?php print $picture; ?>
 
    
 
-    <div class="content">
+   
 
         <?php
-                  $theme_path = drupal_get_path('theme', 'cyrano_ce');
+                  $theme_path = drupal_get_path('theme', 'd6_ce_susy2');
                   include ($theme_path.'/includes/inc_actus_bloc_rp.php');
                   ?>
         
-        <br clear="all"/>
+          <?php
+              $theme_path = drupal_get_path('theme', 'd6_ce_susy2');
+              include ($theme_path.'/includes/inc_region_col_3.php');
+              ?>
           
-    </div>
+    
 
     <?php if ($terms): ?>
       <div class="taxonomy"><?php //print $terms; ?></div>

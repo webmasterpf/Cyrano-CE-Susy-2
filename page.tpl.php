@@ -94,6 +94,4 @@ include ($theme_path.'/includes/inc_header.php');
         <?php endif; ?> <!-- /sidebar-right -->
 
 	  
-	<?php global $theme_path; include ($theme_path.'/includes/inc_footer.php'); ?>
-    
-     
+	<?php global $theme_path; include ($theme_path.'/includes/inc_footer.php'); ?>     

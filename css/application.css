@@ -3749,7 +3749,7 @@ body .conteneur .conteneur-flex #colonne-3.page-lycee {
 /*######-------- ||| BORDURES ||| --------######*/
 @media (min-width: 990px) {
   /* line 26, ../sass/content-type-style/_page-lycee.scss */
-  body .conteneur .conteneur-flex #colonne-2 {
+  body .conteneur .conteneur-flex #colonne-2.page-lycee {
     border-left: 0.0625em solid #ADC91F;
     border-right: 0.0625em solid #93117E;
   }
@@ -4143,7 +4143,7 @@ h1.titre_vdl {
 /*== PAGE GLOBALE POUR VDL ou ACTU ===*/
 /*######-------- ||| ORDRE FLEXBOX ||| --------######*/
 /*######-------- ||| LAYOUT SUSY GALLERY ||| --------######*/
-/* line 15, ../sass/content-type-style/_node-vdl-global.scss */
+/* line 16, ../sass/content-type-style/_node-vdl-global.scss */
 .table-vdl-global .mur-image .liste-image-ul .liste-image-item {
   width: 47.44898%;
   float: left;
@@ -4162,7 +4162,7 @@ h1.titre_vdl {
   clear: none;
 }
 @media (min-width: 990px) {
-  /* line 15, ../sass/content-type-style/_node-vdl-global.scss */
+  /* line 16, ../sass/content-type-style/_node-vdl-global.scss */
   .table-vdl-global .mur-image .liste-image-ul .liste-image-item {
     width: 15.29605%;
     float: left;
@@ -4206,48 +4206,149 @@ h1.titre_vdl {
   }
 }
 
-/*######-------- ||| STYLE ||| --------######*/
-/*Items*/
-/* line 25, ../sass/content-type-style/_node-vdl-global.scss */
-.table-vdl-global .liste-image-ul {
-  list-style: none;
-  padding: 0;
+/* line 24, ../sass/content-type-style/_node-vdl-global.scss */
+.table-vdl-global .liste-image-item {
+  width: 47.44898%;
+  float: left;
+  padding: 0.3em;
 }
-/* line 28, ../sass/content-type-style/_node-vdl-global.scss */
-.table-vdl-global .liste-image-ul a {
-  color: #911381;
-  text-decoration: none;
-  font-size: small;
+/* line 66, ../../../../../../../../home/webmaster/.rvm/gems/ruby-1.9.3-p484/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+.table-vdl-global .liste-image-item:nth-child(2n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: both;
+  margin-left: 0;
 }
-/* line 31, ../sass/content-type-style/_node-vdl-global.scss */
-.table-vdl-global .liste-image-ul a:hover {
-  text-decoration: underline;
-}
-
-/* line 35, ../sass/content-type-style/_node-vdl-global.scss */
-.table-vdl-global .tooltip-vdl {
-  display: none;
+/* line 66, ../../../../../../../../home/webmaster/.rvm/gems/ruby-1.9.3-p484/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+.table-vdl-global .liste-image-item:nth-child(2n + 2) {
+  margin-left: 52.55102%;
+  margin-right: -100%;
+  clear: none;
 }
 @media (min-width: 990px) {
-  /* line 35, ../sass/content-type-style/_node-vdl-global.scss */
+  /* line 24, ../sass/content-type-style/_node-vdl-global.scss */
+  .table-vdl-global .liste-image-item {
+    width: 15.29605%;
+    float: left;
+  }
+  /* line 66, ../../../../../../../../home/webmaster/.rvm/gems/ruby-1.9.3-p484/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+  .table-vdl-global .liste-image-item:nth-child(6n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  /* line 66, ../../../../../../../../home/webmaster/.rvm/gems/ruby-1.9.3-p484/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+  .table-vdl-global .liste-image-item:nth-child(6n + 2) {
+    margin-left: 16.94079%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 66, ../../../../../../../../home/webmaster/.rvm/gems/ruby-1.9.3-p484/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+  .table-vdl-global .liste-image-item:nth-child(6n + 3) {
+    margin-left: 33.88158%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 66, ../../../../../../../../home/webmaster/.rvm/gems/ruby-1.9.3-p484/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+  .table-vdl-global .liste-image-item:nth-child(6n + 4) {
+    margin-left: 50.82237%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 66, ../../../../../../../../home/webmaster/.rvm/gems/ruby-1.9.3-p484/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+  .table-vdl-global .liste-image-item:nth-child(6n + 5) {
+    margin-left: 67.76316%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 66, ../../../../../../../../home/webmaster/.rvm/gems/ruby-1.9.3-p484/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+  .table-vdl-global .liste-image-item:nth-child(6n + 6) {
+    margin-left: 84.70395%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+
+/*######-------- ||| LAYOUT SUSY MASONRY ||| --------######*/
+/* line 34, ../sass/content-type-style/_node-vdl-global.scss */
+.table-vdl-global .masonry__gutter {
+  width: 5.10204%;
+}
+/* line 37, ../sass/content-type-style/_node-vdl-global.scss */
+.table-vdl-global .masonry__column {
+  width: 73.72449%;
+}
+/* line 40, ../sass/content-type-style/_node-vdl-global.scss */
+.table-vdl-global .masonry__item {
+  width: 73.72449%;
+  margin-top: 5.10204%;
+}
+
+/*######-------- ||| AFFICHAGE ||| --------######*/
+/* line 47, ../sass/content-type-style/_node-vdl-global.scss */
+.table-vdl-global .tooltip-vdl {
+  display: block;
+}
+@media (min-width: 990px) {
+  /* line 47, ../sass/content-type-style/_node-vdl-global.scss */
   .table-vdl-global .tooltip-vdl {
     display: block;
   }
 }
 
-/* line 41, ../sass/content-type-style/_node-vdl-global.scss */
+/* line 54, ../sass/content-type-style/_node-vdl-global.scss */
+.table-vdl-global .img-vdl, .table-vdl-global .titre-vdl {
+  display: inherit;
+}
+
+/*######-------- ||| STYLE ||| --------######*/
+/*Items*/
+/* line 60, ../sass/content-type-style/_node-vdl-global.scss */
+.table-vdl-global .liste-image-ul {
+  list-style: none;
+  padding: 0;
+}
+/* line 63, ../sass/content-type-style/_node-vdl-global.scss */
+.table-vdl-global .liste-image-ul a {
+  color: #911381;
+  text-decoration: none;
+  font-size: small;
+}
+/* line 66, ../sass/content-type-style/_node-vdl-global.scss */
+.table-vdl-global .liste-image-ul a:hover {
+  text-decoration: underline;
+}
+
+/* line 71, ../sass/content-type-style/_node-vdl-global.scss */
+span.titre-vdl a {
+  color: #911381;
+  text-decoration: none;
+  font-size: small;
+}
+/* line 74, ../sass/content-type-style/_node-vdl-global.scss */
+span.titre-vdl a:hover {
+  text-decoration: underline;
+}
+
+/* line 78, ../sass/content-type-style/_node-vdl-global.scss */
 .table-vdl-global .field-content {
   height: 10em;
 }
 
-/* line 42, ../sass/content-type-style/_node-vdl-global.scss */
+/* line 79, ../sass/content-type-style/_node-vdl-global.scss */
 .table-vdl-global img {
   border: 0.2em solid #ADC91F;
-  padding: 0.3em;
-  margin: 0.1875em;
+}
+@media (min-width: 990px) {
+  /* line 79, ../sass/content-type-style/_node-vdl-global.scss */
+  .table-vdl-global img {
+    padding: 0.3em;
+    margin: 0.1875em;
+  }
 }
 
-/* line 43, ../sass/content-type-style/_node-vdl-global.scss */
+/* line 84, ../sass/content-type-style/_node-vdl-global.scss */
 .table-vdl-global span.titre-vdl {
   z-index: 15;
   position: relative;
@@ -4259,7 +4360,7 @@ h1.titre_vdl {
   display: block;
 }
 
-/* line 45, ../sass/content-type-style/_node-vdl-global.scss */
+/* line 86, ../sass/content-type-style/_node-vdl-global.scss */
 .table-vdl-global .tooltip-vdl {
   padding: 0;
   height: 10em;
@@ -4267,16 +4368,22 @@ h1.titre_vdl {
   bottom: 1.875em;
 }
 
-/* line 46, ../sass/content-type-style/_node-vdl-global.scss */
+/* line 87, ../sass/content-type-style/_node-vdl-global.scss */
 .table-vdl-global .img-vdl {
   padding: 0;
   height: 10em;
   position: relative;
   bottom: 1.875em;
 }
+@media (min-width: 990px) {
+  /* line 87, ../sass/content-type-style/_node-vdl-global.scss */
+  .table-vdl-global .img-vdl {
+    margin: 0.1em;
+  }
+}
 
 /*Europe 13  Partenaires 14 Sortie-actions 15*/
-/* line 49, ../sass/content-type-style/_node-vdl-global.scss */
+/* line 94, ../sass/content-type-style/_node-vdl-global.scss */
 .vdl-13, .vdl-Europe, .vdl-15, .vdl-Sortie-actions, .vdl-14, .vdl-Partenaires {
   position: relative;
   z-index: 10;
@@ -4287,32 +4394,44 @@ h1.titre_vdl {
   left: 0.1875em;
 }
 
-/* line 53, ../sass/content-type-style/_node-vdl-global.scss */
+/* line 98, ../sass/content-type-style/_node-vdl-global.scss */
 .vdl-13, .vdl-Europe {
   background: transparent url("../images/coin-globale-VDL-europe.png") no-repeat 0;
 }
 
-/* line 56, ../sass/content-type-style/_node-vdl-global.scss */
+/* line 101, ../sass/content-type-style/_node-vdl-global.scss */
 .vdl-14, .vdl-Partenaires {
   background: transparent url("../images/coin-globale-VDL-partenaire.png") no-repeat 0;
 }
 
-/* line 59, ../sass/content-type-style/_node-vdl-global.scss */
+/* line 104, ../sass/content-type-style/_node-vdl-global.scss */
 .vdl-15, .vdl-Sortie-actions {
   background: transparent url("../images/coin-globale-VDL-sortie.png") no-repeat 0;
 }
 
 /*Filtre exposé page globale*/
-/* line 62, ../sass/content-type-style/_node-vdl-global.scss */
+/* line 107, ../sass/content-type-style/_node-vdl-global.scss */
 #views-exposed-form-VDL-visuel-block-1 {
-  width: 30%;
-  margin: 5px auto;
+  width: 50%;
+  margin: 0.3125em auto;
   background: transparent url(../images/zebra-gros-clair.gif) repeat;
-  border-radius: 5px;
-  padding: 5px;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  padding: 0.3125em;
+}
+/* line 112, ../sass/content-type-style/_node-vdl-global.scss */
+#views-exposed-form-VDL-visuel-block-1 label {
+  display: table-cell;
+  vertical-align: middle;
+  font-family: arista,Trebuchet MS, sans-serif;
+  text-align: center;
+  color: #01ABCF;
+  font-size: larger;
+  margin: 0;
 }
 
-/* line 66, ../sass/content-type-style/_node-vdl-global.scss */
+/* line 122, ../sass/content-type-style/_node-vdl-global.scss */
 #views-exposed-form-VDL-visuel-block-1 h3 {
   font-family: arista,Trebuchet MS, sans-serif;
   text-align: center;
@@ -4321,17 +4440,17 @@ h1.titre_vdl {
   margin: 0;
 }
 
-/* line 73, ../sass/content-type-style/_node-vdl-global.scss */
+/* line 129, ../sass/content-type-style/_node-vdl-global.scss */
 #views-exposed-form-VDL-visuel-block-1 select {
   margin: 0 auto;
 }
 
-/* line 74, ../sass/content-type-style/_node-vdl-global.scss */
+/* line 130, ../sass/content-type-style/_node-vdl-global.scss */
 #views-exposed-form-VDL-visuel-block-1 .views-reset-button {
   margin: 0 auto;
 }
 
-/* line 76, ../sass/content-type-style/_node-vdl-global.scss */
+/* line 132, ../sass/content-type-style/_node-vdl-global.scss */
 #views-exposed-form-VDL-visuel-block-1 .views-exposed-widget {
   margin: 0 auto;
 }
@@ -4343,7 +4462,7 @@ h1.titre_vdl {
 views-exposed-form-liste-actu-lycee-block-5
 views-exposed-form-Actualites-liste-globale-block-1
 */
-/* line 86, ../sass/content-type-style/_node-vdl-global.scss */
+/* line 142, ../sass/content-type-style/_node-vdl-global.scss */
 #views-exposed-form-liste-actu-lycee-block-5, #views-exposed-form-liste-actu-lycee-block-4,
 #views-exposed-form-liste-actu-lycee-block-3 {
   width: 10em;
@@ -4353,7 +4472,7 @@ views-exposed-form-Actualites-liste-globale-block-1
   padding: 0.3125em;
 }
 
-/* line 95, ../sass/content-type-style/_node-vdl-global.scss */
+/* line 151, ../sass/content-type-style/_node-vdl-global.scss */
 #views-exposed-form-liste-actu-lycee-block-5 h3, #views-exposed-form-liste-actu-lycee-block-4 h3,
 #views-exposed-form-liste-actu-lycee-block-3 h3 {
   font-family: arista,Trebuchet MS, sans-serif;
@@ -4363,19 +4482,333 @@ views-exposed-form-Actualites-liste-globale-block-1
   margin: 0;
 }
 
-/* line 103, ../sass/content-type-style/_node-vdl-global.scss */
+/* line 159, ../sass/content-type-style/_node-vdl-global.scss */
 #views-exposed-form-liste-actu-lycee-block-5 select, #views-exposed-form-liste-actu-lycee-block-4 select,
 #views-exposed-form-liste-actu-lycee-block-3 select {
   margin: 0 auto;
 }
 
-/* line 107, ../sass/content-type-style/_node-vdl-global.scss */
+/* line 163, ../sass/content-type-style/_node-vdl-global.scss */
 #views-exposed-form-liste-actu-lycee-block-5 .date-views-filter-wrapper .form-item,
 #views-exposed-form-liste-actu-lycee-block-4 .date-views-filter-wrapper .form-item,
 #views-exposed-form-liste-actu-lycee-block-3 .date-views-filter-wrapper .form-item {
   margin: 1px auto;
   width: 10em;
   display: block;
+}
+
+/*-------------------------------------|
+|       CONTENU CUSTOM NODE.TPL        |
+|       PAGE ACTUALITE LISTE      |
+|--------------------------------------*/
+/*######-------- ||| ORDRE FLEXBOX ||| --------######*/
+/* line 15, ../sass/content-type-style/_page-actualites.scss */
+body .conteneur .conteneur-flex #colonne-1 {
+  order: 2;
+}
+/* line 16, ../sass/content-type-style/_page-actualites.scss */
+body .conteneur .conteneur-flex #colonne-2 {
+  order: 1;
+}
+/* line 17, ../sass/content-type-style/_page-actualites.scss */
+body .conteneur .conteneur-flex #colonne-3 {
+  order: 3;
+}
+@media (min-width: 990px) {
+  /* line 19, ../sass/content-type-style/_page-actualites.scss */
+  body .conteneur .conteneur-flex #colonne-1 {
+    order: 1;
+  }
+  /* line 20, ../sass/content-type-style/_page-actualites.scss */
+  body .conteneur .conteneur-flex #colonne-2 {
+    order: 2;
+  }
+  /* line 21, ../sass/content-type-style/_page-actualites.scss */
+  body .conteneur .conteneur-flex #colonne-3 {
+    order: 3;
+  }
+}
+
+/*######-------- ||| BORDURES ||| --------######*/
+@media (min-width: 990px) {
+  /* line 28, ../sass/content-type-style/_page-actualites.scss */
+  body .conteneur .conteneur-flex #colonne-2.page-actualites {
+    border-left: 0.0625em solid #ADC91F;
+    border-right: 0.0625em solid #93117E;
+  }
+}
+
+/*Bloc vue actu générale - page actu globale*/
+/* line 34, ../sass/content-type-style/_page-actualites.scss */
+h3.titre-bloc-actus-generales {
+  font-family: arista,Trebuchet MS, sans-serif;
+  text-align: center;
+  color: #F29400;
+  margin: 0;
+}
+
+/* line 40, ../sass/content-type-style/_page-actualites.scss */
+table#vue-bloc-actus-generales {
+  padding: 0.3125em;
+  width: 98%;
+  margin: 0 auto;
+}
+/* line 44, ../sass/content-type-style/_page-actualites.scss */
+table#vue-bloc-actus-generales span {
+  font-size: smaller;
+}
+/* line 47, ../sass/content-type-style/_page-actualites.scss */
+table#vue-bloc-actus-generales tr {
+  background: #ECECED;
+  background-color: #ECECED;
+  display: block;
+  margin: 0.2em auto;
+  width: inherit;
+}
+/* line 53, ../sass/content-type-style/_page-actualites.scss */
+table#vue-bloc-actus-generales tr:hover {
+  background: #e8efbf;
+}
+/* line 55, ../sass/content-type-style/_page-actualites.scss */
+table#vue-bloc-actus-generales td {
+  padding: 0.125em 0;
+  width: 100%;
+  display: inline-block;
+}
+/* line 59, ../sass/content-type-style/_page-actualites.scss */
+table#vue-bloc-actus-generales td:hover {
+  border-right: #ADC91F solid 0.125em;
+}
+
+/* line 66, ../sass/content-type-style/_page-actualites.scss */
+#vue-bloc-actus-generales hr {
+  border-top: 1px solid #911381;
+  width: 75%;
+  margin: 0 auto;
+  display: none;
+}
+
+/* line 72, ../sass/content-type-style/_page-actualites.scss */
+#vue-bloc-actus-generales td a {
+  text-decoration: none;
+  font-size: initial;
+  font-weight: bold;
+  margin: 0;
+  color: #ADC91F;
+}
+
+/* line 81, ../sass/content-type-style/_page-actualites.scss */
+#vue-bloc-actus-generales img {
+  border: #911381 0.3em solid;
+  float: right;
+  margin: 0.125em 0.25em;
+  padding: 0.125em;
+}
+
+/* line 87, ../sass/content-type-style/_page-actualites.scss */
+#vue-bloc-actus-generales td a:hover {
+  color: #911381;
+}
+
+/* line 88, ../sass/content-type-style/_page-actualites.scss */
+#vue-bloc-actus-generales td img {
+  border: 2px solid #911381;
+  float: right;
+}
+
+/* line 89, ../sass/content-type-style/_page-actualites.scss */
+#vue-bloc-actus-generales td img :hover {
+  opacity: 80;
+}
+
+/* line 90, ../sass/content-type-style/_page-actualites.scss */
+#vue-bloc-actus-generales span.views-field-name, #vue-bloc-actus-generales span.views-field-created, #vue-bloc-actus-generales span.views-field-field-date-evenement-value {
+  font-style: italic;
+  font-size: small;
+  padding: 0 0.3125em;
+  text-align: right;
+}
+
+/* line 96, ../sass/content-type-style/_page-actualites.scss */
+#views-exposed-form-Actualites-liste-globale-block-1 {
+  width: 95%;
+  margin: 0.3125em auto;
+  background: transparent url(../images/zebra-gros-clair.gif) repeat;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  padding: 0.625em 0.3125em;
+}
+
+/* line 103, ../sass/content-type-style/_page-actualites.scss */
+#views-exposed-form-Actualites-liste-globale-block-1 .date-views-filter-wrapper {
+  width: auto;
+  min-width: 20%;
+}
+
+/* line 107, ../sass/content-type-style/_page-actualites.scss */
+#views-exposed-form-Actualites-liste-globale-block-1 .views-exposed-form .views-exposed-widget {
+  padding: .5em .5em 0 0;
+}
+/* line 110, ../sass/content-type-style/_page-actualites.scss */
+#views-exposed-form-Actualites-liste-globale-block-1 .views-widget-filter-field_date_evenement_value {
+  margin: 0 0 0 0.625em;
+}
+/* line 113, ../sass/content-type-style/_page-actualites.scss */
+#views-exposed-form-Actualites-liste-globale-block-1 .views-widget-filter-tid label, #views-exposed-form-Actualites-liste-globale-block-1 .views-widget-filter-field_date_evenement_value label {
+  font-size: small;
+}
+
+/*Pager liste actu globale*/
+/* line 121, ../sass/content-type-style/_page-actualites.scss */
+.view-Actualites-liste-globale ul.pager {
+  margin: 3px auto;
+  width: 95%;
+  display: block;
+  padding: 3px;
+}
+
+/* line 122, ../sass/content-type-style/_page-actualites.scss */
+.view-Actualites-liste-globale .pager li {
+  float: left;
+}
+
+/* line 124, ../sass/content-type-style/_page-actualites.scss */
+.view-Actualites-liste-globale .pager li a {
+  color: #606070;
+}
+
+/* line 125, ../sass/content-type-style/_page-actualites.scss */
+.view-Actualites-liste-globale .pager li.pager-item, .view-Actualites-liste-globale .pager li.pager-current {
+  padding: 3px;
+  -moz-border-radius: 0.8em;
+  -webkit-border-radius: 0.8em;
+  border-radius: 0.8em;
+  height: 15px;
+  width: 15px;
+}
+
+/* line 127, ../sass/content-type-style/_page-actualites.scss */
+.view-Actualites-liste-globale .pager li.pager-item {
+  background: #911381;
+  color: #ECECED;
+}
+
+/* line 129, ../sass/content-type-style/_page-actualites.scss */
+.view-Actualites-liste-globale .pager li.pager-item a {
+  color: #ECECED;
+}
+
+/* line 130, ../sass/content-type-style/_page-actualites.scss */
+.view-Actualites-liste-globale .pager li.pager-current {
+  background: #ADC91F;
+  color: #606070;
+}
+
+/*Bloc actu association RSS sur page Actu globale*/
+/* line 134, ../sass/content-type-style/_page-actualites.scss */
+.block-aggregator {
+  font-size: small;
+}
+/* line 136, ../sass/content-type-style/_page-actualites.scss */
+.block-aggregator ul li {
+  list-style: none;
+}
+
+/* line 140, ../sass/content-type-style/_page-actualites.scss */
+#block-aggregator-feed-1 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* line 145, ../sass/content-type-style/_page-actualites.scss */
+#block-aggregator-feed-1 h3 {
+  font-family: arista,Trebuchet MS, sans-serif;
+  text-align: center;
+  color: #ADC91F;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+/* line 152, ../sass/content-type-style/_page-actualites.scss */
+#block-aggregator-feed-1 ul {
+  background: transparent url(../images/zebra-gros-clair.gif) repeat;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  padding: 0.3125em;
+  margin: 0.625em 0;
+}
+
+/* line 160, ../sass/content-type-style/_page-actualites.scss */
+#block-aggregator-feed-1 ul li {
+  margin: 0.3125em 0;
+}
+
+/* line 164, ../sass/content-type-style/_page-actualites.scss */
+#block-aggregator-feed-1 li a {
+  color: #9898a6;
+  text-decoration: none;
+  padding: 2px;
+  display: block;
+  background: white;
+}
+
+/* line 173, ../sass/content-type-style/_page-actualites.scss */
+#block-aggregator-feed-1 li a:hover {
+  color: white;
+  background: #ADC91F;
+}
+
+/*Vue liste des RP pour item actu*/
+/* line 178, ../sass/content-type-style/_page-actualites.scss */
+#bloc_actus_rp h3 {
+  font-family: arista,Trebuchet MS, sans-serif;
+  text-align: center;
+  color: #911381;
+  font-size: x-large;
+  margin: 5px 0;
+}
+
+/* line 185, ../sass/content-type-style/_page-actualites.scss */
+.liste-revue-presse_defaut {
+  background: transparent url(../images/bg_actu_revuepresse.jpg) no-repeat;
+  background-size: contain;
+}
+
+/* line 189, ../sass/content-type-style/_page-actualites.scss */
+.liste-revue-presse_defaut ul {
+  list-style: none;
+  width: 90%;
+  margin: 0 auto;
+  padding: 5px 0;
+}
+
+/* line 195, ../sass/content-type-style/_page-actualites.scss */
+.liste-revue-presse_defaut li {
+  text-align: center;
+  padding: 5px;
+}
+
+/* line 200, ../sass/content-type-style/_page-actualites.scss */
+.liste-revue-presse_defaut li a {
+  padding: 2px;
+  text-decoration: none;
+  color: #9898a6;
+  font-weight: bold;
+  font-size: small;
+}
+
+/* line 207, ../sass/content-type-style/_page-actualites.scss */
+.liste-revue-presse_defaut li a:hover {
+  background: #ECECED;
+}
+
+/* line 210, ../sass/content-type-style/_page-actualites.scss */
+.liste-revue-presse_defaut hr {
+  border-top: 1px solid #911381;
+  width: 75%;
+  margin: 0 auto;
 }
 
 /*-------------------------------------|

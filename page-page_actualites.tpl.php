@@ -11,7 +11,7 @@
 
               <?php print $content_top; ?>
             </div> <!-- /#content-top -->
-	  
+	          <?php endif; ?>  
 <!-- ______________________ CONTENT TOP NODE_______________________ -->
                <?php if ($content_top_node): ?>
             <div id="content-top-node">
@@ -43,7 +43,7 @@
             </div> <!-- /#content-header -->
           <?php endif; ?>
 		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
-                  <div id="middle-content"  class="conteneur-flex">
+                  <div id="middle-content">
           
             <?php print $content; ?>
               <?php print $feed_icons; ?>
@@ -72,6 +72,4 @@
             </div><!-- /#content-bottom -->
           <?php endif; ?>
 	
-	
-	  <?php $theme_path = drupal_get_path('theme', 'd6_ce_susy2'); include ($theme_path.'/includes/inc_footer.php'); ?>     
-            <?php endif; ?>  
+<?php $theme_path = drupal_get_path('theme', 'd6_ce_susy2'); include ($theme_path.'/includes/inc_footer.php'); ?>    
