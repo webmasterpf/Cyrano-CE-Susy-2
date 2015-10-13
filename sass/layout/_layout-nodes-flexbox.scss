@@ -6,6 +6,13 @@ Ne s'applique que si présence d'un node-TYPE.tpl.php
 /*//////////////////////\\\\\\\\\\\\\\\\\\\\\\
 ********** LAYOUT FLEXBOX NODE.TPL OVERRIDE **********
 \\\\\\\\\\\\\\\\\\\\\\\//////////////////////*/
+body .conteneur .conteneur-flex{
+    &:before,&:after{
+        content: " ";
+        display: block;
+        clear: both;
+    } 
+}
 
 /*//////////////// 1 COLONNE \\\\\\\\\\\\\\\\*/
 body .conteneur .conteneur-flex {
@@ -19,14 +26,14 @@ body .conteneur .conteneur-flex {
   
     .col1_layoutflex_3_6_3{
        @include flex(1 0 span($mobilecol));
-       @include clearfix;
+       
         @include breakpoint ($tablet){
             @include flex(1 0 span(2 of $tabletcol));
              
             
         }
         @include breakpoint ($desktop){
-           //@include flex(1 0 span(3 of $desktopcol no-gutters));
+           @include clearfix; //empeche affichage  page sous IE
            @include flex(1 0 span(3 of $desktopcol));
             
         }
@@ -38,13 +45,13 @@ body .conteneur .conteneur-flex {
     }
     .col2_layoutflex_3_6_3{
        @include flex(1 0 span($mobilecol));
-   @include clearfix;
+   
         @include breakpoint ($tablet){
            @include flex(1 0 span(4 of $tabletcol));
         
         }
         @include breakpoint ($desktop){
-//          @include flex(1 0 span(6 of $desktopcol no-gutter));
+@include clearfix; //empeche affichage  page sous IE
 @include flex(1 0 span(6 of $desktopcol first));    
 
         }
@@ -57,7 +64,7 @@ body .conteneur .conteneur-flex {
     }
     .col3_layoutflex_3_6_3{
         @include flex(1 0 span($mobilecol));
-       @include clearfix;
+       @include clearfix; //empeche affichage  page sous IE
         @include breakpoint ($tablet){
              @include isolate(.3%);
         }

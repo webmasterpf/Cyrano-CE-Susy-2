@@ -3,19 +3,17 @@
 <div class="node <?php print $classes; ?>" id="node-<?php print $node->nid; ?>">
 <div class="node-inner conteneur-flex">
 <!--______________COLONNE GAUCHE 1________________ -->
-  <!-- <pre> <?php print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->
-<div id="colonne-1" class="col1_layoutflex_3_6_3 contenu-actu">
+ <div id="colonne-1" class="col1_layoutflex_3_6_3 contenu-actu">
      <?php if ($title): /*insertion du titre de la page et style differencié*/?>
      <h1 class="titre_pl"><?php print $title; ?></h1>
      <?php endif; ?>
-   <br class="clearBoth"/>
+
      <!-- infos en plus-->
    <?php
    global $theme_path;
    include ($theme_path.'/includes/inc_actus_liste_docs.php');
    ?>
- <br class="clearBoth"/>
-                  <?php
+<?php
  /* inclusion d'une region pour bloc dans colonne de gauche*/
               global $theme_path;
               include ($theme_path.'/includes/inc_region_col_1.php');
@@ -64,7 +62,10 @@
                   include ($theme_path.'/includes/inc_actus_bloc_rp.php');
                   ?>
         
-        <br class="clearBoth"/>
+        <?php
+              global $theme_path;
+              include ($theme_path.'/includes/inc_region_col_3.php');
+              ?> 
           
     </div>
 
@@ -81,4 +82,5 @@
 
   </div> <!-- /node-inner -->
 </div> <!-- /node-->
+ <!-- <pre> <?php //print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->
 <!--______________FIN NODE TPL CUSTOM________________ -->
