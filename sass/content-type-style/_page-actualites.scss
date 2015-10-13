@@ -40,31 +40,31 @@ h3.titre-bloc-actus-generales{
 table#vue-bloc-actus-generales
 {
     padding: em(5px);  width: 98%;margin: 0 auto;
-  
- span{
-    font-size: smaller;
-}
-tr{
-    background: $gris-clair;
-    background-color: $gris-clair;
-    display: block;
-    margin: 0.2em auto;
-    width: inherit;
-&:hover{ background: #e8efbf;   }
-}
- td{
-    padding: em(2px) 0;
-     width: 100%;
-    display: inline-block;//pour eviter effet de padding sur rollover
-&:hover{border-right: $vert solid em(2px);}
- }
+
+    span{
+        font-size: smaller;
+    }
+    tr{
+        background: $gris-clair;
+        background-color: $gris-clair;
+        display: block;
+        margin: 0.2em auto;
+        width: inherit;
+        &:hover{ background: #e8efbf;   }
+    }
+    td{
+        padding: em(2px) 0;
+        width: 100%;
+        display: inline-block;//pour eviter effet de padding sur rollover
+        &:hover{border-right: $vert solid em(2px);}
+    }
 }
 
 
 
 
 #vue-bloc-actus-generales hr{
-    border-top: 1px solid $violet;
+    border-top: em(1px) solid $violet;
     width: 75%;
     margin: 0 auto;
     display: none;
@@ -85,7 +85,7 @@ tr{
     padding: em(2px);
 }
 #vue-bloc-actus-generales td a:hover{color: $violet;}
-#vue-bloc-actus-generales td img{border: 2px solid $violet;float: right;}
+#vue-bloc-actus-generales td img{border: em(2px) solid $violet;float: right;}
 #vue-bloc-actus-generales td img :hover{opacity: 80;}
 #vue-bloc-actus-generales span.views-field-name,#vue-bloc-actus-generales span.views-field-created,#vue-bloc-actus-generales span.views-field-field-date-evenement-value{
     font-style: italic;
@@ -118,12 +118,12 @@ tr{
 
 
 /*Pager liste actu globale*/
-.view-Actualites-liste-globale ul.pager{margin: 3px auto;width: 95%;display: block;padding: 3px;}
+.view-Actualites-liste-globale ul.pager{margin: em(3px) auto;width: 95%;display: block;padding: em(3px);}
 .view-Actualites-liste-globale .pager li
 {float: left;}
 .view-Actualites-liste-globale .pager li a{color:$gris-anthracite;}
 .view-Actualites-liste-globale .pager li.pager-item,.view-Actualites-liste-globale .pager li.pager-current
-{padding: 3px;@include arrondis(0.8em); height: 15px;width: 15px;}
+{padding: em(3px);@include arrondis(0.8em); height: em(15px);width: em(15px);}
 .view-Actualites-liste-globale .pager li.pager-item
 {background:$violet ;color:$gris-clair;}
 .view-Actualites-liste-globale .pager li.pager-item a{color:$gris-clair;}
@@ -164,7 +164,7 @@ tr{
 #block-aggregator-feed-1 li a{
     color: $gris-clair-moyen;
     text-decoration: none;
-    padding: 2px;
+    padding: em(2px);
     display: block;
     background: white;
     
@@ -180,35 +180,39 @@ tr{
    text-align: center;
    color: $violet;
    font-size: x-large;
-   margin: 5px 0;
+   margin: em(5px) 0;
 }
 .liste-revue-presse_defaut{
-    background: transparent url(../images/bg_actu_revuepresse.jpg) no-repeat ;
+    background: transparent url(../images/bg_actu_revuepresse.jpg) no-repeat top;
     background-size: contain;
 }
 .liste-revue-presse_defaut ul{
     list-style: none;
     width: 90%;
     margin: 0 auto;
-    padding: 5px 0;
+    padding: em(5px) 0;
 }
 .liste-revue-presse_defaut li{
     
     text-align: center;
-    padding: 5px;
+    padding: em(5px);
 }
 .liste-revue-presse_defaut li a{
-    padding: 2px;
+    padding: em(2px);
     text-decoration: none;
     color: $gris-clair-moyen;
     font-weight: bold;
-    font-size: small;
+    font-size: x-small;
+    @include breakpoint ($desktop){
+        font-size: small;
+    }
+    
 }
 .liste-revue-presse_defaut li a:hover{
     background: $gris-clair;
 }
 .liste-revue-presse_defaut hr{
-    border-top: 1px solid $violet;
+    border-top: em(1px) solid $violet;
     width: 75%;
     margin: 0 auto;
 

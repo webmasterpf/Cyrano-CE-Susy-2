@@ -48,25 +48,30 @@ function d6_ce_susy2_preprocess_node(&$vars, $hook) {
 $node = $vars['node'];
 $lesTypes=array('page_fiche_formation', 'page_pole','contenu_actualites');
 //ajouter les vids possibles pour chaque quelquesoit le type
-$lesVid=array('1','5');// vid 1 pour pole formation, vid 5 pour type actualite
+$lesVid= array('1','6');// vid 1 pour pole formation, vid 6 pour type actualite (DEV/PROD)
 // on regarde si le type est dans le tableau
-if ( in_array($node->type,$lesTypes) ) {
+if ( in_array($node->type, $lesTypes) ) {
+     drupal_set_message('Type du node si type ok (entrée de la condition) : '.$node->type,'status');
+       if ( empty($node->taxonomy)  ) {
+     drupal_set_message('<b>Pas de terme de taxonomie trouvé !</b> ','status');      
+       } 
        if ( ! empty($node->taxonomy)  ) {
+           drupal_set_message('Term name dans boucle si non vide: '.$term->name,'status');
 // Récupération du 1er element du tableau
            $term = array_shift($node->taxonomy);
     // verifie si l'un des termes appartiennent bien à l'un des vid définis dans le tableau
-           if ( in_array($term->vid,$lesVid) ) {
+           if ( in_array($term->vid, $lesVid) ) {
          
               $tplfile = 'node-'.$node->type.'-'. $term->vid.'-'.$term->tid ;
               $vars['template_files'][] = $tplfile ;
-          //drupal_set_message('Term name : '.$term->name,'status');
+          drupal_set_message('Term name : '.$term->name,'status');
            drupal_set_message('Template file : '.$tplfile.'.tpl.php','status');
           }
     
           
       }
- //drupal_set_message('Type du node hors : '.$node->type,'status');
-// drupal_set_message('Term name hors : '.$term->name,'status');
+ drupal_set_message('Type du node hors boucle: '.$node->type,'status');
+ drupal_set_message('Term name hors boucle: '.$term->name,'status');
     }
 }
 ?>

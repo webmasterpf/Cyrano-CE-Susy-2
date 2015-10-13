@@ -2,7 +2,7 @@
  <!-- ______________________ LAYOUT PAGE CONTENU ACTUALITE CELONY PAGE.TPL_______________________ -->
   <!-- ______________________ CONTENU _______________________ -->
   
-      <div id="contentPage">
+      
       
           <!-- ______________________ CONTENT TOP _______________________ -->
       <?php if ($breadcrumb ||$content_top ): ?>
@@ -11,7 +11,7 @@
 
               <?php print $content_top; ?>
             </div> <!-- /#content-top -->
-
+      <?php endif; ?>
             <!-- ______________________ CONTENT TOP NODE_______________________ -->
                <?php if ($content_top_node): ?>
             <div id="content-top-node">
@@ -20,7 +20,7 @@
             <?php endif; ?>
             
          <!-- ______________________ COLONNE CENTRALE INNER _______________________ -->
-        <div id="content-inner-vdl">
+        <div id="content-inner">
 		             
 		
            
@@ -64,17 +64,12 @@
         <?php endif; ?>
 
        
-
-   
-    	 <br class="clearBoth"/>
          <!-- ______________________ CONTENU BAS _______________________ -->
 <?php if ($content_bottom): ?>
             <div id="content-bottom">
               <?php print $content_bottom; ?>
             </div><!-- /#content-bottom -->
           <?php endif; ?>
-	 </div> <!-- /contentPage -->
+	
 	  
- <?php $theme_path = drupal_get_path('theme', 'd6_ce_susy2'); include ($theme_path.'/includes/inc_footer.php'); ?>
-         <?php endif; ?>
-     
+ <?php $theme_path = drupal_get_path('theme', 'd6_ce_susy2'); include ($theme_path.'/includes/inc_footer.php'); ?>     
