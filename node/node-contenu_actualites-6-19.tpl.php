@@ -84,5 +84,5 @@
 
   </div> <!-- /node-inner -->
 </div> <!-- /node-->
-<!-- <pre> <?php //print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->
+
 <!--______________FIN NODE TPL CUSTOM________________ -->

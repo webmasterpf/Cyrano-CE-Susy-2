@@ -15,7 +15,9 @@
          .logoHead {
                     img{margin: 0 auto;display: block;}
          }
-         .menuImg {}
+         .menuImg {
+             background: white;
+         }
      }
      .headBas {
         @include clearfix; 

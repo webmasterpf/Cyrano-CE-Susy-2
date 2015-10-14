@@ -1,5 +1,5 @@
 // Regroupe le style pour le contenu des node.tpl custom
-// créer des fichiers _node-TYPE.scss et les importer dans application.scss
+// Concerne toutes les pages qui créer du contenu Europe, Sortie, Partenaires
 
 /*-------------------------------------|
 |       CONTENU CUSTOM NODE.TPL        |
@@ -10,11 +10,25 @@
 //@include breakpoint ($desktop){}
 //@include breakpoint ($tablet){}
 
-h1.vdl_titre{color: $gris-clair;}
-.vdl-content{}
-.vdl-illustration{
+/*######-------- ||| ORDRE FLEXBOX ||| --------######*/
+body .conteneur {
+
+    
+    @include breakpoint ($desktop){
+   
+    }
+}
+
+/*######-------- ||| BORDURES ||| --------######*/
+body .conteneur {
+    @include breakpoint ($desktop){
+        #colonne-2.contenu-vdl{
+            @include border-vert-violet;
+        }
+        }
     
 }
+/*######-------- ||| STYLE ||| --------######*/
 .vdl-passerelle{}
 .vdl-video{
     width: 89%;
@@ -25,4 +39,167 @@ h1.vdl_titre{color: $gris-clair;}
 .vdl-galerie-image .gallery-slides
 {
     img{@include adaptable-img;}
+}
+/*----------------------------------------
+*****~~~~~~ PAGE VDL  ~~~~~~~~~~~~*********
+-----LISTE DES VDL - TEMPLATE VUES - LAYOUT CSS-----
+------------------------------------------*/
+h1.titre_vdl,h1.titre_vdl_sortie{
+      color: $vert;
+    line-height: inherit;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+/*######-------- COLONNE G1 --------######*/
+
+.contenu-vdl{
+     p{
+    padding: em(5px);
+    
+}
+}
+
+#pageVdl_col_G2 .views-exposed-form .views-exposed-widget .form-submit {
+    margin: 0 0 0 3.3em;
+}
+
+.contenu-vdl #table_infos_plus{
+    margin: 1em auto;
+}
+/*######-------- COLONNE G3 --------######*/
+
+/*Table pour la vue filtre dyn sur tid*/
+#table-bloc-vdl-liste{width: 490px;margin: 0 auto;border: 0;border-top: 3px solid #AEC81F;}
+#table-bloc-vdl-liste thead th{
+    border-bottom: 3px solid #AEC81F;
+}
+#table-bloc-vdl-liste tbody{}
+#table-bloc-vdl-liste tr{
+    margin: 3px;
+    
+
+}
+#table-bloc-vdl-liste td{
+    background: white;
+    border: 0;
+    margin: 2px 0;
+    padding: 5px;
+    display: block;
+    border-bottom: 2px solid #950F7E;
+}
+#table-bloc-vdl-liste td:hover{
+    background: #AEC81F;
+}
+#table-bloc-vdl-liste td img{border: 2px solid #91127D;}
+#table-bloc-vdl-liste td img a{}
+#table-bloc-vdl-liste p{}
+#table-bloc-vdl-liste a{
+    color: #950F7E;
+    text-decoration: none;
+    font-weight: bold;
+}
+#table-bloc-vdl-liste a:hover{
+    text-decoration: underline;
+    color: white;
+}
+#table-bloc-vdl-liste span.date-display-single,#table-bloc-vdl-liste .views-field-field-date-evenement-value{
+    text-align: right;
+    /*float: right;*/
+    font-style: italic;
+}
+/*------- LISTE VDL SIMILAIRE ------------*/
+#bloc-autres-vdl {
+    h3{
+        font-family: arista,Trebuchet MS, sans-serif;
+        text-align: center;
+        color: $bleu-turquoise;
+        font-size: large;
+        margin: em(5px) 0;
+    }
+    #liste-vdl-similaires{
+        width: em(200px);
+        margin: 0 auto;
+        background: transparent url(../images/zebra-gros-clair.gif) repeat ;
+        @include arrondis();
+        ul{
+            margin: 0;
+            padding: em(5px) 0;
+           
+        }
+        li{
+            margin: em(3px) 0;
+             list-style: none;
+        }
+    }
+}
+
+
+.element-vdl-similaire {
+    background: $gris-clair;
+    display: block;
+    width: auto;
+    margin: 0 auto;
+
+    a{
+        background: $gris-clair;
+        display: block;
+        color: #4F4F4F;
+        font-size: smaller;
+        padding: 0.1em;
+        &:hover{
+            background: $vert;
+            color: white;
+        }
+    }
+
+    span{
+        display: block;
+        p{
+            font-size: smaller;
+        }
+    }
+}
+
+/*----------------------------------------
+*****~~~~~~ PAGE VDL  ~~~~~~~~~~~~*********
+-----SORTIE-ACTION-EUROPE-PARTENAIRES-----
+------------------------------------------*/
+
+/*---- Galerie images au choix -------*/
+#bloc-galerie-vdl{
+    margin: 0;
+    padding: 0;
+   
+    h3{
+        text-align: center;
+        font-family: arista,Trebuchet MS, sans-serif;
+        font-size: larger;
+        margin: em(5px);
+        color: $violet;
+
+    }
+    a{
+        background:none;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+    .overlay-inner p{
+        color: white;
+    }
+    .vignettes-zoom {
+        a, a:hover{
+            background: 0;
+            text-decoration: none;
+            -moz-box-shadow: none ;
+            -webkit-box-shadow: none ;
+            box-shadow: none ;
+            color: none;
+        }
+        img{
+            border: em(3px) solid $violet;
+           
+        }
+    }
 }

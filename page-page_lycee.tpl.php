@@ -43,7 +43,7 @@
             </div> <!-- /#content-header -->
           <?php endif; ?>
 		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
-                  <div id="middle-content" class="conteneur-flex">
+                  <div id="middle-content">
           
             <?php print $content; ?>
               <?php print $feed_icons; ?>

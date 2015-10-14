@@ -20,6 +20,7 @@ include ($theme_path.'/js/code_stats.php');
            include ($theme_path.'/includes/inc_js_responsivenav.php');
            include ($theme_path.'/js/jquery-lib-online.php');
            include ($theme_path.'/includes/inc_js_masonry.php');
+           //include ($theme_path.'/includes/inc_drupal_debug.php');
            ?>
     
     

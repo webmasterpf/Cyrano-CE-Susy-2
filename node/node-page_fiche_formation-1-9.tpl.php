@@ -2,7 +2,7 @@
 <div class="node <?php print $classes; ?>" id="node-<?php print $node->nid; ?>">
   <div class="node-inner">
 <!--______________COLONNE GAUCHE 1 : pole arts________________ -->
-  <!-- <pre> <?php //print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->
+
 <div id="fiche_col_1">
      <?php if ($title): /*insertion du titre de la page et style differencié*/?>
      <h1 class="titre_pole_arts"><?php print $title; ?></h1>
@@ -63,8 +63,6 @@ include ($theme_path.'/includes/inc_formation_table_fiche.php');
     <?php endif; ?>
 
 </div>
- <!-- retour haut selon resolution de l'ecran -->
-          <a href="#general" id="retour_haut">Haut de page</a>
 
   </div> <!-- /node-inner -->
 </div> <!-- /node-->

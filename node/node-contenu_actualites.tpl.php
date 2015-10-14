@@ -2,7 +2,7 @@
 <div class="node <?php print $classes; ?>" id="node-<?php print $node->nid; ?>">
   <div class="node-inner conteneur-flex">
 <!--______________COLONNE GAUCHE 1________________ -->
-  <!-- <pre> <?php print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->
+
 <div id="colonne-1" class="col1_layoutflex_3_6_3 contenu-actu">
      <?php if ($title): /*insertion du titre de la page et style differencié*/?>
      <h1 class="titre_pl"><?php print $title; ?></h1>

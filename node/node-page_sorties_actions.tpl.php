@@ -79,7 +79,7 @@ include ($theme_path.'/includes/inc_vdl_autres_evenements.php');
     <?php endif; ?>
 
 </div>
-    <!-- <pre> <?php print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->
+
 
   </div> <!-- /node-inner -->
 </div> <!-- /node-->

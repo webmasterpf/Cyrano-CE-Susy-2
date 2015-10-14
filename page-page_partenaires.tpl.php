@@ -44,7 +44,7 @@
           <?php endif; ?>
 		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
           <div id="middle-content-vdl">
-           <!-- <pre> <?php print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->
+
             <?php print $content; ?>
               <?php print $feed_icons; ?>
           </div> <!-- /#content-area -->

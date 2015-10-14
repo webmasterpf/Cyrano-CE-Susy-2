@@ -2,7 +2,7 @@
 <div class="node <?php print $classes; ?>" id="node-<?php print $node->nid; ?>">
   <div class="node-inner conteneur-flex">
 <!--______________COLONNE GAUCHE 1________________ -->
-  <!-- <pre> <?php //print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->
+
 <div id="colonne-1" class="page-actualites col1_layoutflex_3_6_3">
   
   

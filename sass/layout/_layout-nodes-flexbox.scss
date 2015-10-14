@@ -13,16 +13,22 @@ body .conteneur .conteneur-flex{
         clear: both;
     } 
 }
-
+//Pour déplacer les éléments des blocs avec flexbox
+body .conteneur .conteneur-flexchild{
+      //Flexbox initialisation du conteneur
+        @include flexbox;
+       @include flex-flow(column wrap);//besoin d'envelopper le contenu + colonne
+        
+}
 /*//////////////// 1 COLONNE \\\\\\\\\\\\\\\\*/
-body .conteneur .conteneur-flex {
-    .col1_12{
+body .conteneur {
+    .col1_layoutflex_12{
         max-width: container();
     }
 }
 
 /*//////////////// 3 COLONNES \\\\\\\\\\\\\\\\*/
-body .conteneur .conteneur-flex {
+body .conteneur {
   
     .col1_layoutflex_3_6_3{
        @include flex(1 0 span($mobilecol));
@@ -34,7 +40,7 @@ body .conteneur .conteneur-flex {
         }
         @include breakpoint ($desktop){
            @include clearfix; //empeche affichage  page sous IE
-           @include flex(1 0 span(3 of $desktopcol));
+           @include flex(1 0 span(first 3 of $desktopcol));
             
         }
         //Pour orientation paysage
@@ -80,7 +86,7 @@ body .conteneur .conteneur-flex {
     }
 }
 
-body .conteneur .conteneur-flex {
+body .conteneur {
     .col1_layoutflex_2_7_3{
        @include flex($mobilecol);
        
@@ -138,7 +144,7 @@ body .conteneur .conteneur-flex {
 
     }
 }
-body .conteneur .conteneur-flex {
+body .conteneur {
     .col1_layoutflex_2_6_4{
        @include flex($mobilecol);
        @include clearfix;
@@ -227,7 +233,7 @@ body .conteneur {
     }
 }
 /*//////////////// 2 COLONNES ASYMETRIQUES \\\\\\\\\\\\\\\\*/
-body .conteneur .conteneur-flex {
+body .conteneur {
     .col1_layoutflex_4_8{
         @include breakpoint ($tablet){
             @include flex(first 3 of $tabletcol);
@@ -326,7 +332,7 @@ body .conteneur .conteneur-flex {
 }
 
 /*//////////////// 4 COLONNES \\\\\\\\\\\\\\\\*/
-body .conteneur .conteneur-flex {
+body .conteneur {
     .layoutflex_4col_all3{
        @include flex($mobilecol);
         
@@ -355,7 +361,7 @@ body .conteneur .conteneur-flex {
     }
 }
 /*\\\\\\\\\\\ LAYOUT IMBRIQUE (NESTED) - SPECIAUX ///////////*/
-body .conteneur .conteneur-flex {
+body .conteneur {
     @include breakpoint ($desktop){
         
         .layoutflex_2col_items_4_8 {
