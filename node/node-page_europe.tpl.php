@@ -34,7 +34,7 @@ include ($theme_path.'/includes/inc_vdl_table_infos_plus.php');
      /*insertion du contenu du corps de la page*/
       print $node->content['body']['#value'];
       ?>
-     <?php if ($node->field_choix_galerie_vdl[0]['view']): ?>
+     <?php if (!empty($node->field_choix_galerie_vdl[0]['view'])): ?>
         <div id="bloc-galerie-vdl">
            <?php  print $node->field_choix_galerie_vdl[0]['view'] /*Vue actus du lycée*/ ?>
         </div>

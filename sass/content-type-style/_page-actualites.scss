@@ -12,13 +12,13 @@
 
 /*######-------- ||| ORDRE FLEXBOX ||| --------######*/
 body .conteneur .conteneur-flex{
-    #colonne-1{order:2;}
-    #colonne-2{order:1;}
-    #colonne-3{order:3;}
+    #colonne-1.page-actualites{order:2;}
+    #colonne-2.page-actualites{order:1;}
+    #colonne-3.page-actualites{order:3;}
     @include breakpoint ($desktop){
-    #colonne-1{order:1;}
-    #colonne-2{order:2;}
-    #colonne-3{order:3;}
+    #colonne-1.page-actualites{order:1;}
+    #colonne-2.page-actualites{order:2;}
+    #colonne-3.page-actualites{order:3;}
     }
 }
 

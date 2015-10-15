@@ -3,14 +3,18 @@
   <div class="node-inner conteneur-flex">
 <!--______________COLONNE GAUCHE 1________________ -->
 
-<div id="colonne-1" class="page-lycee col1_layout_3_6_3">
+<div id="colonne-1" class="col1_layout_3_6_3 page-lycee">
      <?php if ($title): /*insertion du titre de la page et style differencié*/?>
      <h1 class="titre_pl"><?php print $title; ?></h1>
      
     <?php endif; ?>
-      <br class="clearBoth"/>
+
        <!-- Deco page-->
-    <?php  print $node->field_image_deco_lycee[0]['view'] /*Image deco page lycee*/ ?>
+       <?php
+       if (!empty($node->field_image_deco_lycee[0])):
+           print "<span class=".$node->content['field_image_deco_lycee']['field']['#field_name'].">".$node->field_image_deco_lycee[0]['view'].'</span>'; /* Image deco page lycee */
+       endif;
+       ?>
 <br class="clearBoth"/>
  <?php
  /* inclusion d'une region pour bloc dans colonne de gauche*/
@@ -19,7 +23,7 @@
               ?>
 </div>
 <!--______________COLONNE GAUCHE 2________________ -->
-<div id="colonne-2" class="page-lycee col2_layout_3_6_3">
+<div id="colonne-2" class="col2_layout_3_6_3 page-lycee">
      <?php if ($submitted): ?>
       <span class="submitted"><?php print $submitted; ?></span>
     <?php endif; ?>
@@ -31,7 +35,7 @@
 </div>
 <!--______________COLONNE GAUCHE 3________________ -->
    
-<div id="colonne-3" class="page-lycee col3_layout_3_6_3">
+<div id="colonne-3" class="col3_layout_3_6_3 page-lycee">
      <?php print $picture; ?>
 
    

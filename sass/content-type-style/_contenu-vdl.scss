@@ -13,7 +13,9 @@
 /*######-------- ||| ORDRE FLEXBOX ||| --------######*/
 body .conteneur {
 
-    
+    #colonne-1.partenaires{order:1;}
+    #colonne-2.partenaires{order:2;}
+    #colonne-3.partenaires{order:3;}
     @include breakpoint ($desktop){
    
     }
@@ -45,8 +47,8 @@ body .conteneur {
 -----LISTE DES VDL - TEMPLATE VUES - LAYOUT CSS-----
 ------------------------------------------*/
 h1.titre_vdl,h1.titre_vdl_sortie{
-      color: $vert;
-    line-height: inherit;
+  color: $vert;
+  line-height: inherit;
   width: 80%;
   text-align: center;
   margin: 0 auto;
@@ -54,60 +56,25 @@ h1.titre_vdl,h1.titre_vdl_sortie{
 /*######-------- COLONNE G1 --------######*/
 
 .contenu-vdl{
-     p{
-    padding: em(5px);
-    
-}
-}
-
-#pageVdl_col_G2 .views-exposed-form .views-exposed-widget .form-submit {
-    margin: 0 0 0 3.3em;
-}
-
-.contenu-vdl #table_infos_plus{
+    p{
+        padding: em(5px);
+        a{
+            color: $violet;
+            text-decoration: none;
+            &:hover{
+                color: $vert;
+                text-decoration: underline;
+            }
+        }
+    }
+    #table_infos_plus{
     margin: 1em auto;
 }
-/*######-------- COLONNE G3 --------######*/
+}
 
-/*Table pour la vue filtre dyn sur tid*/
-#table-bloc-vdl-liste{width: 490px;margin: 0 auto;border: 0;border-top: 3px solid #AEC81F;}
-#table-bloc-vdl-liste thead th{
-    border-bottom: 3px solid #AEC81F;
-}
-#table-bloc-vdl-liste tbody{}
-#table-bloc-vdl-liste tr{
-    margin: 3px;
-    
 
-}
-#table-bloc-vdl-liste td{
-    background: white;
-    border: 0;
-    margin: 2px 0;
-    padding: 5px;
-    display: block;
-    border-bottom: 2px solid #950F7E;
-}
-#table-bloc-vdl-liste td:hover{
-    background: #AEC81F;
-}
-#table-bloc-vdl-liste td img{border: 2px solid #91127D;}
-#table-bloc-vdl-liste td img a{}
-#table-bloc-vdl-liste p{}
-#table-bloc-vdl-liste a{
-    color: #950F7E;
-    text-decoration: none;
-    font-weight: bold;
-}
-#table-bloc-vdl-liste a:hover{
-    text-decoration: underline;
-    color: white;
-}
-#table-bloc-vdl-liste span.date-display-single,#table-bloc-vdl-liste .views-field-field-date-evenement-value{
-    text-align: right;
-    /*float: right;*/
-    font-style: italic;
-}
+
+
 /*------- LISTE VDL SIMILAIRE ------------*/
 #bloc-autres-vdl {
     h3{

@@ -132,35 +132,3 @@ width: em(74px);height: em(52px);top: em(26px);left: em(3px);}
 #views-exposed-form-VDL-visuel-block-1 .views-exposed-widget
 {margin: 0 auto;}
 #views-exposed-form-VDL-visuel-block-1 .views-submit-button{}
-/*
-== Bloc filtre exposé de view pour l'année - archives ===
-*/
-/*Avec views 3 nvx noms de classes et ids : 
-views-exposed-form-liste-actu-lycee-block-5
-views-exposed-form-Actualites-liste-globale-block-1
-*/
-#views-exposed-form-liste-actu-lycee-block-5,#views-exposed-form-liste-actu-lycee-block-4,
-#views-exposed-form-liste-actu-lycee-block-3{
-    width: em(160px);
-    margin: em(15px) auto;
-    background: transparent url(../images/zebra-gros-clair.gif) repeat ;
-    border-radius: em(5px);
-    padding: em(5px);
-   
-}
-#views-exposed-form-liste-actu-lycee-block-5 h3,#views-exposed-form-liste-actu-lycee-block-4 h3,
-#views-exposed-form-liste-actu-lycee-block-3 h3{
-   font-family: arista,Trebuchet MS, sans-serif;
-   text-align: center;
-   color: #01ABCF;
-   font-size: 1.5em;
-   margin: 0;
-}
-#views-exposed-form-liste-actu-lycee-block-5 select,#views-exposed-form-liste-actu-lycee-block-4 select,
-#views-exposed-form-liste-actu-lycee-block-3 select{
-    margin: 0 auto;
-}
-#views-exposed-form-liste-actu-lycee-block-5 .date-views-filter-wrapper .form-item,
-#views-exposed-form-liste-actu-lycee-block-4 .date-views-filter-wrapper .form-item,
-#views-exposed-form-liste-actu-lycee-block-3 .date-views-filter-wrapper .form-item
-{margin: 1px auto;width: em(160px);display: block;}

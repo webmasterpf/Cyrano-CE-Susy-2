@@ -2,10 +2,10 @@
 <div class="node <?php print $classes; ?>" id="node-<?php print $node->nid; ?>">
   <div class="node-inner">
 <!--______________COLONNE GAUCHE 1________________ -->
- <div id="pageVdl_col_1">
+<div id="colonne-1" class="col1_layout_3_6_3 contenu-vdl vdl-liste">
      <?php if ($title): /*insertion du titre de la page et style differencié*/?>
      <h1 class="titre_vdl"><?php print $title; ?></h1>
-     <br class="clearBoth"/>
+     
     <?php endif; ?>
               <?php
               /*Region pour bloc dans colonne de G*/
@@ -14,10 +14,13 @@
               ?>
       
        <!-- Deco page-->
-    <?php  print $node->field_image_deco_lycee[0]['view'] /*Image deco page lycee*/ ?>
+    <?php if (!empty($node->field_image_deco_lycee[0])):
+    print $node->field_image_deco_lycee[0]['view']; /*Image deco page lycee*/ 
+    endif; 
+    ?>
 </div>
 <!--______________COLONNE GAUCHE 2________________ -->
-<div id="pageVdl_col_2">
+<div id="colonne-2" class="col2_layout_3_6_3 contenu-vdl vdl-liste">
      <?php if ($submitted): ?>
       <span class="submitted"><?php print $submitted; ?></span>
     <?php endif; ?>
@@ -27,12 +30,11 @@
       print $node->field_vue_liste_vdl[0]['view'];/*Les vdl archives et en cours*/
      /*Pour les termes Sortie : 15 - Europe : 13 - Partenaires : 14 */
       ?>
-     <!-- retour haut selon resolution de l'ecran -->
-          <a href="#general" id="retour_haut">Haut de page</a>
+
 </div>
 <!--______________COLONNE GAUCHE 3________________ -->
    
-<div id="pageVdl_col_3">
+<div id="colonne-3" class="col3_layout_3_6_3 contenu-vdl vdl-liste">
      <?php print $picture; ?>
 
    

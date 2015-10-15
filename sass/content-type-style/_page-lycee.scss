@@ -12,12 +12,16 @@
 
 /*######-------- ||| ORDRE FLEXBOX ||| --------######*/
 body .conteneur .conteneur-flex{
-    #colonne-1.page-lycee h1.titre_pl{order:1;}
-    #colonne-1.page-lycee img{order:4;}
-    #colonne-1.page-lycee {order:4}
+    #colonne-1.page-lycee {order:1;}
+    #colonne-1.page-lycee span{display: none;}
     #colonne-2.page-lycee {order:1;}
     #colonne-3.page-lycee {order:2;}
-    @include breakpoint ($desktop){}
+    @include breakpoint ($desktop){
+    #colonne-1.page-lycee {order:1;}
+    #colonne-1.page-lycee span{display: initial;}
+    #colonne-2.page-lycee {order:2;}
+    #colonne-3.page-lycee {order:3;}
+    }
 }
 
 /*######-------- ||| BORDURES ||| --------######*/

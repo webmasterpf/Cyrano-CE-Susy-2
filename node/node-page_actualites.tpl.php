@@ -3,7 +3,7 @@
   <div class="node-inner conteneur-flex">
 <!--______________COLONNE GAUCHE 1________________ -->
 
-<div id="colonne-1" class="page-actualites col1_layoutflex_3_6_3">
+<div id="colonne-1" class="page-actualites col1_layout_3_6_3">
   
   
  <?php
@@ -16,7 +16,7 @@
        
 </div>
 <!--______________COLONNE GAUCHE 2________________ -->
-<div id="colonne-2" class="page-actualites col2_layoutflex_3_6_3">
+<div id="colonne-2" class="page-actualites col2_layout_3_6_3">
      <?php if ($submitted): ?>
       <span class="submitted"><?php print $submitted; ?></span>
     <?php endif; ?>
@@ -42,7 +42,7 @@
 </div>
 <!--______________COLONNE GAUCHE 3________________ -->
    
-<div id="colonne-3" class="page-actualites col3_layoutflex_3_6_3">
+<div id="colonne-3" class="page-actualites col3_layout_3_6_3">
      <?php print $picture; ?>
 
    

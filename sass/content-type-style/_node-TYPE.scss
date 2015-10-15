@@ -12,9 +12,9 @@
 
 /*######-------- ||| ORDRE FLEXBOX ||| --------######*/
 body .conteneur .conteneur-flex{
-    #colonne-1{order:1;}
-    #colonne-2{order:2;}
-    #colonne-3{order:3;}
+    #colonne-1.CLASS_NAME{order:1;}
+    #colonne-2.CLASS_NAME{order:2;}
+    #colonne-3.CLASS_NAME{order:3;}
     @include breakpoint ($desktop){}
 }
 
