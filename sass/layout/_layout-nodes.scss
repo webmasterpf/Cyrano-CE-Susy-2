@@ -193,6 +193,68 @@ body .conteneur{
 
     }
 }
+//Pour fiche formation CE - 228
+body .conteneur{
+    .col1_layout_2_2_8{
+       @include span($mobilecol);
+       @include clearfix;
+       
+       @include breakpoint ($tablet){
+            @include span(2 of $tabletcol);
+        
+        }
+       
+       @include breakpoint ($desktop){
+           @include span( 2 of $desktopcol);
+        
+        }
+        //Pour orientation paysage
+         @include breakpoint ($tabletlandscape){
+           @include span(3 of $tabletcol-landcsape);
+        
+        }
+    }
+    .col2_layout_2_2_8{
+       @include span($mobilecol);
+        
+        
+        @include clearfix;
+        @include breakpoint ($tablet){
+           @include span(2 of $tabletcol);
+        
+        }
+        @include breakpoint ($desktop){
+          @include span(2 of $desktopcol);
+        
+        }
+        //Pour orientation paysage
+         @include breakpoint ($tabletlandscape){
+           @include span(3 of $tabletcol-landcsape);
+
+        }
+
+    }
+    .col3_layout_2_2_8{//pas de of pour le span car le contexte est définit par le breakpoint
+        @include span($mobilecol);
+       
+
+        @include clearfix;
+        @include breakpoint ($tablet){
+            @include span( 4 of $tabletcol);
+
+        }
+        @include breakpoint ($desktop){
+           @include span(last 8);
+
+        }
+        //Pour orientation paysage
+         @include breakpoint ($tabletlandscape){
+           @include span(last 5 of $tabletcol-landcsape);
+
+        }
+
+    }
+}
 //Pour un 3 colonnes egales : page pole
 body .conteneur{
     .layout_3col_all4{
@@ -313,8 +375,26 @@ body .conteneur{
   .col1_layout_9_3{}
   .col2_layout_9_3{}
   
-  .col1_layout_10_2{}
-  .col2_layout_10_2{}
+  .col1_layout_10_2{
+       @include breakpoint ($tablet){
+          @include span(first 6 of $tabletcol);
+
+      }
+      @include breakpoint ($desktop){
+          @include span(first 10 of $desktopcol);
+
+      }
+  }
+  .col2_layout_10_2{
+       @include breakpoint ($tablet){
+          @include span(last 2 of $tabletcol);
+
+      }
+      @include breakpoint ($desktop){
+          @include span(last 2 of $desktopcol);
+
+      }
+  }
 }
 
 /*//////////////// 4 COLONNES \\\\\\\\\\\\\\\\*/

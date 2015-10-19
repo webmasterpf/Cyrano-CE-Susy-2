@@ -1,7 +1,7 @@
 <!--______________NODE TPL POUR FICHE FORMATION CUSTOM : node-1-2.tpl.php________________ -->
 <div class="node <?php print $classes; ?>" id="node-<?php print $node->nid; ?>">
   <div class="node-inner">
-<!--______________COLONNE GAUCHE 1 : pole tertiaire________________ -->
+<!--______________COLONNE GAUCHE 1 : pole services ________________ -->
 
 <div id="fiche_col_1">
      <?php if ($title): /*insertion du titre de la page et style differencié*/?>
@@ -22,7 +22,7 @@ include ($theme_path.'/includes/inc_field_diapo_slideshow_multimage.php');
               ?>
     </div><!-- /fiche_col_1 -->
 
-<!--______________COLONNE GAUCHE 2 : pole tertiaire________________ -->
+<!--______________COLONNE GAUCHE 2 : pole services ________________ -->
 <div id="fiche_col_2">
         <?php
  //affichage du complement splash clignotant 
@@ -39,7 +39,7 @@ include ($theme_path.'/includes/inc_formation_table_fiche.php');
 ?>
 
 </div>
-<!--______________COLONNE GAUCHE 3 : pole tertiaire________________ -->
+<!--______________COLONNE GAUCHE 3 : pole services ________________ -->
 
 <div id="fiche_col_3">
      <?php print $picture; ?>

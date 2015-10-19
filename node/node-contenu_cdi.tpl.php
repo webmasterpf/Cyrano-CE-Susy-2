@@ -1,13 +1,13 @@
 <!--______________NODE TPL POUR TdC PAGE CONTENU CDI CUSTOM________________ -->
 <div class="node <?php print $classes; ?>" id="node-<?php print $node->nid; ?>">
-  <div class="node-inner">
+  <div class="node-inner conteneur-flex">
 <!--______________COLONNE GAUCHE 1________________ -->
 
-<div id="pageLycee_col_1">
+<div id="colonne-1" class="col1_layout_3_6_3 page-lycee">
      <?php if ($title): /*insertion du titre de la page et style differencié*/?>
      <h1 class="titre_pl"><?php print $title; ?></h1>
      <?php endif; ?>
-   <br class="clearBoth"/>
+   
 
                   <?php
  /* inclusion d'une region pour bloc dans colonne de gauche*/
@@ -19,7 +19,7 @@
        
 </div>
 <!--______________COLONNE GAUCHE 2________________ -->
-<div id="pageLycee_col_2">
+<div id="colonne-2" class="col2_layout_3_6_3 page-lycee">
      <?php if ($submitted): ?>
       <span class="submitted"><?php print $submitted; ?></span>
     <?php endif; ?>
@@ -62,7 +62,7 @@
 </div>
 <!--______________COLONNE GAUCHE 3________________ -->
    
-<div id="pageLycee_col_3">
+<div id="colonne-3" class="col3_layout_3_6_3 page-lycee">
      <?php print $picture; ?>
 
    

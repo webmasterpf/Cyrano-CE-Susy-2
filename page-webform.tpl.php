@@ -5,8 +5,7 @@ include ($theme_path.'/includes/inc_header.php');
  <!-- ______________________ LAYOUT WEBFORM GENERIK OVERRIDE PAR NODE.TPL CUSTOM _______________________ -->
   <!-- ______________________ CONTENU _______________________ -->
   
-      <div class="content-global">
-      
+       
           <!-- ______________________ CONTENT TOP _______________________ -->
       <?php if ($breadcrumb ||$content_top ): ?>
             <div id="content-top">
@@ -14,11 +13,16 @@ include ($theme_path.'/includes/inc_header.php');
 
               <?php print $content_top; ?>
             </div> <!-- /#content-top -->
-	  
-      
+	         <?php endif; ?>
+<!-- ______________________ CONTENT TOP NODE_______________________ -->
+               <?php if ($content_top_node): ?>
+            <div id="content-top-node">
+	              <?php print $content_top_node; ?>
+            </div> <!-- /#content-top-node -->
+            <?php endif; ?>      
 
         
-        <div id="content-inner-webform">
+        <div id="content-inner">
 		             
 		
            
@@ -41,7 +45,7 @@ include ($theme_path.'/includes/inc_header.php');
             </div> <!-- /#content-header -->
           <?php endif; ?>
 		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
-          <div id="middle-content-webform">
+                  <div id="middle-content">
           
             <?php print $content; ?>
               <?php print $feed_icons; ?>
@@ -64,16 +68,12 @@ include ($theme_path.'/includes/inc_header.php');
        
 		
    
-    	 <br clear="all"/>
          <!-- ______________________ CONTENU BAS _______________________ -->
 <?php if ($content_bottom): ?>
             <div id="content-bottom">
               <?php print $content_bottom; ?>
             </div><!-- /#content-bottom -->
           <?php endif; ?>
-	 </div> <!-- /content-global -->
-  <?php
-global $theme_path;
-include ($theme_path.'/includes/inc_footer.php');
-?>
-        <?php endif; ?>
+	
+	  
+	  <?php $theme_path = drupal_get_path('theme', 'd6_ce_susy2'); include ($theme_path.'/includes/inc_footer.php'); ?>

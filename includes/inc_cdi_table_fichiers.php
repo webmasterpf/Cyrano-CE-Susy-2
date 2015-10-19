@@ -3,7 +3,7 @@
       * le premier array sert pour le header de la table, ensuite il s'agit de la table simple ($rows)
       * http://www.group42.ca/theming_101_%E2%80%93_theme_table_function
       */
- if ($node->field_fichiers_cdi[0]['view']): ?>
+ if (!empty($node->field_fichiers_cdi[0]['view'])): ?>
         <div id="docs-utiles-cdi">
             <h3>Documents utiles</h3>
            <?php
@@ -27,4 +27,3 @@ print $output;
 
 ?>        </div>
            <?php endif;?>
-<br class="clearBoth"/>

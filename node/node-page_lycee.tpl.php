@@ -12,10 +12,12 @@
        <!-- Deco page-->
        <?php
        if (!empty($node->field_image_deco_lycee[0])):
-           print "<span class=".$node->content['field_image_deco_lycee']['field']['#field_name'].">".$node->field_image_deco_lycee[0]['view'].'</span>'; /* Image deco page lycee */
+           print "<span class=".$node->content['field_image_deco_lycee']['field']['#field_name'].">".$node->field_image_deco_lycee[0]['view'].'</span>
+               <br class="clearBoth"/>'; /* Image deco page lycee */
+       
        endif;
-       ?>
-<br class="clearBoth"/>
+              ?>
+
  <?php
  /* inclusion d'une region pour bloc dans colonne de gauche*/
               global $theme_path;
@@ -48,8 +50,9 @@ global $theme_path;
 include ($theme_path.'/includes/inc_lycee_docs_joints.php');
 ?>
         
-        <br class="clearBoth"/>
+      
            <?php if ($node->field_vue_actus_lycee[0]['view']): ?>
+          <br class="clearBoth"/>
         <div id="bloc-actu-lycee">
            <?php  print $node->field_vue_actus_lycee[0]['view'] /*Vue actus du lycée*/ ?>
         </div>

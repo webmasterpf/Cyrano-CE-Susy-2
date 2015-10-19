@@ -106,35 +106,53 @@ h3.block-title{
 #liste_formation_pole_services, #liste_formation_pole_tertiaire, #liste_formation_pole_arts{
     background: white url('../images/bg_coin_vierge.jpg') no-repeat top left;
     margin: 0 auto;
-    padding: 20px 0;
-    width: em(980px);
-}
-#liste_formation_pole_services h3,#liste_formation_pole_tertiaire h3, #liste_formation_pole_arts h3 {
-    color: #AEC821;
-    margin: 0 auto;
-    text-align: center;
-}
-#liste_formation_pole_services .view, #liste_formation_pole_tertiaire view, #liste_formation_pole_arts view{
-    width: 99%;
-}
-#liste_formation_pole_services .view-content, #liste_formation_pole_tertiaire view-content, #liste_formation_pole_arts view-content{
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px 0;
-}
+    padding: em(20px) 0;
+    width: auto;
+    h3 {
+        color: $vert;
+        margin: 0 auto;
+        text-align: center;
+    }
+    view{
+        width: 99%;
+    }
+    view-content{
+        width: 80%;
+        margin: 0 auto;
+    padding: em(20px) 0;
+    }
+    table{
+        margin: 0 auto;
+        text-align: center;
+    }
+    tbody{
+        margin: 0 auto;
+        padding: 0;
+    }
+    tr{
+        padding: 0;
+    }
+    td{
+        padding: 0;
+    }
+.view-content h3{
+    color: $violet;
+    text-decoration: none;
+    padding: em(2px);
 
-#liste_formation_pole_services table,#liste_formation_pole_tertiaire table, #liste_formation_pole_arts table{
-    margin: 0 auto;
-    text-align: center;
 }
-#liste_formation_pole_services tbody, #liste_formation_pole_tertiaire tbody, #liste_formation_pole_arts tbody{
-    margin: 0 auto;
-    padding: 0;
-}
-#liste_formation_pole_services table tr, #liste_formation_pole_tertiaire tr, #liste_formation_pole_arts tr{
-    padding: 0;
-}
-#liste_formation_pole_services table td, #liste_formation_pole_tertiaire td, #liste_formation_pole_arts td{
-    padding: 0;
-}
+.views-field-title {
+   font-size: medium;
 
+}
+ .views-field-title a{
+    color: $vert;
+    text-decoration: none;
+    padding: 2px;
+
+}
+ .views-field-title a:hover{
+    background: $violet;
+    color: white;
+}
+}

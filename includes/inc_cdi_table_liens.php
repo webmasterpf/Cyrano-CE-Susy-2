@@ -19,4 +19,3 @@ print $output;
 
         </div>
            <?php endif;?>
-<br class="clearBoth"/>
