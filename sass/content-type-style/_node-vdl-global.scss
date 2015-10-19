@@ -12,7 +12,8 @@
 /*######-------- ||| ORDRE FLEXBOX ||| --------######*/
 
 /*######-------- ||| LAYOUT SUSY GALLERY ||| --------######*/
-//avec views style liste
+//avec views style liste - ajouter la classe dans 
+// le display style
 .table-vdl-global .mur-image .liste-image-ul .liste-image-item{
     @include gallery(2 of $mobilecol);
     @include breakpoint ($desktop){
@@ -30,6 +31,7 @@
     
 }
 /*######-------- ||| LAYOUT SUSY MASONRY ||| --------######*/
+//ATTENTION: le display style n'accepte que les - , pas les _ !!!
 .table-vdl-global {
     .masonry__gutter {
         width: gutter();
@@ -37,7 +39,7 @@
     .masonry__column {
         width: span(3); 
     }
-    .masonry__item {
+    .masonry__item,.masonry--item {
         width: span(3);
         margin-top: gutter();
     }
