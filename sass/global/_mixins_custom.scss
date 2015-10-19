@@ -31,6 +31,25 @@
   clip: rect(0, 0, 0, 0);
   position: absolute;
 }
+@mixin blinkEffect($opaciteDepart:1.0,$opaciteMedium:0.0,$opaciteFinal:1.0){
+    @-moz-keyframes blinker {  
+    0% { opacity: $opaciteDepart; }
+    50% { opacity: $opaciteMedium; }
+    100% { opacity: $opaciteFinal; }
+}
+
+@-webkit-keyframes blinker {  
+    0% { opacity: $opaciteDepart; }
+    50% { opacity: $opaciteMedium; }
+    100% { opacity: $opaciteFinal; }
+}
+
+@keyframes blinker {  
+   0% { opacity: $opaciteDepart; }
+    50% { opacity: $opaciteMedium; }
+    100% { opacity: $opaciteFinal; }
+}
+}
 /*------- EFFETS VISUELS GENERIQUES--------------*/
 @mixin cadre-ombre($epaisseur-cadre:0.5em,$couleur-cadre:#fff){
      border: $epaisseur-cadre solid $couleur-cadre;

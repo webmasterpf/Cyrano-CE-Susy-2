@@ -3,7 +3,7 @@
   <div class="node-inner">
 <!--______________COLONNE GAUCHE 1 : pole services ________________ -->
 
-<div id="fiche_col_1">
+<div id="colonne-1" class="col1_layout_3_2_7 fiche-formation">
      <?php if ($title): /*insertion du titre de la page et style differencié*/?>
      <h1 class="titre_pole_services"><?php print $title; ?></h1>
 
@@ -23,7 +23,7 @@ include ($theme_path.'/includes/inc_field_diapo_slideshow_multimage.php');
     </div><!-- /fiche_col_1 -->
 
 <!--______________COLONNE GAUCHE 2 : pole services ________________ -->
-<div id="fiche_col_2">
+<div id="colonne-2" class="col2_layout_3_2_7 fiche-formation">
         <?php
  //affichage du complement splash clignotant 
    if ($node->field_info[0]['view']): ?>
@@ -41,7 +41,7 @@ include ($theme_path.'/includes/inc_formation_table_fiche.php');
 </div>
 <!--______________COLONNE GAUCHE 3 : pole services ________________ -->
 
-<div id="fiche_col_3">
+<div id="colonne-3" class="col3_layout_3_2_7 fiche-formation">
      <?php print $picture; ?>
 
     <?php if ($submitted): ?>
@@ -68,4 +68,3 @@ include ($theme_path.'/includes/inc_formation_table_fiche.php');
   </div> <!-- /node-inner -->
 </div> <!-- /node-->
 <!--______________FIN NODE TPL CUSTOM________________ -->
- <?php print_r();?>

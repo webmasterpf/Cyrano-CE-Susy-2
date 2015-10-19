@@ -3,7 +3,7 @@
   <div class="node-inner">
 <!--______________COLONNE GAUCHE 1________________ -->
 
-<div id="fiche_col_1">
+<div id="colonne-1" class="col1_layout_3_2_7 fiche-formation">
      <?php if ($title): /*insertion du titre de la page et style differencié*/?>
      <h1 class="titre_fiche"><?php print $title; ?></h1>
      
@@ -22,7 +22,7 @@ include ($theme_path.'/includes/inc_field_diapo_fiche_flash.php');
               ?>
 </div>
 <!--______________COLONNE GAUCHE 2________________ -->
-<div id="fiche_col_2">
+<div id="colonne-2" class="col2_layout_3_2_7 fiche-formation">
     <?php
 global $theme_path;
 include ($theme_path.'/includes/inc_formation_table_fiche.php');
@@ -31,7 +31,7 @@ include ($theme_path.'/includes/inc_formation_table_fiche.php');
 </div>
 <!--______________COLONNE GAUCHE 3________________ -->
    
-<div id="fiche_col_3">
+<div id="colonne-3" class="col3_layout_3_2_7 fiche-formation">
      <?php print $picture; ?>
 
     <?php if ($submitted): ?>

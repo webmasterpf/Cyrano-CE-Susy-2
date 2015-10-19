@@ -2,20 +2,25 @@
  <!-- ______________________ LAYOUT PAGE FICHE FORMATION _______________________ -->
   <!-- ______________________ CONTENU _______________________ -->
   
-  
+     
       
           <!-- ______________________ CONTENT TOP _______________________ -->
       <?php if ($breadcrumb ||$content_top ): ?>
             <div id="content-top">
-	<span id="ariane"> <?php print $breadcrumb; ?></span>
+	<span class="ariane"> <?php print $breadcrumb; ?></span>
 
               <?php print $content_top; ?>
             </div> <!-- /#content-top -->
-	  
-      
-     
+	         <?php endif; ?>
+<!-- ______________________ CONTENT TOP NODE_______________________ -->
+               <?php if ($content_top_node): ?>
+            <div id="content-top-node">
+	              <?php print $content_top_node; ?>
+            </div> <!-- /#content-top-node -->
+            <?php endif; ?>      
+
         
-        <div id="content-inner-ficheFormation" class="inner column center">
+        <div id="content-inner">
 		             
 		
            
@@ -38,30 +43,18 @@
             </div> <!-- /#content-header -->
           <?php endif; ?>
 		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
-          <div id="middle-content-ficheFormation">
-               
+                  <div id="middle-content">
+          
             <?php print $content; ?>
-<!-- <?php print_r($node->taxonomy)?> -->
- <?php if ($terms): ?>
-      <div id="taxonomy">
-<?php print Cyrano_PF_print_terms($node->taxonomy);?>
-      </div>
-<?php endif;?>
-
               <?php print $feed_icons; ?>
           </div> <!-- /#content-area -->
 
         
 
-         
+          
+          
       </div> <!-- /content-inner /content -->
-  
-  <!-- ______________________ CONTENU BAS _______________________ -->
-<?php if ($content_bottom): ?>
-            <div id="content-bottom">
-              <?php print $content_bottom; ?>
-            </div><!-- /#content-bottom -->
-          <?php endif; ?>
+
             
         <?php if (!empty($primary_links) or !empty($secondary_links)): ?>
           <div id="navigation" class="menu <?php if (!empty($primary_links)) { print "with-main-menu"; } if (!empty($secondary_links)) { print " with-sub-menu"; } ?>">
@@ -69,9 +62,14 @@
             <?php if (!empty($secondary_links)){ print theme('links', $secondary_links, array('id' => 'secondary', 'class' => 'links sub-menu')); } ?>
           </div> <!-- /navigation -->
         <?php endif; ?>
-
-       
+	
+   
+         <!-- ______________________ CONTENU BAS _______________________ -->
+<?php if ($content_bottom): ?>
+            <div id="content-bottom">
+              <?php print $content_bottom; ?>
+            </div><!-- /#content-bottom -->
+          <?php endif; ?>
+	
 	  
-<?php global $theme_path; include ($theme_path.'/includes/inc_footer.php'); ?>
-         <?php endif; ?>
-     
+	  <?php $theme_path = drupal_get_path('theme', 'd6_ce_susy2'); include ($theme_path.'/includes/inc_footer.php'); ?>     

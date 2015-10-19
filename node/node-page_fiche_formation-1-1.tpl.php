@@ -1,9 +1,9 @@
 <!--______________NODE TPL POUR FICHE FORMATION CUSTOM : node-1-1.tpl.php________________ -->
 <div class="node <?php print $classes; ?>" id="node-<?php print $node->nid; ?>">
-  <div class="node-inner">
+  <div class="node-inner conteneur-flex">
 <!--______________COLONNE GAUCHE 1 : pole tertiaire________________ -->
   
-<div id="fiche_col_1">
+<div id="colonne-1" class="col1_layout_3_2_7 fiche-formation">
      <?php if ($title): /*insertion du titre de la page et style differencié*/?>
      <h1 class="titre_pole_tertiaire"><?php print $title; ?></h1>
 
@@ -23,7 +23,7 @@ include ($theme_path.'/includes/inc_field_diapo_slideshow_multimage.php');
               ?>
 </div><!-- fin colonne G1-->
 <!--______________COLONNE GAUCHE 2 : pole tertiaire ________________ -->
-<div id="fiche_col_2">
+<div id="colonne-2" class="col2_layout_3_2_7 fiche-formation">
     
      <?php
  //affichage du complement splash clignotant 
@@ -43,7 +43,7 @@ include ($theme_path.'/includes/inc_formation_table_fiche.php');
 </div>
 <!--______________COLONNE GAUCHE 3 : pole tertiaire ________________ -->
 
-<div id="fiche_col_3">
+<div id="colonne-3" class="col3_layout_3_2_7 fiche-formation">
      <?php print $picture; ?>
 
     <?php if ($submitted): ?>
@@ -66,8 +66,7 @@ include ($theme_path.'/includes/inc_formation_table_fiche.php');
     <?php endif; ?>
 
 </div>
- <!-- retour haut selon resolution de l'ecran -->
-          <a href="#general" id="retour_haut">Haut de page</a>
+
 
   </div> <!-- /node-inner -->
 </div> <!-- /node-->

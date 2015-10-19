@@ -195,7 +195,7 @@ body .conteneur{
 }
 //Pour fiche formation CE - 228
 body .conteneur{
-    .col1_layout_2_2_8{
+    .col1_layout_3_2_7{
        @include span($mobilecol);
        @include clearfix;
        
@@ -205,7 +205,7 @@ body .conteneur{
         }
        
        @include breakpoint ($desktop){
-           @include span( 2 of $desktopcol);
+           @include span( 3 of $desktopcol);
         
         }
         //Pour orientation paysage
@@ -214,7 +214,7 @@ body .conteneur{
         
         }
     }
-    .col2_layout_2_2_8{
+    .col2_layout_3_2_7{
        @include span($mobilecol);
         
         
@@ -234,7 +234,7 @@ body .conteneur{
         }
 
     }
-    .col3_layout_2_2_8{//pas de of pour le span car le contexte est définit par le breakpoint
+    .col3_layout_3_2_7{//pas de of pour le span car le contexte est définit par le breakpoint
         @include span($mobilecol);
        
 
@@ -244,7 +244,8 @@ body .conteneur{
 
         }
         @include breakpoint ($desktop){
-           @include span(last 8);
+           @include span(7 of $desktopcol);
+           @include gutter(0);
 
         }
         //Pour orientation paysage
