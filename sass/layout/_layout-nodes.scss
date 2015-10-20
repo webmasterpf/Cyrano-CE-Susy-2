@@ -265,8 +265,8 @@ body .conteneur{
         
         }
         @include breakpoint ($desktop){
-           @include span(4 of $desktopcol (gutter-override:.5em));
-        
+           @include span(4 of $desktopcol);
+        @include gutter(0.5em);
         }
     }
     .layout_3col_all4last{
@@ -275,7 +275,8 @@ body .conteneur{
         
         }
         @include breakpoint ($desktop){
-           @include span(4 of $desktopcol (gutter-override:.5em));//sinon colonne trop large, 
+           @include span(4 of $desktopcol);//sinon colonne trop large, 
+           @include gutter(0.5em);
            //possible aussi avec no-gutters
         
         }
