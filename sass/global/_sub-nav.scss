@@ -2,7 +2,7 @@
 // Utilisation de selectnav.js pour avoir un menu responsive
 // http://lukaszfiszer.github.io/selectnav.js/
 // https://github.com/lukaszfiszer/selectnav.js
-
+// Utilisation de flexbox pour ordre des items
 aside.navStatic{
     .horizontal-nav { display: none; }
     .js #subnav { display: none; }
@@ -12,17 +12,21 @@ aside.navStatic{
         .selectnav { display: none; }
         .horizontal-nav { display:block; }
         ul.horizontal-nav {        
+            //Flexbox initialisation du conteneur
+        @include display-flex;//Compass Mixin
+       @include flex-flow(row wrap);
+       
             @include horizontal-list-container;//Compass Mixin
             @include break;
             padding-top: 1em;
             li {
-               @include horizontal-list-item;//Compass Mixin
+              @include flex(1 0 auto);
+                @include horizontal-list-item;//Compass Mixin
                
                 padding: 0;
                 text-align:center;
-                font-size: 1.5em;
                 list-style: none;
-                float: right;
+               // float: right;//inverse ordre des items,pas besoin avec flexbox
 
                 &:last-child {
               //  @include last;
@@ -37,7 +41,7 @@ aside.navStatic{
                     color: $gris-anthracite;
                     text-decoration: none;
                     display: block;
-                    @include adjust-font-size-to(16px);
+                     font-size: 1.5em;
                     &:hover {
                         color: $orange-fonce;
                     }

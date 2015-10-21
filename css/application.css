@@ -826,6 +826,10 @@ aside.navStatic select {
   }
   /* line 14, ../sass/global/_sub-nav.scss */
   aside.navStatic ul.horizontal-nav {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
     margin: 0;
     padding: 0;
     border: 0;
@@ -834,8 +838,10 @@ aside.navStatic select {
     clear: both;
     padding-top: 1em;
   }
-  /* line 18, ../sass/global/_sub-nav.scss */
+  /* line 22, ../sass/global/_sub-nav.scss */
   aside.navStatic ul.horizontal-nav li {
+    -webkit-flex: 1 0 auto;
+    flex: 1 0 auto;
     list-style-image: none;
     list-style-type: none;
     margin-left: 0;
@@ -845,9 +851,7 @@ aside.navStatic select {
     padding-right: 4px;
     padding: 0;
     text-align: center;
-    font-size: 1.5em;
     list-style: none;
-    float: right;
   }
   /* line 49, ../../../../../../../../home/webmaster/.rvm/gems/ruby-1.9.3-p484/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
   aside.navStatic ul.horizontal-nav li:first-child {
@@ -861,7 +865,7 @@ aside.navStatic select {
   aside.navStatic ul.horizontal-nav li.last {
     padding-right: 0;
   }
-  /* line 32, ../sass/global/_sub-nav.scss */
+  /* line 37, ../sass/global/_sub-nav.scss */
   aside.navStatic ul.horizontal-nav li a {
     margin: 0.25em;
     border: 0;
@@ -869,25 +873,24 @@ aside.navStatic select {
     color: #606070;
     text-decoration: none;
     display: block;
-    font-size: 1em;
-    line-height: 1.5em;
+    font-size: 1.5em;
   }
-  /* line 41, ../sass/global/_sub-nav.scss */
+  /* line 46, ../sass/global/_sub-nav.scss */
   aside.navStatic ul.horizontal-nav li a:hover {
     color: #DE603A;
   }
-  /* line 44, ../sass/global/_sub-nav.scss */
+  /* line 49, ../sass/global/_sub-nav.scss */
   aside.navStatic ul.horizontal-nav li a img {
     max-width: 100%;
     margin: 0;
   }
 }
 
-/* line 58, ../sass/global/_sub-nav.scss */
+/* line 63, ../sass/global/_sub-nav.scss */
 aside.navPicto table {
   display: table-row;
 }
-/* line 61, ../sass/global/_sub-nav.scss */
+/* line 66, ../sass/global/_sub-nav.scss */
 aside.navPicto a {
   float: left;
   margin: 0 0 0 0.5em;
@@ -900,7 +903,7 @@ aside.navPicto a {
   font-size: 1em;
   line-height: 1.5em;
 }
-/* line 71, ../sass/global/_sub-nav.scss */
+/* line 76, ../sass/global/_sub-nav.scss */
 aside.navPicto a:hover {
   color: #DE603A;
 }
