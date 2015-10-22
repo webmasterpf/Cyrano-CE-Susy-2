@@ -476,3 +476,12 @@ body .conteneur{
         }
     }
 }
+.ariane .breadcrumb {
+    
+    @include breakpoint ($desktop){
+     
+        background: chocolate;//supprimer en PROD
+      
+    }
+
+}

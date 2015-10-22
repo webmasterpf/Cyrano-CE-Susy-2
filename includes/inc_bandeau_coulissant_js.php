@@ -5,6 +5,6 @@
     
 </div>
         <a href="#" class="btn btn-primary" data-action="toggle" data-side="top">
-        <span>Les sites de nos lycées</span>
+        <span>Les lycées de Provence Formation</span>
     </a>
     <?php endif; ?>

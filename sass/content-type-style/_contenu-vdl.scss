@@ -13,11 +13,13 @@
 /*######-------- ||| ORDRE FLEXBOX ||| --------######*/
 body .conteneur {
 
-    #colonne-1.partenaires{order:1;}
-    #colonne-2.partenaires{order:2;}
-    #colonne-3.partenaires{order:3;}
+    #colonne-1.partenaires,#colonne-2.contenu-vdl{order:1;}
+    #colonne-2.partenaires,#colonne-1.contenu-vdl{order:2;}
+    #colonne-3.partenaires,#colonne-3.contenu-vdl{order:3;}
     @include breakpoint ($desktop){
-   
+    #colonne-1.contenu-vdl{order:1;}
+    #colonne-2.contenu-vdl{order:2;}
+    #colonne-3.contenu-vdl{order:3;}
     }
 }
 

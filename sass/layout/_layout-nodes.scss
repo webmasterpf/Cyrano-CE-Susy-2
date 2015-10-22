@@ -44,7 +44,7 @@ body .conteneur{
         
         }
         @include breakpoint ($desktop){
-          @include span(6 of $desktopcol no-gutters);//pour que la col3 ne sorte pas
+          @include span(6 of $desktopcol);
         
         }
         //Pour orientation paysage
@@ -64,7 +64,7 @@ body .conteneur{
         }
         @include breakpoint ($desktop){
            @include span(3 of $desktopcol);
-            
+            @include gutters(0.5em);
         }
         //Pour orientation paysage
          @include breakpoint ($tabletlandscape){
@@ -193,9 +193,9 @@ body .conteneur{
 
     }
 }
-//Pour fiche formation CE - 228
+//Pour fiche formation CE - 3 colonnes
 body .conteneur{
-    .col1_layout_3_2_7{
+    .col1_layout_3_3_6{
        @include span($mobilecol);
        @include clearfix;
        
@@ -214,7 +214,7 @@ body .conteneur{
         
         }
     }
-    .col2_layout_3_2_7{
+    .col2_layout_3_3_6{
        @include span($mobilecol);
         
         
@@ -224,7 +224,7 @@ body .conteneur{
         
         }
         @include breakpoint ($desktop){
-          @include span(2 of $desktopcol);
+          @include span(3 of $desktopcol);
         
         }
         //Pour orientation paysage
@@ -234,7 +234,7 @@ body .conteneur{
         }
 
     }
-    .col3_layout_3_2_7{//pas de of pour le span car le contexte est définit par le breakpoint
+    .col3_layout_3_3_6{//pas de of pour le span car le contexte est définit par le breakpoint
         @include span($mobilecol);
        
 
@@ -244,7 +244,7 @@ body .conteneur{
 
         }
         @include breakpoint ($desktop){
-           @include span(7 of $desktopcol);
+           @include span(6 of $desktopcol);
            @include gutter(0);
 
         }

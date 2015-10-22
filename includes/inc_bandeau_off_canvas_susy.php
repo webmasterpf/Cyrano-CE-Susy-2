@@ -11,6 +11,6 @@
             <?php print $bandeau1; ?>
         </div>
             </div>
-        <a href="#" class="menu-toggle">Les sites des lycées</a>
+        <a href="#" class="menu-toggle">Les lycées de Provence Formation</a>
 
     <?php endif; ?>

@@ -654,7 +654,7 @@ html {
 /* line 31, ../sass/global/_typos.scss */
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   padding: 0.3em;
-  margin: 0;
+  margin: 0.3em 0 0 0;
   color: #000;
 }
 
@@ -725,9 +725,11 @@ h6, .h6 {
 /* line 113, ../sass/global/_typos.scss */
 .conteneur #footer p {
   margin-bottom: 1.5em;
+  font-size: small;
+  padding: 0.3em;
 }
 
-/* line 117, ../sass/global/_typos.scss */
+/* line 120, ../sass/global/_typos.scss */
 .HPBasGauche p, .HPBasDroit p {
   font-size: 0.75em;
   line-height: 2em;
@@ -865,32 +867,32 @@ aside.navStatic select {
   aside.navStatic ul.horizontal-nav li.last {
     padding-right: 0;
   }
-  /* line 37, ../sass/global/_sub-nav.scss */
+  /* line 36, ../sass/global/_sub-nav.scss */
   aside.navStatic ul.horizontal-nav li a {
     margin: 0.25em;
     border: 0;
     font-family: "Arista", Trebuchet MS, sans-serif;
-    color: #606070;
+    color: #911381;
     text-decoration: none;
     display: block;
-    font-size: 1.5em;
+    font-size: 1.8em;
   }
-  /* line 46, ../sass/global/_sub-nav.scss */
+  /* line 45, ../sass/global/_sub-nav.scss */
   aside.navStatic ul.horizontal-nav li a:hover {
-    color: #DE603A;
+    color: #ADC91F;
   }
-  /* line 49, ../sass/global/_sub-nav.scss */
+  /* line 48, ../sass/global/_sub-nav.scss */
   aside.navStatic ul.horizontal-nav li a img {
     max-width: 100%;
     margin: 0;
   }
 }
 
-/* line 63, ../sass/global/_sub-nav.scss */
+/* line 62, ../sass/global/_sub-nav.scss */
 aside.navPicto table {
   display: table-row;
 }
-/* line 66, ../sass/global/_sub-nav.scss */
+/* line 65, ../sass/global/_sub-nav.scss */
 aside.navPicto a {
   float: left;
   margin: 0 0 0 0.5em;
@@ -903,7 +905,7 @@ aside.navPicto a {
   font-size: 1em;
   line-height: 1.5em;
 }
-/* line 76, ../sass/global/_sub-nav.scss */
+/* line 75, ../sass/global/_sub-nav.scss */
 aside.navPicto a:hover {
   color: #DE603A;
 }
@@ -1107,6 +1109,7 @@ body .conteneur .col2_layout_3_6_3 {
   body .conteneur .col2_layout_3_6_3 {
     width: 49.17763%;
     float: left;
+    margin-right: 1.64474%;
   }
 }
 @media (min-height: 767px) and (max-width: 1024px) and (orientation: landscape) {
@@ -1140,6 +1143,7 @@ body .conteneur .col3_layout_3_6_3 {
     width: 23.76645%;
     float: left;
     margin-right: 1.64474%;
+    margin-right: 0.5em;
   }
 }
 @media (min-height: 767px) and (max-width: 1024px) and (orientation: landscape) {
@@ -3868,7 +3872,7 @@ body .conteneur .HPDroite2 aside.PartieDroite2 h3 {
     height: 3.75em;
     bottom: 4.6875em;
     left: 0.75em;
-    width: 95%;
+    width: 93.5%;
     position: relative;
     z-index: 15;
     opacity: 0.6;
@@ -5870,603 +5874,6 @@ h1.titre_pole_arts a {
   text-decoration: none;
   color: #ADC91F;
   padding: 0 0 0 40px;
-}
-
-/*
-Pour le dev, code visuel sur les blocs selon le breakpoint
-à commenter ou supprimer pour la production
-
-*/
-/* line 15, ../sass/layout/_layout-debug-colour.scss */
-body .conteneur .content-inner {
-  background-color: #F29400;
-}
-/* line 18, ../sass/layout/_layout-debug-colour.scss */
-body .conteneur .content-inner .content-top {
-  background-color: chocolate;
-}
-/* line 22, ../sass/layout/_layout-debug-colour.scss */
-body .conteneur .middle-content {
-  background-color: deeppink;
-}
-/* line 24, ../sass/layout/_layout-debug-colour.scss */
-body .conteneur #footer {
-  background-color: firebrick;
-}
-/* line 25, ../sass/layout/_layout-debug-colour.scss */
-body .conteneur #footer aside {
-  background-color: teal;
-}
-@media (min-width: 800px) and (max-width: 989px) {
-  /* line 33, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur #header {
-    background-color: sienna;
-  }
-  /* line 38, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .content-top {
-    background-color: mistyrose;
-  }
-  /* line 40, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .middle-content {
-    background-color: #C8D215;
-  }
-  /* line 46, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur #footer {
-    background-color: peachpuff;
-  }
-  /* line 47, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur #footer aside {
-    background: sandybrown;
-  }
-}
-@media (min-width: 990px) {
-  /* line 57, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur #header {
-    background: seashell;
-  }
-  /* line 64, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .content-inner {
-    background-color: palevioletred;
-  }
-  /* line 67, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .middle-content {
-    background-color: yellow;
-  }
-  /* line 71, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .content-top {
-    background-color: yellowgreen;
-  }
-  /* line 74, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur #left-content {
-    background: tomato;
-  }
-  /* line 75, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur #right-content {
-    background: violet;
-  }
-  /* line 76, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur #footer {
-    background-color: palegreen;
-  }
-  /* line 77, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur #footer aside {
-    background: yellowgreen;
-  }
-}
-@media (min-height: 767px) and (max-width: 1024px) and (orientation: landscape) {
-  /* line 85, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur #header {
-    background: palevioletred;
-  }
-  /* line 92, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .content-inner {
-    background-color: yellow;
-  }
-  /* line 95, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .middle-content {
-    background-color: sandybrown;
-  }
-  /* line 99, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .content-top {
-    background-color: yellowgreen;
-  }
-  /* line 102, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur #left-content {
-    background: tomato;
-  }
-  /* line 103, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur #right-content {
-    background: violet;
-  }
-  /* line 104, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur #footer {
-    background-color: palegreen;
-  }
-}
-
-/* line 112, ../sass/layout/_layout-debug-colour.scss */
-body .conteneur .annonceImg {
-  background: greenyellow;
-}
-/* line 113, ../sass/layout/_layout-debug-colour.scss */
-body .conteneur .blocLycee {
-  background: pink;
-}
-/* line 114, ../sass/layout/_layout-debug-colour.scss */
-body .conteneur .contentAnim {
-  background: #C8D215;
-}
-/* line 115, ../sass/layout/_layout-debug-colour.scss */
-body .conteneur .textAnim {
-  background: salmon;
-}
-@media (min-width: 990px) {
-  /* line 111, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur {
-    /*    //Dimensions pour les pc*/
-  }
-  /* line 119, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .annonceImg {
-    background: blueviolet;
-  }
-  /* line 120, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .blocLycee {
-    background: royalblue;
-  }
-  /* line 121, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .contentAnim {
-    background: gold;
-  }
-  /* line 122, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .textAnim {
-    background: bisque;
-  }
-}
-@media (min-width: 800px) and (max-width: 989px) {
-  /* line 111, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur {
-    /*     //Dimensions pour les tablettes*/
-  }
-  /* line 127, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .annonceImg {
-    background: greenyellow;
-  }
-  /* line 128, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .blocLycee {
-    background: pink;
-  }
-  /* line 129, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .contentAnim {
-    background: #C8D215;
-  }
-  /* line 130, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .textAnim {
-    background: red;
-  }
-}
-
-/* line 138, ../sass/layout/_layout-debug-colour.scss */
-body .conteneur .HPDiapoVerticalGauche {
-  background: orangered;
-}
-/* line 140, ../sass/layout/_layout-debug-colour.scss */
-body .conteneur .HPDroite1 {
-  background: sienna;
-}
-/* line 141, ../sass/layout/_layout-debug-colour.scss */
-body .conteneur .HPDroite2 {
-  background: thistle;
-}
-@media (min-width: 990px) {
-  /* line 136, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur {
-    /*    //Dimensions pour les pc*/
-  }
-  /* line 145, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .HPDiapoVerticalGauche {
-    background: rosybrown;
-  }
-  /* line 147, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .HPDroite1 {
-    background: gold;
-  }
-  /* line 148, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .HPDroite2 {
-    background: bisque;
-  }
-  /* line 149, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .HPDroite3 {
-    background: inactiveborder;
-  }
-}
-@media (min-width: 800px) and (max-width: 989px) {
-  /* line 136, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur {
-    /*     //Dimensions pour les tablettes*/
-  }
-  /* line 154, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .HPDroite {
-    background: #C8D215;
-  }
-  /* line 155, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .HPDroite1 {
-    background: royalblue;
-  }
-  /* line 156, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .HPDroite2 {
-    background: #00CC99;
-  }
-}
-
-/*//////////////////////\\\\\\\\\\\
-********** COULEUR LAYOUT NODE.TPL OVERRIDE **********
-\\\\\\\\\\\\//////////////////////*/
-/*//////////////// 1 COLONNE \\\\\\\\*/
-/*//////////////// 3 COLONNES \\\\\\\\*/
-@media (min-width: 800px) and (max-width: 989px) {
-  /* line 173, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col1_layout_3_6_3 {
-    background: #00CC99;
-  }
-}
-@media (min-width: 990px) {
-  /* line 173, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col1_layout_3_6_3 {
-    background: #cccccc;
-  }
-}
-@media (min-height: 767px) and (max-width: 1024px) and (orientation: landscape) {
-  /* line 173, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col1_layout_3_6_3 {
-    background: violet;
-  }
-}
-/* line 189, ../sass/layout/_layout-debug-colour.scss */
-body .conteneur .col2_layout_3_6_3 {
-  background: khaki;
-}
-@media (min-width: 800px) and (max-width: 989px) {
-  /* line 189, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col2_layout_3_6_3 {
-    background: tomato;
-  }
-}
-@media (min-width: 990px) {
-  /* line 189, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col2_layout_3_6_3 {
-    background: hotpink;
-  }
-}
-@media (min-height: 767px) and (max-width: 1024px) and (orientation: landscape) {
-  /* line 189, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col2_layout_3_6_3 {
-    background: royalblue;
-  }
-}
-/* line 209, ../sass/layout/_layout-debug-colour.scss */
-body .conteneur .col3_layout_3_6_3 {
-  background: #00c9fe;
-}
-@media (min-width: 800px) and (max-width: 989px) {
-  /* line 209, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col3_layout_3_6_3 {
-    background: purple;
-  }
-}
-@media (min-width: 990px) {
-  /* line 209, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col3_layout_3_6_3 {
-    background: teal;
-  }
-}
-@media (min-height: 767px) and (max-width: 1024px) and (orientation: landscape) {
-  /* line 209, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col3_layout_3_6_3 {
-    background: violet;
-  }
-}
-
-@media (min-width: 800px) and (max-width: 989px) {
-  /* line 230, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col1_layout_2_7_3 {
-    background: #00CC99;
-  }
-}
-@media (min-width: 990px) {
-  /* line 230, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col1_layout_2_7_3 {
-    background: blanchedalmond;
-  }
-}
-@media (min-height: 767px) and (max-width: 1024px) and (orientation: landscape) {
-  /* line 230, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col1_layout_2_7_3 {
-    background: violet;
-  }
-}
-/* line 243, ../sass/layout/_layout-debug-colour.scss */
-body .conteneur .col2_layout_2_7_3 {
-  background: khaki;
-}
-@media (min-width: 800px) and (max-width: 989px) {
-  /* line 243, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col2_layout_2_7_3 {
-    background: tomato;
-  }
-}
-@media (min-width: 990px) {
-  /* line 243, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col2_layout_2_7_3 {
-    background: hotpink;
-  }
-}
-@media (min-height: 767px) and (max-width: 1024px) and (orientation: landscape) {
-  /* line 243, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col2_layout_2_7_3 {
-    background: royalblue;
-  }
-}
-/* line 256, ../sass/layout/_layout-debug-colour.scss */
-body .conteneur .col3_layout_2_7_3 {
-  background: #00c9fe;
-}
-@media (min-width: 800px) and (max-width: 989px) {
-  /* line 256, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col3_layout_2_7_3 {
-    background: purple;
-  }
-}
-@media (min-width: 990px) {
-  /* line 256, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col3_layout_2_7_3 {
-    background: teal;
-  }
-}
-@media (min-height: 767px) and (max-width: 1024px) and (orientation: landscape) {
-  /* line 256, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col3_layout_2_7_3 {
-    background: violet;
-  }
-}
-
-@media (min-width: 800px) and (max-width: 989px) {
-  /* line 273, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col1_layout_2_6_4 {
-    background: #00CC99;
-  }
-}
-@media (min-width: 990px) {
-  /* line 273, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col1_layout_2_6_4 {
-    background: #cccccc;
-  }
-}
-@media (min-height: 767px) and (max-width: 1024px) and (orientation: landscape) {
-  /* line 273, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col1_layout_2_6_4 {
-    background: violet;
-  }
-}
-/* line 291, ../sass/layout/_layout-debug-colour.scss */
-body .conteneur .col2_layout_2_6_4 {
-  background: khaki;
-}
-@media (min-width: 800px) and (max-width: 989px) {
-  /* line 291, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col2_layout_2_6_4 {
-    background: tomato;
-  }
-}
-@media (min-width: 990px) {
-  /* line 291, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col2_layout_2_6_4 {
-    background: hotpink;
-  }
-}
-@media (min-height: 767px) and (max-width: 1024px) and (orientation: landscape) {
-  /* line 291, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col2_layout_2_6_4 {
-    background: royalblue;
-  }
-}
-/* line 311, ../sass/layout/_layout-debug-colour.scss */
-body .conteneur .col3_layout_2_6_4 {
-  background: #00c9fe;
-}
-@media (min-width: 800px) and (max-width: 989px) {
-  /* line 311, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col3_layout_2_6_4 {
-    background: purple;
-  }
-}
-@media (min-width: 990px) {
-  /* line 311, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col3_layout_2_6_4 {
-    background: teal;
-  }
-}
-@media (min-height: 767px) and (max-width: 1024px) and (orientation: landscape) {
-  /* line 311, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col3_layout_2_6_4 {
-    background: violet;
-  }
-}
-
-/* line 334, ../sass/layout/_layout-debug-colour.scss */
-body .conteneur .layout_3col_all4 {
-  background: indianred;
-}
-@media (min-width: 800px) and (max-width: 989px) {
-  /* line 334, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .layout_3col_all4 {
-    background: tomato;
-  }
-}
-@media (min-width: 990px) {
-  /* line 334, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .layout_3col_all4 {
-    background: khaki;
-  }
-}
-/* line 344, ../sass/layout/_layout-debug-colour.scss */
-body .conteneur .layout_3col_all4last {
-  background: khaki;
-}
-@media (min-width: 800px) and (max-width: 989px) {
-  /* line 344, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .layout_3col_all4last {
-    background: tomato;
-  }
-}
-@media (min-width: 990px) {
-  /* line 344, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .layout_3col_all4last {
-    background: indianred;
-  }
-}
-
-/*//////////////// 2 COLONNES ASYMETRIQUES \\\\\\\\*/
-@media (min-width: 800px) and (max-width: 989px) {
-  /* line 358, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col1_layout_4_8 {
-    background: #00CC99;
-  }
-}
-@media (min-width: 990px) {
-  /* line 358, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col1_layout_4_8 {
-    background: #cccccc;
-  }
-}
-/* line 368, ../sass/layout/_layout-debug-colour.scss */
-body .conteneur .col2_layout_4_8 {
-  background: khaki;
-}
-@media (min-width: 800px) and (max-width: 989px) {
-  /* line 368, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col2_layout_4_8 {
-    background: tomato;
-  }
-}
-@media (min-width: 990px) {
-  /* line 368, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col2_layout_4_8 {
-    background: thistle;
-  }
-}
-@media (min-width: 800px) and (max-width: 989px) {
-  /* line 382, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col1_layout_3_9 {
-    background: #00CC99;
-  }
-}
-@media (min-width: 990px) {
-  /* line 382, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col1_layout_3_9 {
-    background: #cccccc;
-  }
-}
-/* line 390, ../sass/layout/_layout-debug-colour.scss */
-body .conteneur .col2_layout_3_9 {
-  background: khaki;
-}
-@media (min-width: 800px) and (max-width: 989px) {
-  /* line 390, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col2_layout_3_9 {
-    background: tomato;
-  }
-}
-@media (min-width: 990px) {
-  /* line 390, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col2_layout_3_9 {
-    background: thistle;
-  }
-}
-@media (min-width: 800px) and (max-width: 989px) {
-  /* line 409, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col1_layout_7_5 {
-    background: tomato;
-  }
-}
-@media (min-width: 990px) {
-  /* line 409, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col1_layout_7_5 {
-    background: thistle;
-  }
-}
-@media (min-width: 800px) and (max-width: 989px) {
-  /* line 417, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col2_layout_7_5 {
-    background: #00CC99;
-  }
-}
-@media (min-width: 990px) {
-  /* line 417, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col2_layout_7_5 {
-    background: #cccccc;
-  }
-}
-@media (min-width: 800px) and (max-width: 989px) {
-  /* line 426, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col1_layout_8_4 {
-    background: tomato;
-  }
-}
-@media (min-width: 990px) {
-  /* line 426, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col1_layout_8_4 {
-    background: thistle;
-  }
-}
-@media (min-width: 800px) and (max-width: 989px) {
-  /* line 434, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col2_layout_8_4 {
-    background: #00CC99;
-  }
-}
-@media (min-width: 990px) {
-  /* line 434, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .col2_layout_8_4 {
-    background: #cccccc;
-  }
-}
-
-/*//////////////// 4 COLONNES \\\\\\\\*/
-/* line 452, ../sass/layout/_layout-debug-colour.scss */
-body .conteneur .layout_4col_all3 {
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-  background: khaki;
-}
-@media (min-width: 800px) and (max-width: 989px) {
-  /* line 452, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .layout_4col_all3 {
-    background: tomato;
-  }
-}
-@media (min-width: 990px) {
-  /* line 452, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .layout_4col_all3 {
-    background: indianred;
-  }
-}
-/* line 465, ../sass/layout/_layout-debug-colour.scss */
-body .conteneur .layout_4col_all3last {
-  background: khaki;
-}
-@media (min-width: 800px) and (max-width: 989px) {
-  /* line 465, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .layout_4col_all3last {
-    background: tomato;
-  }
-}
-@media (min-width: 990px) {
-  /* line 465, ../sass/layout/_layout-debug-colour.scss */
-  body .conteneur .layout_4col_all3last {
-    background: indianred;
-  }
 }
 
 /*

@@ -29,7 +29,7 @@ $TrebuchetFont : Trebuchet MS, Verdana, Helvetica, sans-serif;
 ==             CSS H                ==|
 =====================================*/
 h1, .h1,h2, .h2 ,h3, .h3,h4, .h4,h5, .h5,h6, .h6{
-    padding:0.3em;margin: 0;color:#000;
+    padding:0.3em;margin: 0.3em 0 0 0;color:#000;
 }
 
 h1, .h1 {
@@ -110,7 +110,10 @@ h6, .h6 {
     }
     #right-content{}
     #footer{@include adjust-font-size-to(10px);
-        p{@include trailer();}
+        p{
+            @include trailer();
+         font-size: small;
+        padding: 0.3em;}
     }
 }
 .HPBasGauche, .HPBasDroit {
