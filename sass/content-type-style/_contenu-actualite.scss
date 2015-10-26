@@ -29,16 +29,20 @@ body .conteneur .conteneur-flex{
     
 }
 /*######-------- ||| STYLE ||| --------######*/
-#colonne-1.contenu-actu {
+#colonne-1.contenu-actu, #colonne-2.contenu-actu {
     h3{
     text-align: center;
     color: $vert;
-    font-family: arista,Trebuchet MS, sans-serif;
+    font-family: $AristaFont;
     font-size: larger;
     margin: em(5px);
 
 }
+p{
+    font-size: small;
 }
+}
+
 #table_infos_plus{
     margin: 0 auto;
     width: em(170px);

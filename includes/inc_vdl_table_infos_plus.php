@@ -5,13 +5,13 @@
 
 ?>
 <?php
-if (!empty(
+if (
                 $node->field_relatif_formation[0]['view']
                 OR $node->field_fiche_action[0]['view']
                 OR $node->field_lien_utile_vdl[0]['view']
                 OR $node->field_lien_utile_vdl[1]['view']
                 OR $node->field_lien_utile_vdl[2]['view']
-        )
+        
 ):
     ?>
 <table id="table_infos_plus" border="0">

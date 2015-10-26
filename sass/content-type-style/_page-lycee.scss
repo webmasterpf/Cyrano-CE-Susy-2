@@ -61,27 +61,70 @@ h1.titre_pl a:hover{}
 /*######-------- COLONNE G2 --------######*/
 #colonne-2.page-lycee{
      h2{color: $vert;padding: em(5px);}
-h3{color: #911381;padding: 5px;}
-h4{padding: 5px; color: #F29803;}
-p{ padding: 5px;}
-ul{padding: 5px;}
+h3{color: #911381;padding: em(5px);}
+h4{padding: em(5px); color: #F29803;}
+p{ padding: em(5px);}
+ul{padding: em(5px);}
+p,li{font-size: small;}
 a img { background: 0;}
 a{
     background: #AEC821;
     color: #EFEFEF;
     text-decoration: none;
     padding: 3px;
-    margin: 5px;
+    margin: em(5px);
     &:hover{
     color: #AEC821;
     background: none;
-     -moz-box-shadow: #AAAAAA 0px 0px 5px ;
-    -webkit-box-shadow: #AAAAAA 0px 0px 5px;
-    box-shadow: #AAAAAA 0px 0px 5px;
+     -moz-box-shadow: #AAAAAA 0px 0px em(5px) ;
+    -webkit-box-shadow: #AAAAAA 0px 0px em(5px);
+    box-shadow: #AAAAAA 0px 0px em(5px);
 }
 }
 iframe#slideshare-embed, iframe{@include adaptable-img;}
 }
+/*--------- LISTE VUE FICHIERS DOCS JOINTS (Colonne G3)--------*/
+h3.titre_liste_doc{
+    text-align: center;
+    color: $vert;
+    font-family: $AristaFont;
+    font-size: inherit;
+    margin: em(5px);
+
+}
+#bloc_docs_utiles_plycee{
+    width: 95%;
+    margin: 0 auto;
+}
+.liste_docs_joints {
+    background: transparent url(../images/zebra-gros-clair.gif) repeat ;
+    -moz-border-radius: em(5px);
+    border-radius: em(5px);
+    padding: em(10px) em(5px);
+    list-style: none;
+    div{
+        margin: em(5px) 0;
+    }
+    span{
+        margin: em(2px) 0;
+    }
+    a{
+        font-weight: bold;
+        text-decoration: none;
+        padding: em(3px);
+        color:  $gris-anthracite;
+        background: white;
+        &:hover{
+            text-decoration: none;
+            background: $vert;
+            color: white;
+        }
+    }
+    .filefield-icon {
+        display: none;
+    }
+}
+
 /*------ LISTE VUE ACTU LYCEE (Colonne G3) ---------*/
 #colonne-3 #bloc-actu-lycee{
     width: 90%;

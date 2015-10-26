@@ -29,7 +29,11 @@ body .conteneur {
     
 }
 /*######-------- ||| STYLE ||| --------######*/
-
+.fiche-formation{
+    p,li{
+        font-size:small;
+    }
+}
 #diapo_fiche{
     display: none;
     @include breakpoint ($desktop){

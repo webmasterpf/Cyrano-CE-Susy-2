@@ -34,7 +34,16 @@ jQuery(document).ready(function($) {
     $transformer.removeClass('is-open');
   });
 });
+    //Pour enlever la taille des images sur les Gallery Formatter
+    jQuery(document).ready(function(){
 
+jQuery('#bloc-galerie-vdl .gallery-slides').each(function(){
+        //jQuery(this).removeAttr('width')
+        //jQuery(this).removeAttr('height');
+        jQuery(this).attr("style", "width:25em;height:22em;"); 
+    });
+
+});
 /*
  * Pour pouvoir utiliser plusieurs versions de Jquery : https://www.drupal.org/node/1058168
  * Utiliser jQuery111  pour les plugins qui n'utilisent pas 1.3.2 fournit par Jquery Update

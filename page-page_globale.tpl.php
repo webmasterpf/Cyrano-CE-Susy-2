@@ -23,7 +23,7 @@
        <!-- ______________________ CONTENU CENTRAL _______________________ -->
 		
 	
-        <div class="inner column center content-page-globale">
+        <div class="inner column center">
 	
           <?php if ($mission || $messages || $help || $tabs): ?>
             <div id="content-header">              

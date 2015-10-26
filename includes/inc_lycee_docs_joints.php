@@ -5,14 +5,13 @@
  */
 
 ?>
-<?php  if (!empty(
-        $node->field_doc_joints[0]['view']
-        OR $node->field_doc_joints[1]['view']
-        OR $node->field_doc_joints[2]['view']
-        OR $node->field_lien_page_lycee[0]['view']
-        OR $node->field_lien_page_lycee[1]['view']
-        OR $node->field_lien_page_lycee[2]['view']
-        )
+<?php  if (isset( $node->field_doc_joints[0] )
+        OR isset( $node->field_doc_joints[1])
+        OR isset($node->field_doc_joints[2])
+        OR isset( $node->field_lien_page_lycee[0])
+        OR isset( $node->field_lien_page_lycee[1])
+        OR isset( $node->field_lien_page_lycee[2])
+        
 
 ): ?>
 <div id="bloc_docs_utiles_plycee">

@@ -57,11 +57,13 @@ h1.titre_vdl,h1.titre_vdl_sortie{
 }
 /*######-------- COLONNE G1 --------######*/
 
-.contenu-vdl{
-    p{
+#colonne-2.contenu-vdl{
+    p,li{
         padding: em(5px);
+        font-size:small;
+        margin:0;
         a{
-            color: $violet;
+                        color: $violet;
             text-decoration: none;
             &:hover{
                 color: $vert;
