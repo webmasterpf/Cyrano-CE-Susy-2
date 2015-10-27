@@ -20,10 +20,12 @@ scripts[] = js/jquery.sticky.js
 ;pour bandeau coulissant
 scripts[] = js/jquery.sidebar.js
 scripts[] = js/jquery.sidebar.min.js
+;pour Flexslider v2.5.0
+scripts[] = js/jquery.flexslider-min.js
 
 ;Action des plugins Jquery
-scripts[] = js/general.js
-;scripts[] = js/jquery_plugin.js
+;scripts[] = js/general.js
+
 
 
 ;Styles pour Superfish
@@ -40,6 +42,8 @@ stylesheets[all][] = css/vendor/buttons/buttons.css
 ;stylesheets[all][] = 3rdparty/buttons/css/font-awesome.min.css
 scripts[] = 3rdparty/buttons/js/buttons.js
 
+;Style pour Flexslider
+stylesheets[all][] = css/flexslider.css
 
 ; CSS pour utiliser NiceMenu
 ;stylesheets[all][] = css/navigation/nice_menus_custom.css
@@ -68,6 +72,8 @@ regions[menuDyn] = Menu Header - Menu dynamique JS
 regions[navStatic] = Navigation statique - Bloc
 regions[site_slogan] = Slogan du site - Bloc
 regions[search_box] = Zone recherche - Bloc
+regions[footerjs] = Pour inclure des JS dans le footer
+
 
 ;Bandeau haut de page accueil (si besoin)
 regions[bandeau1] = Bandeau haut de page

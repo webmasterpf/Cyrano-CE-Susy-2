@@ -5212,7 +5212,7 @@ body .conteneur .conteneur-flex #colonne-3.contenu-actu {
 #colonne-1.contenu-actu h3, #colonne-2.contenu-actu h3 {
   text-align: center;
   color: #ADC91F;
-  font-family: arista,Trebuchet MS, sans-serif;
+  font-family: "Arista", Trebuchet MS, sans-serif;
   font-size: larger;
   margin: 0.3125em;
 }

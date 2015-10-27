@@ -17,12 +17,13 @@ include ($theme_path.'/js/code_stats.php');
     <!-- ______________________ /CONTENEUR _______________________ -->
            <?php 
            global $theme_path;
-         // include ($theme_path.'/includes/inc_js_responsivenav.php'); inutile,deja dans header
-           include ($theme_path.'/js/jquery-lib-online.php');
-           include ($theme_path.'/includes/inc_js_masonry.php');
+          
+      
           //include ($theme_path.'/includes/inc_drupal_debug.php');
            ?>
-    
+         
+                    <?php print $footerjs; ?>
+              
     
 	<?php print $closure ?>
    

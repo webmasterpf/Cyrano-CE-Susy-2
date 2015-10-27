@@ -75,7 +75,18 @@ if ( in_array($node->type, $lesTypes) ) {
     }
 }
 ?>
-
+<?php
+function d6_ce_susy2_preprocess_page(&$vars){
+   drupal_add_js('https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js','theme', 'header', FALSE, TRUE, FALSE);
+   drupal_add_js('http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js','theme', 'header', FALSE, TRUE, FALSE);
+   drupal_add_js('http://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js','theme', 'header', FALSE, TRUE, FALSE);
+   drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/jquery_init.js','theme', 'header', FALSE, TRUE, FALSE);
+   drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/js_jquery_new.js','theme', 'header', FALSE, TRUE, FALSE);  
+   drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/jquery_exit.js','theme', 'header', FALSE, TRUE, FALSE);
+   drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/js_jquery_defaut.js','theme', 'header', FALSE, TRUE, FALSE);
+   //die('les JS sont chargés');
+}
+?>
 <?php
 // fonction pour avoir la possibilité de faire un template pour page recherche
 function phptemplate_preprocess_page(&$vars) {
