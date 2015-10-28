@@ -77,13 +77,17 @@ if ( in_array($node->type, $lesTypes) ) {
 ?>
 <?php
 function d6_ce_susy2_preprocess_page(&$vars){
-   drupal_add_js('https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js','theme', 'header', FALSE, TRUE, FALSE);
-   drupal_add_js('http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js','theme', 'header', FALSE, TRUE, FALSE);
-   drupal_add_js('http://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js','theme', 'header', FALSE, TRUE, FALSE);
-   drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/jquery_init.js','theme', 'header', FALSE, TRUE, FALSE);
-   drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/js_jquery_new.js','theme', 'header', FALSE, TRUE, FALSE);  
-   drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/jquery_exit.js','theme', 'header', FALSE, TRUE, FALSE);
-   drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/js_jquery_defaut.js','theme', 'header', FALSE, TRUE, FALSE);
+    //http://www.zites.net/en/load-external-javascript-files-drupal-6/
+    $external_js1 = 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js';
+   drupal_add_js('document.write(unescape("%3Cscript src=\''. $external_js1 .'\' type=\'text/javascript\'%3E%3C/script%3E"));', 'inline');
+    $external_js2 = 'http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js';
+   drupal_add_js('document.write(unescape("%3Cscript src=\''. $external_js2 .'\' type=\'text/javascript\'%3E%3C/script%3E"));', 'inline','header');
+    $external_js3 = 'http://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js';
+   drupal_add_js('document.write(unescape("%3Cscript src=\''. $external_js3 .'\' type=\'text/javascript\'%3E%3C/script%3E"));', 'inline');
+   drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/jquery_init.js','theme');
+   drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/js_jquery_new.js','theme');  
+   drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/jquery_exit.js','theme');
+   drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/js_jquery_defaut.js','theme');
    //die('les JS sont chargés');
 }
 ?>
