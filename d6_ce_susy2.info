@@ -72,7 +72,8 @@ regions[menuDyn] = Menu Header - Menu dynamique JS
 regions[navStatic] = Navigation statique - Bloc
 regions[site_slogan] = Slogan du site - Bloc
 regions[search_box] = Zone recherche - Bloc
-regions[footerjs] = Pour inclure des JS dans le footer
+;regions[footer] = Footer
+;regions[footerjs] = Pour inclure des JS dans le footer
 
 
 ;Bandeau haut de page accueil (si besoin)

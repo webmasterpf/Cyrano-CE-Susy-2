@@ -21,7 +21,7 @@ include ($theme_path.'/js/code_stats.php');
       
           //include ($theme_path.'/includes/inc_drupal_debug.php');
            ?>
-         
+                    <?php print $footer; ?>
                     <?php print $footerjs; ?>
               
     

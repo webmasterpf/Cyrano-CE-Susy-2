@@ -5,7 +5,7 @@
  * http://sundropsoftware.com/how-to-use-jquery-noconflict-the-right-way/
  */
 
-
+(function($){
 //jQuery(window).load(function()
 jQuery(document).ready(function() 
  {
@@ -16,17 +16,10 @@ jQuery(document).ready(function()
 //            );
   console.log('jQuery dans la fonction Flexslider');  
   jQuery('.flexslider').flexslider({
-    animation: "slide"
+          animation: "slide"
   });
 });
 
-(function($){
-    console.log('jQuery dans la fonction anonyme Flexslider');
- $('.flexslider').flexslider({
-    animation: "slide"
-  });
-
-})(jQuery);
  
 jQuery(document).ready(function() {
   var $masonryContainer = $('.content-page-globale');
@@ -37,3 +30,4 @@ jQuery(document).ready(function() {
     itemSelector: '.masonry__item,.masonry--item'
   });
 });
+})(jQuery);
