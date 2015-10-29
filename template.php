@@ -79,14 +79,33 @@ if ( in_array($node->type, $lesTypes) ) {
 function d6_ce_susy2_preprocess_page(&$vars){
     //http://www.zites.net/en/load-external-javascript-files-drupal-6/
     // JS externe avec le module advagg qui permet d'utiliser 'external'
-   drupal_add_js('http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js', 'external');
-   drupal_add_js('https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js', 'external');
-   drupal_add_js('http://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js', 'external');
-   drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/jquery_init.js','theme');
-   drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/js_jquery_new.js','theme');  
-   drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/jquery_exit.js','theme');
-   drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/js_jquery_defaut.js','theme');
-   //die('les JS sont chargés');
+//   drupal_add_js('http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js', 'external');
+//   drupal_add_js('https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js', 'external');
+//   drupal_add_js('http://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js', 'external');
+//   
+// permet usage de vieilles versions de jQuery
+        //drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/jquery-migrate-1.2.1.min.js', 'theme');
+//chargement des plugins qui utilisent la version de jQuery par défaut du site
+//   drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/responsive-nav.js','theme');
+//   drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/tinynav.min.js','theme');
+    //   drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/jquery.navobile.min.js','theme');
+    //   drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/jquery.jpanelmenu.min.js','theme');
+    drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/selectnav.min.js', 'theme');
+    drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/jquery.sticky.js', 'theme');
+  //  drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/jquery.sidebar.min.js', 'theme');
+
+//chargement des scripts qui utilisent la version de jQuery par défaut du site
+    drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/js_jquery_defaut.js', 'theme');
+// mise en place du noConflict pour utiliser plusieurs versions de jQuery   
+    drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/jquery_init.js', 'theme');
+//chargement des plugins qui utilisent une version de jQuery plus récente
+    drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/jquery.flexslider.js', 'theme');
+    drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/3rdparty/buttons/js/buttons.js', 'theme');
+    drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/js_jquery_new.js', 'theme');
+    //  mise à disposition des 2 versions de jQuery
+    drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/jquery_exit.js', 'theme');
+
+    //die('les JS sont chargés');
 }
 ?>
 <?php

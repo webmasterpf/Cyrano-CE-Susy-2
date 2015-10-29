@@ -1,0 +1,11 @@
+/*
+Override du style de galerie flexslider
+*/
+#bloc-galerie-vdl .flexslider{
+    margin: 0 auto;
+    width: 97%;
+    .slides img{
+        padding: 0.7em;
+        border: 0.3em solid $gris-clair;
+    }
+}        

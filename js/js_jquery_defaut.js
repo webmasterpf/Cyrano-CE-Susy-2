@@ -13,7 +13,8 @@
 
         selectnav('subnav', {label: '- Accès rapide -'});
 
-        $("#header").sticky({topSpacing: 10});
+        //Header collant haut de page
+$("#header").sticky({topSpacing: 10});
 
 
 
@@ -21,20 +22,7 @@
 
     });
 
-//OffCanvas avec fonction anonyme
 
-    var $transformer = $('.transformer'),
-            $menuToggle = $('.menu-toggle');
-    $('.menu-toggle').on('click', function (event) {
-        event.preventDefault();
-        $transformer.toggleClass('is-open');
-    });
-
-    $('.close-btn').on('click', function (event) {
-        event.preventDefault();
-        console.log('bouton referme volet fonctionne !');
-        $transformer.removeClass('is-open');
-    });
 
 
     //Pour enlever la taille des images sur les Gallery Formatter
