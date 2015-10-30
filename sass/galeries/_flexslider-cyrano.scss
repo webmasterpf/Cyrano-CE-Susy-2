@@ -5,7 +5,23 @@ Override du style de galerie flexslider
     margin: 0 auto;
     width: 97%;
     .slides img{
-        padding: 0.7em;
+        padding: 0.2em;
         border: 0.3em solid $gris-clair;
+        @include arrondis;
+    }
+    .flex-control-nav{
+        bottom: 0;
+    }
+    .flex-caption {
+  position: relative;
+  z-index: 3;
+  padding: 2%;
+  width: 95%;
+  left: 0;
+  bottom: 4em;
+  background: rgba(0,0,0,.5);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+  font-size: small;
     }
 }        

@@ -38,8 +38,18 @@
 //    });
 
     jQuery(window).load(function () {
+        //Pour une galerie standard
         console.log('Chargement de Flexslider');
         $('.flexslider').flexslider({
+            animation: "slide",
+            
+        });
+    });
+    
+     jQuery(window).load(function () {
+         //Pour une galerie avec des vignettes
+        console.log('Chargement de FlexsliderThumbs');
+        $('.flexslider-thumbs').flexslider({
             animation: "slide",
             controlNav: "thumbnails"
         });

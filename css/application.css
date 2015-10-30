@@ -6182,4 +6182,38 @@ VIEWS 3 CYCLE: DIAPO CONTENU ===================================
   float: right;
 }
 
+/*
+Override du style de galerie flexslider
+*/
+/* line 4, ../sass/galeries/_flexslider-cyrano.scss */
+#bloc-galerie-vdl .flexslider {
+  margin: 0 auto;
+  width: 97%;
+}
+/* line 7, ../sass/galeries/_flexslider-cyrano.scss */
+#bloc-galerie-vdl .flexslider .slides img {
+  padding: 0.2em;
+  border: 0.3em solid #ECECED;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+}
+/* line 12, ../sass/galeries/_flexslider-cyrano.scss */
+#bloc-galerie-vdl .flexslider .flex-control-nav {
+  bottom: 0;
+}
+/* line 15, ../sass/galeries/_flexslider-cyrano.scss */
+#bloc-galerie-vdl .flexslider .flex-caption {
+  position: relative;
+  z-index: 3;
+  padding: 2%;
+  width: 95%;
+  left: 0;
+  bottom: 4em;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+  font-size: small;
+}
+
 /*# sourceMappingURL=application.css.map */
