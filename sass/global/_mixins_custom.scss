@@ -57,11 +57,11 @@
     -webkit-box-shadow: #AAAAAA 0px 0px 5px;
     box-shadow: #AAAAAA 0px 0px 5px;
 }
-@mixin ombrage {
-    border: 5px solid #fff;
-    -moz-box-shadow: 8px 8px 12px #aaa;
-    -webkit-box-shadow: 8px 8px 12px #aaa;
-    box-shadow: 8px 8px 12px #555;
+@mixin ombrage ($contour:0.5em,$decalage-horizontal:0.5em,$decalage-vertical:0.5em,$couleur-ombre:#aaa){
+    border: $contour solid #fff;
+    -moz-box-shadow: $decalage-horizontal $decalage-vertical 12px $couleur-ombre;
+    -webkit-box-shadow: $decalage-horizontal $decalage-vertical 12px $couleur-ombre;
+    box-shadow: $decalage-horizontal $decalage-vertical 12px $couleur-ombre;
     }
     
 @mixin ombrage-bas {
