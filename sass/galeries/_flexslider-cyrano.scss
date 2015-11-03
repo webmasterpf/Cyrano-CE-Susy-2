@@ -1,6 +1,10 @@
 /*
 Override du style de galerie flexslider
 */
+
+//@include breakpoint ($mobile){}
+//@include breakpoint ($desktop){}
+//@include breakpoint ($tablet){}
 #bloc-galerie-vdl .flexslider{
     margin: 0 auto;
     width: 95%;
@@ -10,11 +14,14 @@ Override du style de galerie flexslider
     }
     .slides img{
         padding: 0.2em;
-        border: 0.3em solid $gris-clair;
+        border: 0.1em solid $gris-clair;
         @include arrondis;
+        @include breakpoint ($desktop){
+            border: 0.3em solid $gris-clair;
+        }
     }
     .flex-control-nav{
-        bottom: 0;
+        bottom: -1.1em;
     }
     .flex-control-paging {
         li a{

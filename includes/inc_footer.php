@@ -18,7 +18,7 @@ include ($theme_path.'/js/code_stats.php');
            <?php 
            global $theme_path;
           
-          include ($theme_path.'/includes/inc_drupal_debug.php');
+          //include ($theme_path.'/includes/inc_drupal_debug.php');
            ?>
                                  
     

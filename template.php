@@ -100,6 +100,7 @@ function d6_ce_susy2_preprocess_page(&$vars){
     drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/jquery_init.js', 'theme');
 //chargement des plugins qui utilisent une version de jQuery plus récente
     drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/jquery.flexslider.js', 'theme');
+    drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/jquery.bxslider.min.js', 'theme');
     drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/3rdparty/buttons/js/buttons.js', 'theme');
     drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/js_jquery_new.js', 'theme');
     //  mise à disposition des 2 versions de jQuery

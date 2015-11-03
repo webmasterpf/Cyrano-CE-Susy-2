@@ -59,4 +59,11 @@
             controlNav: "thumbnails"
         });
     });
+    
+    //Pour le BxSlider
+    jQuery(window).load(function (){
+        console.log('Chargement de BxSlider');
+  $('.bxslider').bxSlider();
+   pagerCustom: '#bx-pager'
+});
 })(jQuery);

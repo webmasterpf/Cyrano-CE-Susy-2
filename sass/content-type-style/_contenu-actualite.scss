@@ -93,38 +93,3 @@ p{
         margin: 0;
     }
 }
-/*---- Galerie images au choix -------*/
-#bloc-galerie-vdl{
-    margin: 0;
-    padding: 0;
-    
-    h3{
-        text-align: center;
-        font-family: $AristaFont;
-        font-size: 2.0em;
-        margin: em(5px);
-        color: $violet;
-
-    }
-    a{
-        background:none;
-        margin: 0;
-        padding: 0;
-        text-decoration: none;
-    }
-    .overlay-inner p{
-        color: white;
-    }
-    .vignettes-zoom a, .vignettes-zoom a:hover{
-        background: 0;
-        text-decoration: none;
-        -moz-box-shadow: none ;
-        -webkit-box-shadow: none ;
-        box-shadow: none ;
-        color: none;
-        img{
-            border: 3px solid $vert;
-        }
-    }
-
-}
