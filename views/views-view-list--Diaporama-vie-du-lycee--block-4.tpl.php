@@ -20,7 +20,13 @@
   <div id="bx-pager">
   <?php for ($i=0;$i<count($rows);$i++): ?>
   <a data-slide-index="<?php print $i; ?>" href="">
-      <img src="<?php print $row->field_galerie_image_vdl_fid_1 [0]['filepath']; ?>"/></a>
+      <img src="<?php print $fields['field_galerie_image_vdl_fid_1']->content; ?>"/></a>
+      
+      
   <?php endfor; ?>
   </div>
 <?php print $wrapper_suffix; ?>
+ <?php
+global $theme_path;
+//include ($theme_path . '/includes/inc_drupal_debug_views.php');
+?>
