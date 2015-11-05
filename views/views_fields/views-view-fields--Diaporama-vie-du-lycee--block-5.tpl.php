@@ -23,38 +23,38 @@
  * @ingroup views_templates
  */
 ?>
-<?php foreach ($fields as $id => $field): ?>
-  <?php if (!empty($field->separator)): ?>
-    <?php print $field->separator; ?>
-  <?php endif; ?>
+<!-- TEMPLATE DE VIEWS FIELDS CUSTOM -->
 
-  <?php print $field->wrapper_prefix; ?>
-    <?php print $field->label_html; ?>
-    <?php print $field->content; ?>
-<?php print $fields['field_galerie_image_vdl_fid']->content ['uri']; //affiche un second diapo?>
-<?php print $view->field['field_galerie_image_vdl_fid']->advanced_render($row); //affiche un 3eme diapo ?>
 <?php 
-//$field_galerie_image_vdl = field_get_items('node', $node, 'field_galerie_image_vdl'); 
-// $image_url = file_create_url($field_video_image[0]['uri']);  
-// print $image_url;
- ?>
- <?php foreach ($row->field_galerie_image_vdl_fid as $img) : ?>
-        
-        <?php $img_medium = image_style_url('Site-CE-480x350-flexslider', $img['raw']['uri']); ?>
-        
-        <a class="cloud-zoom-gallery <?php ($count == 0)? print ' selected ': NULL; ?>" 
-           
-           data-thumb="<?php print $img_medium; ?>'" 
-           href ="<?php print $img_medium; ?>">
-            <span class="vs-thumb">
-              <?php print $img_medium; ?>
-            </span>
-        </a>
-        <?php $count ++; ?>
-      <?php endforeach; ?>
-  <?php print $field->wrapper_suffix; ?>
-<?php endforeach; ?>
 
+ //   print ' <div class="flexslider-thumbs"> <ul class="slides">';
+//foreach ($fields as $id => $field): 
+//   if (!empty($field->separator)): 
+//   print $field->separator; 
+//   endif; 
+
+   //print $field->wrapper_prefix;
+   
+    //print $field->label_html;
+    //print $field->content; 
+
+
+    $imgurl = file_create_url($field->uri);  
+    
+    $img_thumb_filepath = strip_tags($fields['field_galerie_image_vdl_fid_1']->content);
+    $img_slide_size = strip_tags($fields['field_galerie_image_vdl_fid']->content);
+    $img_caption = strip_tags($fields['field_galerie_image_vdl_data']->content);
+    print //'<li data-thumb='.$img_thumb_filepath.'>'
+             '<img src="'.$img_slide_size.'" />'
+            . '<p class="flex-caption">'.$img_caption.'</p>'
+            //. '</li>';
+    
+
+
+ //print $field->wrapper_suffix; 
+// endforeach;
+ ?>
+<?php //print '</ul> </div>';?>
 <?php
 global $theme_path;
 include ($theme_path . '/includes/inc_drupal_debug_views.php');

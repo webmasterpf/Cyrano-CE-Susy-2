@@ -6,20 +6,7 @@ Override du style de galerie flexslider
 //@include breakpoint ($desktop){}
 //@include breakpoint ($tablet){}
 #bloc-galerie-vdl .flexslider{
-    margin: 0 auto;
-    width: 95%;
-    display:inline-block;
-    li{
-        padding: 0;
-    }
-    .slides img{
-        padding: 0.2em;
-        border: 0.1em solid $gris-clair;
-        @include arrondis;
-        @include breakpoint ($desktop){
-            border: 0.3em solid $gris-clair;
-        }
-    }
+   
     .flex-control-nav{
         bottom: -1.1em;
     }
@@ -36,19 +23,7 @@ Override du style de galerie flexslider
             background: $vert;
         }
     }
-    .flex-caption {
-  position: relative;
-  z-index: 3;
-  padding: 2%;
-  width: 94%;
-  left: 0.8em;
-  bottom: 4em;
-  background: rgba(0,0,0,.5);
-  color: #fff;
-  text-shadow: 0 -1px 0 rgba(0,0,0,.3);
-  font-size: small;
-  line-height: 1.15em;
-    }
+
 }        
 .flexslider{
     .flex-direction-nav a{
@@ -82,4 +57,34 @@ Override du style de galerie flexslider
 .flexslider:hover .flex-direction-nav .flex-next:hover {
   opacity: 1;
 }
+}
+//Pour le style des galeries quelques soit le type de nav
+.flexslider , .flexslider-thumbs{
+     margin: 0 auto;
+    width: 95%;
+    display:inline-block;
+    li{
+        padding: 0;
+    }
+    .slides img{
+        padding: 0.2em;
+        border: 0.1em solid $gris-clair;
+        @include arrondis;
+        @include breakpoint ($desktop){
+            border: 0.3em solid $gris-clair;
+        }
+    }
+        .flex-caption {
+  position: relative;
+  z-index: 3;
+  padding: 2%;
+  width: 94%;
+  left: 0.8em;
+  bottom: 4em;
+  background: rgba(0,0,0,.5);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+  font-size: small;
+  line-height: 1.15em;
+    }
 }
