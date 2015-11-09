@@ -10,7 +10,8 @@ Style - layout pour le bandeau des autres sites de l'ASSO
     
     ul{
             background: $blanc-casse;
-            
+            padding:0;
+            @include arrondis;
             
             li{
                 //@include span (1 of 7);

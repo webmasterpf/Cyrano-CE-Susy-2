@@ -10,6 +10,8 @@ body .conteneur{
         //@debug susy-get(columns);
         #header{
             //voir _layout-header.scss
+            top:0;
+            position: initial;
 
 
         }
@@ -23,7 +25,7 @@ body .conteneur{
             .content-header{}
         }
         .content-top{
-
+         margin: 1em 0 0 0;   
         }
         .middle-content{
            
