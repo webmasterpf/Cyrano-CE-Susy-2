@@ -66,15 +66,13 @@ Override du style de galerie flexslider
     li{
         padding: 0;
     }
-    .slides img{
+     .slides img{
         padding: 0.2em;
         border: 0.1em solid $gris-clair;
         @include arrondis;
-        @include breakpoint ($desktop){
-            border: 0.3em solid $gris-clair;
-        }
+       
     }
-        .flex-caption {
+      *.flex-caption {
   position: relative;
   z-index: 3;
   padding: 2%;
@@ -84,7 +82,21 @@ Override du style de galerie flexslider
   background: rgba(0,0,0,.5);
   color: #fff;
   text-shadow: 0 -1px 0 rgba(0,0,0,.3);
-  font-size: small;
+  font-size: x-small;
   line-height: 1.15em;
+ 
     }
+    @include breakpoint ($desktop){
+    
+            .slides img{
+            border: 0.3em solid $gris-clair;
+        }
+        
+       *.flex-caption{
+            font-size: small;
+        }
+
+    
+    }
+    
 }
