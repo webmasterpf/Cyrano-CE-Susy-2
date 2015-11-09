@@ -29,7 +29,7 @@ body .conteneur .conteneur-flex{
     
 }
 /*######-------- ||| STYLE ||| --------######*/
-#colonne-1.contenu-actu, #colonne-2.contenu-actu {
+.contenu-actu {
     h3{
     text-align: center;
     color: $vert;
@@ -38,7 +38,7 @@ body .conteneur .conteneur-flex{
     margin: em(5px);
 
 }
-p{
+p,li{
     font-size: small;
 }
 }
