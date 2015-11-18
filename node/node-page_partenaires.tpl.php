@@ -39,7 +39,11 @@ include ($theme_path.'/includes/inc_vdl_table_infos_plus.php');
            <?php  print $node->field_choix_galerie_vdl[0]['view'] /*Vue actus du lycée*/ ?>
         </div>
            <?php endif;?>
-
+ <?php
+                  global $theme_path;
+                  include ($theme_path.'/includes/inc_actus_video.php');
+                  ?>
+      
     
 </div>
 <!--______________COLONNE GAUCHE 3________________ -->
