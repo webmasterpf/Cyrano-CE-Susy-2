@@ -35,10 +35,10 @@ qacct:"xxxx"
 </noscript>
 <!-- End Quantcast tag -->
 <!-- Woopra Code Start -->
-<script type="text/javascript" src="//static.woopra.com/js/woopra.v2.js"></script>
+<!--<script type="text/javascript" src="//static.woopra.com/js/woopra.v2.js"></script>
 <script type="text/javascript">
 woopraTracker.setDomain("lycee-XXX.fr");
 woopraTracker.track();
-</script>
+</script>-->
 <!-- Woopra Code End -->
 

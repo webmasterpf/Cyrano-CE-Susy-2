@@ -32,6 +32,8 @@ body .conteneur {
     }
     img.close-btn{
         vertical-align: middle;
+        cursor: pointer;
+        zoom: 1.5;
     }
     .menu-toggle, .transformer.is-open > .menu-toggle{
         position: absolute;

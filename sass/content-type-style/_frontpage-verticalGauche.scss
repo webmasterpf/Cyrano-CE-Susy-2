@@ -176,7 +176,7 @@ aside.DiapoHP{
 // Style du diaporama dynamique
 
 /*---DIAPORAMA HOMEPAGE TEXTE DYNAMIQUE PAS SUR MOBILE----*/
-.conteneur #views_slideshow_cycle_div_diaporama_homepage-block_1_0 > div > div.views-field.views-field-teaser{
+.conteneur aside#block-views-diaporama_homepage-block_1{
     display: none;
     @include breakpoint ($desktop){
         display: block;

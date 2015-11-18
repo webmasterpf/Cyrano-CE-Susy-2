@@ -12,8 +12,8 @@
 /*######-------- ||| ORDRE FLEXBOX ||| --------######*/
 
 /*######-------- ||| LAYOUT SUSY GALLERY ||| --------######*/
-//avec views style liste - ajouter la classe dans 
-// le display style
+//avec views style liste - ajouter la classe dans le display style
+//ajouter classes wrapper:.mur-image | element liste : .liste-image-ul | classe de ligne: .liste-image-item
 .table-vdl-global .mur-image .liste-image-ul .liste-image-item{
     @include gallery(2 of $mobilecol);
     @include breakpoint ($desktop){
@@ -86,7 +86,7 @@ span.titre-vdl{
 .table-vdl-global  span.titre-vdl{z-index:15;position: relative;bottom: em(90px);
                                   background: $gris-clair;color: $violet;left: em(5px);width: em(145px);display: block;}
 .table-vdl-global .tooltip-vdl{padding: 0;height: em(160px);position: relative;bottom: em(30px);}
-.table-vdl-global .img-vdl{padding: 0;height: em(160px);position: relative;bottom: em(30px);
+.table-vdl-global .img-vdl{padding: 0;height: em(160px);position: relative;bottom: em(54px);-moz-bottom:em(60px);
                            @include breakpoint ($desktop){ 
                                margin: 0.1em;
                            }

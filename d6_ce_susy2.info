@@ -2,7 +2,7 @@
 ;Ajouter les regions utiles dans la liste ci apres, idem pour les CSS.
 ;Changer le screenshot du site pour interface admin
 ;
-name = SUSY 2 Template for Celony website
+name = SUSY 2 for Celony website
 description = Gabarit SCSS /HTML5 pour Drupal 6. Thème RWD utilisant Compass, Susy 2
 version = VERSION
 core = 6.x

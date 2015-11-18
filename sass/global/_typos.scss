@@ -61,16 +61,9 @@ h4, .h4{
 }
 h5, .h5 {
 	
-	
-
-
-
 	font-size: em(12px);
 }
 h6, .h6 {
-	
-
-
 
 	font-size: em(10px);
 }
@@ -109,7 +102,8 @@ h6, .h6 {
         }
     }
     #right-content{}
-    #footer{@include adjust-font-size-to(10px);
+    #footer{
+        @include adjust-font-size-to(10px);
         p{
             @include trailer();
          font-size: small;

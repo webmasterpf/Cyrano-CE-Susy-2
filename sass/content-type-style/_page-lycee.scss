@@ -33,8 +33,8 @@ body .conteneur .conteneur-flex{
 }
 
 h1.titre_pl{
-    font-size: 24px;
-    color: #911381;
+    font-size: x-large;
+    color: $violet;
     line-height: 1.0em
 }
 h1.titre_pl a{}
@@ -61,20 +61,20 @@ h1.titre_pl a:hover{}
 /*######-------- COLONNE G2 --------######*/
 #colonne-2.page-lycee{
      h2{color: $vert;padding: em(5px);}
-h3{color: #911381;padding: em(5px);}
+h3{color: $violet;padding: em(5px);}
 h4{padding: em(5px); color: #F29803;}
 p{ padding: em(5px);}
 ul{padding: em(5px);}
 p,li{font-size: small;}
 a img { background: 0;}
 a{
-    background: #AEC821;
+    background: $vert;
     color: #EFEFEF;
     text-decoration: none;
     padding: 3px;
     margin: em(5px);
     &:hover{
-    color: #AEC821;
+    color: $vert;
     background: none;
      -moz-box-shadow: #AAAAAA 0px 0px em(5px) ;
     -webkit-box-shadow: #AAAAAA 0px 0px em(5px);
