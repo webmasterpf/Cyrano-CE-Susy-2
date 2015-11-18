@@ -174,3 +174,13 @@ h1.titre_vdl,h1.titre_vdl_sortie{
         }
     }
 }
+/**Video pour inclusion via node.tpl - Etendu à tout contenu Actu,VDL*/
+.video_rp{
+    width: 83%;
+    margin: 0 auto;
+    border: em(2px) solid $gris-clair;
+    padding: em(3px);
+    .table-video-rp{
+        border: 0;
+    }
+}

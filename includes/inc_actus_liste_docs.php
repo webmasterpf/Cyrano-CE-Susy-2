@@ -11,7 +11,10 @@
 
 ?>
 <?php
-
+if (!empty($node->field_fichier_joint_rp)
+   OR !empty($node->field_lien_internet_rp)
+        ):
+    
 $viewname_ld1 = 'Liste_docs';
 $view = views_get_view ($viewname_ld1);
 $viewdisplay_ld1 = $view->set_display('block_1');
@@ -41,5 +44,5 @@ elseif (empty($view->result)) {
   print $outputEmpty;
 }
 
-
+endif;
 ?>

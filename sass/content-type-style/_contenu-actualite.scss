@@ -51,27 +51,27 @@ p,li{
         border: 0;
     }
     h3{
-        font-family: arista,Trebuchet MS, sans-serif;
+        font-family: $AristaFont;
         text-align: center;
-        color: #01ABCF;
-        font-size: 1.5em;
-        margin: 5px 0;
+        color: $bleu-turquoise;
+        font-size: large;
+        margin: em(5px) 0;
     }
     tr{
-        background: transparent url('//../images/sep_infos_plus_vdl.jpg') no-repeat bottom 20px;
+        background: transparent url('../images/sep_infos_plus_vdl.jpg') no-repeat bottom em(20px);
 
     }
     td{
-        padding: 3px 0 6px 10px;
+        padding: em(3px) 0 em(6px) em(10px);
         text-align: center;
     }
     hr{
-        border-bottom: 1px solid #01ABCF;
-        width: 120px;
+        border-bottom: em(1px) solid $bleu-turquoise;
+        width: em(120px);
         margin: 0 auto;
     }
     a{
-        color: #01ABCF;
+        color: $bleu-turquoise;
         text-decoration: none;
         text-align: center;
         &:hover{
@@ -80,6 +80,9 @@ p,li{
     }
     .filefield-icon {
         display: none;
+    }
+    p{
+        margin: 0;
     }
 }
 #colonne-2.contenu-actu{

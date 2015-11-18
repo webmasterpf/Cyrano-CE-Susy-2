@@ -8,7 +8,7 @@ Override du style de galerie flexslider
 #bloc-galerie-vdl .flexslider{
    
     .flex-control-nav{
-        bottom: -1.1em;
+        bottom: -2.1em;
     }
     .flex-control-paging {
         li a{
@@ -59,11 +59,11 @@ Override du style de galerie flexslider
 }
 }
 //Pour le style des galeries quelques soit le type de nav
-.flexslider , .flexslider-thumbs{
+#colonne-2 .flexslider , .flexslider-thumbs{
      margin: 0 auto;
     width: 95%;
     display:inline-block;
-    li{
+    li, ul.slides li{
         padding: 0;
     }
      .slides img{
