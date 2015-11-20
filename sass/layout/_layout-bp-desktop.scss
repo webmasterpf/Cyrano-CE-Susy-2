@@ -27,6 +27,9 @@ body .conteneur{
         .content-top{
          margin: 1em 0 0 0;   
         }
+        .content-top{
+         margin: 0;   
+        }
         .middle-content{
            
             @include clearfix;

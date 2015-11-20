@@ -24,7 +24,7 @@ body .conteneur
         //Values: none | <flex-grow> <flex-shrink> || <flex-basis>
         // Default: See individual properties (1 1 0).
              @include flex(1 0 span($mobilecol));
-
+             margin-top: 1em 0 0 0;
     .HPDiapoVerticalGauche{
       padding: 0.3em;
     //Flexbox ordre des blocs

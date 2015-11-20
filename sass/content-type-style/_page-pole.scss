@@ -34,6 +34,7 @@ body .conteneur .conteneur-flex{
 .conteneur .page-pole{
     p{
         font-size: small;
+        margin: 0;
     }
 }
 h1.title-page-bloc{
@@ -42,10 +43,10 @@ h1.title-page-bloc{
     text-align: center;
     color: $violet;
     text-transform: uppercase;
-    
+    margin: 1em 0 0 0;    
 }
 h3.block-title{
-    font-size: 18px;
+    font-size: medium;
     color: $vert;
     text-align: center;
     text-transform: uppercase;

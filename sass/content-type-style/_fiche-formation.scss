@@ -213,51 +213,39 @@ body .conteneur {
     }
 }
 /*----------- STYLES POUR FICHE FORMATION ------------------*/
+h1.titre_fiche,h1.titre_pole_tertiaire,h1.titre_pole_services,h1.titre_pole_arts{
+    display: block;
+    height: auto;
+    padding: em(40px) 0 em(10px) em(20px);
+    color: $vert;
+    width: em(175px);
+    margin: 2em 0 0  0;
+    a{
+        text-decoration: none;
+        color: $vert;
+        padding: 0 0 0 em(40px);
+    }
+    @include breakpoint ($desktop){
+        display: table-cell;
+        margin: 0;
+    }
+}
 h1.titre_fiche{
     background: white url('../images/bg_coin_vierge.jpg') no-repeat top left;
-    display: table-cell;
-    height: auto;
-    padding: 40px 0 10px 20px;
-    color: $vert;
-     width: 175px;
+
 }
 
 h1.titre_pole_tertiaire{
     background: white url('../images/bg_coin_fiche_tertiaire.jpg') no-repeat top left;
-    display: table-cell;
-    height: auto;
-    padding: 40px 0 10px 20px;
-    color: $vert;
-     width: 175px;
+
 }
-h1.titre_pole_tertiaire a{
-    text-decoration: none;
-    color: $vert;
-    padding: 0 0 0 40px;
-}
+
 h1.titre_pole_services{
     background: white url('../images/bg_coin_fiche_services.jpg') no-repeat top left;
-    display: table-cell;
-    height: auto;
-    padding: 40px 0 10px 20px;
-    color: $vert;
-     width: 175px;
+
 }
-h1.titre_pole_services a{
-    text-decoration: none;
-    color: $vert;
-    padding: 0 0 0 40px;
-}
+
 h1.titre_pole_arts{
     background: white url('../images/bg_coin_fiche_arts.jpg') no-repeat top left;
-    display: table-cell;
-    height: auto;
-    padding: 40px 0 10px 20px;
-    color: $vert;
-     width: 175px;
-}
-h1.titre_pole_arts a{
-    text-decoration: none;
-    color: $vert;
-    padding: 0 0 0 40px;
+
 }

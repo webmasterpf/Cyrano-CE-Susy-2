@@ -53,7 +53,10 @@ h1.titre_vdl,h1.titre_vdl_sortie{
   line-height: inherit;
   width: 80%;
   text-align: center;
-  margin: 0 auto;
+  margin: 2em 0 0 0;
+  @include breakpoint ($desktop){
+      margin: 0 auto;
+  }
 }
 /*######-------- COLONNE G1 --------######*/
 
@@ -101,6 +104,11 @@ h1.titre_vdl,h1.titre_vdl_sortie{
         li{
             margin: em(3px) 0;
              list-style: none;
+        }
+    }
+    #bloc_vdl_autres_evenements{
+        p{
+            margin: 0;
         }
     }
 }

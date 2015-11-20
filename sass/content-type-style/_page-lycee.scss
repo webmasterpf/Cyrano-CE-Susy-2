@@ -35,7 +35,11 @@ body .conteneur .conteneur-flex{
 h1.titre_pl{
     font-size: x-large;
     color: $violet;
-    line-height: 1.0em
+    line-height: 1.0em;
+        margin: 2em 0 0 0;
+        @include breakpoint ($desktop){
+        margin: 0;
+    }
 }
 h1.titre_pl a{}
 h1.titre_pl a:hover{}
