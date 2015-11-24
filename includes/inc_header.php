@@ -7,9 +7,12 @@
         <!-- Meta RWD -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
  <!-- stats-SEO -->
-    <meta name="google-site-verification" content="" />
-    <meta name="y_key" content=""/>
-    <meta name="msvalidate.01" content="" />
+    <meta name="google-site-verification" content="msBEDS9QaIIEpzPS6_Wi-HOzKWr1Kw0dageOmF-4rbs" />
+    <meta name="y_key" content="e0a3005490e0c1fc"/>
+    <meta name="msvalidate.01" content="E2114447554473259DE0996EF11B87E0" />
+      <?php /* Code pour scan par https://detectify.com */ ?>
+    <meta name="detectify-verification" content="8497102470e46552eeca2eb8a07b7910" />
+    <meta name="Generator" content="Drupal 6 (http://drupal.org)" />
     <?php print $head; ?>
     <?php print $styles; ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
