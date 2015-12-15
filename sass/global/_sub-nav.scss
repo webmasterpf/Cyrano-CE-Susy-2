@@ -41,7 +41,7 @@ aside.navStatic{
                     color: $violet;
                     text-decoration: none;
                     display: block;
-                     font-size: medium;//1.8em
+                    font-size: large;//1.8em
                     &:hover {
                         color: $vert;
                     }
@@ -55,9 +55,11 @@ aside.navStatic{
                
             }
             li.logo{
-                background:  image-url("logo-Pf-sites-lycees.jpg") left 0.3em;//avec compass
+                background-image: image-url("logo-Pf-sites-lycees.jpg");//avec compass
+                background-position: left 0.3em;
                 background-size: contain;
                 text-indent: -9999em;
+                width: 12em;
             }
         }
     }
