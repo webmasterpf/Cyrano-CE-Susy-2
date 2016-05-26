@@ -1,5 +1,5 @@
 // Regroupe le style pour le contenu des node.tpl custom
-// créer des fichiers _node-TYPE.scss et les importer dans application.scss
+// créer des fichiers _CONTENT-TYPE.scss et les importer dans application.scss
 
 /*-------------------------------------|
 |       CONTENU CUSTOM               |
@@ -10,6 +10,7 @@
 //@include breakpoint ($mobile){}
 //@include breakpoint ($desktop){}
 //@include breakpoint ($tablet){}
+//@include breakpoint(($desktop,$tablet)){}
 
 /*######-------- ||| ORDRE FLEXBOX ||| --------######*/
 body .conteneur .conteneur-flex{

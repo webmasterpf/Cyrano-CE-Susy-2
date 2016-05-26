@@ -33,7 +33,11 @@
      /*insertion du contenu du corps de la page*/
       print $node->content['body']['#value']
       ?>
-     
+      <?php
+ /* inclusion d'une region pour bloc dans colonne de gauche*/
+              global $theme_path;
+              include ($theme_path.'/includes/inc_region_col_2.php');
+              ?>
 </div>
 <!--______________COLONNE GAUCHE 3________________ -->
    
@@ -57,6 +61,11 @@ include ($theme_path.'/includes/inc_lycee_docs_joints.php');
            <?php  print $node->field_vue_actus_lycee[0]['view'] /*Vue actus du lycée*/ ?>
         </div>
            <?php endif;?>
+           <?php
+ /* inclusion d'une region pour bloc dans colonne de gauche*/
+              global $theme_path;
+              include ($theme_path.'/includes/inc_region_col_3.php');
+              ?>
     </div>
 
     <?php if ($terms): ?>

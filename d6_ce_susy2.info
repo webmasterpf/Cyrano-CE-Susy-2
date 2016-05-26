@@ -15,8 +15,6 @@ engine = phptemplate
 ;Action des plugins Jquery
 ;chargé via le template.php
 
-
-
 ;Styles pour Superfish
 superfish_styles[assopf_superfish] = Style pour Superfish  - assopf_superfish.css
 

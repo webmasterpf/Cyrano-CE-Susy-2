@@ -56,9 +56,8 @@ body .conteneur{
     }
     .col3_layout_3_6_3{
         @include span($mobilecol);
-       
-        
         @include clearfix;
+       
         @include breakpoint ($tablet){
              @include isolate(.3%);
         }

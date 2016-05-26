@@ -106,7 +106,7 @@ h6, .h6 {
         @include adjust-font-size-to(10px);
         p{
             @include trailer();
-         font-size: small;
+         font-size: x-small;
         padding: 0.3em;}
     }
 }
