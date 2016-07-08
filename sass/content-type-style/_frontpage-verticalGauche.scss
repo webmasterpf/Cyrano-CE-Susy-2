@@ -27,13 +27,17 @@ body .conteneur
          
     }
     .HPDroite{
-       
+       iframe{
+                max-width: 100%;
+                padding: em(1px);
+                border: em(1px) solid $violet;
+            }
     }
     .HPDroite1{}
     .HPDroite2{
         aside.PartieDroite2 {
             h3{
-                font-family: arista,Trebuchet MS, sans-serif;
+                font-family: $AristaFont;
                 text-align: center;
                 color: $vert;
                 font-size: large;
@@ -64,7 +68,7 @@ body .conteneur
             
         }
         .HPDroite{
-          
+            
            
             
             
